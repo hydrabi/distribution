@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalAgeViewController">
+            <connections>
+                <outlet property="pickerView" destination="JvS-I4-Gqg" id="4un-uE-zhM"/>
+                <outlet property="tableView" destination="OUe-WN-dbt" id="jSO-rZ-c8m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OUe-WN-dbt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvS-I4-Gqg">
+                    <rect key="frame" x="0.0" y="352" width="320" height="216"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JvS-I4-Gqg" secondAttribute="trailing" id="2M0-NL-1O1"/>
+                <constraint firstAttribute="bottom" secondItem="JvS-I4-Gqg" secondAttribute="bottom" id="AWw-TE-q0k"/>
+                <constraint firstItem="OUe-WN-dbt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ers-w8-5RU"/>
+                <constraint firstItem="JvS-I4-Gqg" firstAttribute="top" secondItem="OUe-WN-dbt" secondAttribute="bottom" id="FwY-xX-d4a"/>
+                <constraint firstItem="OUe-WN-dbt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZV0-K8-7gR"/>
+                <constraint firstAttribute="trailing" secondItem="OUe-WN-dbt" secondAttribute="trailing" id="eCT-yj-WN1"/>
+                <constraint firstItem="JvS-I4-Gqg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oy0-FO-1ij"/>
+            </constraints>
+            <point key="canvasLocation" x="275" y="234"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+//
+//  Distribution-Prefix.pch
+//  Distribution
+//
+//  Created by Hydra on 15/12/7.
+//  Copyright © 2015年 毕志锋. All rights reserved.
+//
+
+#ifndef Distribution_Prefix_pch
+#define Distribution_Prefix_pch
+
+#ifdef __OBJC__
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+#import "PersonlInfoManager.h"
+//#import <MagicalRecord/MagicalRecord.h>
+#import "MBProgressHUD+YG.h"
+#import "AVUser+Attibute.h"
+#import "GlobalMacro.h"
+#endif
+
+#endif /* Distribution_Prefix_pch */

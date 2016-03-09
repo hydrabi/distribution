@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="CDImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CommodityDefault" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-mT-QqB" userLabel="image0">
+                        <rect key="frame" x="6" y="0.0" width="100" height="98.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="af0-Yj-yaE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="af0-Yj-yaE"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CommodityDefault" translatesAutoresizingMaskIntoConstraints="NO" id="v2C-rx-HMj" userLabel="image2">
+                        <rect key="frame" x="214" y="0.0" width="100" height="98.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="caj-Zf-Ezv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="caj-Zf-Ezv"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CommodityDefault" translatesAutoresizingMaskIntoConstraints="NO" id="id0-X6-rCl" userLabel="image1">
+                        <rect key="frame" x="110" y="0.0" width="100" height="98.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="9U4-vB-2mK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9U4-vB-2mK"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="id0-X6-rCl" firstAttribute="width" secondItem="v2C-rx-HMj" secondAttribute="width" id="4td-Ux-o0I"/>
+                    <constraint firstItem="v2C-rx-HMj" firstAttribute="leading" secondItem="id0-X6-rCl" secondAttribute="trailing" constant="4" id="AXG-8R-wig"/>
+                    <constraint firstItem="ghC-mT-QqB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="F2R-Sx-bVf"/>
+                    <constraint firstAttribute="trailing" secondItem="v2C-rx-HMj" secondAttribute="trailing" constant="6" id="G80-EX-Fw3"/>
+                    <constraint firstItem="v2C-rx-HMj" firstAttribute="top" secondItem="id0-X6-rCl" secondAttribute="top" id="JRl-gh-WW4"/>
+                    <constraint firstItem="ghC-mT-QqB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Und-dw-JG2"/>
+                    <constraint firstAttribute="bottom" secondItem="v2C-rx-HMj" secondAttribute="bottom" constant="5" id="g5g-3g-Uka"/>
+                    <constraint firstItem="id0-X6-rCl" firstAttribute="leading" secondItem="ghC-mT-QqB" secondAttribute="trailing" constant="4" id="ghh-T8-ZkE"/>
+                    <constraint firstAttribute="bottom" secondItem="id0-X6-rCl" secondAttribute="bottom" constant="5" id="hbm-zl-gOF"/>
+                    <constraint firstItem="ghC-mT-QqB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="kqD-5B-qv1"/>
+                    <constraint firstAttribute="bottom" secondItem="ghC-mT-QqB" secondAttribute="bottom" constant="5" id="nrA-aC-8c5"/>
+                    <constraint firstItem="id0-X6-rCl" firstAttribute="top" secondItem="ghC-mT-QqB" secondAttribute="top" id="o4o-nj-75b"/>
+                    <constraint firstItem="ghC-mT-QqB" firstAttribute="width" secondItem="id0-X6-rCl" secondAttribute="width" id="xoW-Xt-FjF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Und-dw-JG2"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image0" destination="ghC-mT-QqB" id="v6k-Ff-2Ub"/>
+                <outlet property="image1" destination="id0-X6-rCl" id="7Mj-L4-HI3"/>
+                <outlet property="image2" destination="v2C-rx-HMj" id="43R-Vo-RWm"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="269"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CommodityDefault" width="184" height="215"/>
+    </resources>
+</document>

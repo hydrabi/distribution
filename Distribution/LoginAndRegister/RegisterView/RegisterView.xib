@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="etw-5K-nRv" customClass="RegisterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="378"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRi-sk-Uv0">
+                    <rect key="frame" x="140" y="25" width="40" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7Q-hK-Ibv" customClass="PlaceHolderViewLRCustomTextField">
+                    <rect key="frame" x="12" y="96" width="296" height="49.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9As-Qm-eEJ" customClass="PlaceHolderViewLRCustomTextField">
+                    <rect key="frame" x="12" y="234" width="195" height="49.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMp-zK-LSU">
+                    <rect key="frame" x="213" y="234.5" width="95" height="49.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="0yG-4e-XZp"/>
+                    </constraints>
+                    <state key="normal" title="获取验证码"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZH-qA-1QQ" customClass="PlaceHolderViewLRCustomTextField">
+                    <rect key="frame" x="12" y="165" width="296" height="49"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef4-g3-yRc">
+                    <rect key="frame" x="12" y="309" width="296" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="P3N-6c-KD5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EZH-qA-1QQ" firstAttribute="top" secondItem="a7Q-hK-Ibv" secondAttribute="bottom" constant="20" id="1qm-wP-Ixo"/>
+                <constraint firstItem="Ef4-g3-yRc" firstAttribute="leading" secondItem="etw-5K-nRv" secondAttribute="leading" constant="12" id="2jm-v7-SDI"/>
+                <constraint firstAttribute="trailing" secondItem="a7Q-hK-Ibv" secondAttribute="trailing" constant="12" id="3QI-hV-d5I"/>
+                <constraint firstItem="9As-Qm-eEJ" firstAttribute="leading" secondItem="etw-5K-nRv" secondAttribute="leading" constant="12" id="5zX-e7-Mi0"/>
+                <constraint firstItem="a7Q-hK-Ibv" firstAttribute="leading" secondItem="etw-5K-nRv" secondAttribute="leading" constant="12" id="6QF-7E-bbL"/>
+                <constraint firstAttribute="trailing" secondItem="Ef4-g3-yRc" secondAttribute="trailing" constant="12" id="6ur-vx-pKb"/>
+                <constraint firstItem="9As-Qm-eEJ" firstAttribute="height" secondItem="EZH-qA-1QQ" secondAttribute="height" id="81b-qq-S9U"/>
+                <constraint firstItem="IMp-zK-LSU" firstAttribute="top" secondItem="9As-Qm-eEJ" secondAttribute="top" id="9aI-fh-nkU"/>
+                <constraint firstItem="a7Q-hK-Ibv" firstAttribute="height" secondItem="9As-Qm-eEJ" secondAttribute="height" id="DaD-tg-S78"/>
+                <constraint firstItem="9As-Qm-eEJ" firstAttribute="top" secondItem="EZH-qA-1QQ" secondAttribute="bottom" constant="20" id="IaV-hp-bqE"/>
+                <constraint firstItem="Ef4-g3-yRc" firstAttribute="top" secondItem="9As-Qm-eEJ" secondAttribute="bottom" constant="25" id="J42-fD-pkM"/>
+                <constraint firstItem="a7Q-hK-Ibv" firstAttribute="top" secondItem="dRi-sk-Uv0" secondAttribute="bottom" constant="47" id="KFs-KK-9XH"/>
+                <constraint firstItem="dRi-sk-Uv0" firstAttribute="centerX" secondItem="etw-5K-nRv" secondAttribute="centerX" id="S6K-H4-OX9"/>
+                <constraint firstItem="IMp-zK-LSU" firstAttribute="leading" secondItem="9As-Qm-eEJ" secondAttribute="trailing" constant="6" id="nHC-05-gKL"/>
+                <constraint firstAttribute="trailing" secondItem="IMp-zK-LSU" secondAttribute="trailing" constant="12" id="nhy-jW-JHg"/>
+                <constraint firstItem="EZH-qA-1QQ" firstAttribute="leading" secondItem="etw-5K-nRv" secondAttribute="leading" constant="12" id="oHw-Ah-Gba"/>
+                <constraint firstItem="dRi-sk-Uv0" firstAttribute="top" secondItem="etw-5K-nRv" secondAttribute="top" constant="25" id="oV8-G0-wYi"/>
+                <constraint firstItem="IMp-zK-LSU" firstAttribute="height" secondItem="9As-Qm-eEJ" secondAttribute="height" id="r0S-L5-uft"/>
+                <constraint firstAttribute="bottom" secondItem="Ef4-g3-yRc" secondAttribute="bottom" constant="19" id="saW-f6-gmC"/>
+                <constraint firstAttribute="trailing" secondItem="EZH-qA-1QQ" secondAttribute="trailing" constant="12" id="uUh-iX-EpM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="finishButton" destination="Ef4-g3-yRc" id="8VS-hq-Sw2"/>
+                <outlet property="passwordTextField" destination="EZH-qA-1QQ" id="w1y-LL-O4P"/>
+                <outlet property="telephoneTextField" destination="a7Q-hK-Ibv" id="jeu-rS-UMc"/>
+                <outlet property="titleLabel" destination="dRi-sk-Uv0" id="pHL-8c-7D4"/>
+                <outlet property="verifyCodeButton" destination="IMp-zK-LSU" id="sZq-Yi-Dwx"/>
+                <outlet property="verifyCodeTextField" destination="9As-Qm-eEJ" id="2ln-Yb-rnd"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="64"/>
+        </view>
+    </objects>
+</document>

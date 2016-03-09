@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PersonalHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Dh-j8-0XM">
+                        <rect key="frame" x="230" y="2" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="eLj-lt-ENk"/>
+                            <constraint firstAttribute="width" constant="60" id="nGw-RH-mwn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalCell_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="yyr-3S-L51">
+                        <rect key="frame" x="296" y="26" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="OcB-fb-zc0"/>
+                            <constraint firstAttribute="width" constant="12" id="mnh-bS-xRf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuh-zi-nyD">
+                        <rect key="frame" x="12" y="22" width="32" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Dh-j8-0XM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="76F-UO-fxP"/>
+                    <constraint firstItem="yyr-3S-L51" firstAttribute="leading" secondItem="6Dh-j8-0XM" secondAttribute="trailing" constant="6" id="HBR-AA-NRD"/>
+                    <constraint firstAttribute="trailing" secondItem="yyr-3S-L51" secondAttribute="trailing" constant="12" id="WHB-T7-wtX"/>
+                    <constraint firstItem="yyr-3S-L51" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eJv-pK-Iem"/>
+                    <constraint firstItem="uuh-zi-nyD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h2e-qN-aYW"/>
+                    <constraint firstItem="uuh-zi-nyD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="tNf-zE-H5g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImage" destination="yyr-3S-L51" id="t26-CH-MKM"/>
+                <outlet property="headImage" destination="6Dh-j8-0XM" id="VV8-7P-Scj"/>
+                <outlet property="headLabel" destination="uuh-zi-nyD" id="fxF-or-Dtm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="personalCell_arrow" width="8" height="13"/>
+    </resources>
+</document>

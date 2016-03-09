@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gIp-dA-wcP" customClass="LRCustomTextField">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYB-PZ-kOj">
+                    <rect key="frame" x="8" y="14" width="70" height="21.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="bEM-ny-Dd9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdN-9T-vF6">
+                    <rect key="frame" x="78" y="0.0" width="234" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jdN-9T-vF6" firstAttribute="leading" secondItem="tYB-PZ-kOj" secondAttribute="trailing" id="M3C-5Z-Olg"/>
+                <constraint firstAttribute="trailing" secondItem="jdN-9T-vF6" secondAttribute="trailing" constant="8" id="N2L-W5-9tc"/>
+                <constraint firstItem="jdN-9T-vF6" firstAttribute="top" secondItem="gIp-dA-wcP" secondAttribute="top" id="PIY-1z-h7s"/>
+                <constraint firstAttribute="bottom" secondItem="jdN-9T-vF6" secondAttribute="bottom" id="WH5-kQ-MD0"/>
+                <constraint firstItem="tYB-PZ-kOj" firstAttribute="leading" secondItem="gIp-dA-wcP" secondAttribute="leading" constant="8" id="bQ8-bl-l9V"/>
+                <constraint firstItem="tYB-PZ-kOj" firstAttribute="centerY" secondItem="gIp-dA-wcP" secondAttribute="centerY" id="mre-92-AWR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="preNameLabel" destination="tYB-PZ-kOj" id="cfF-6q-Xun"/>
+                <outlet property="textField" destination="jdN-9T-vF6" id="MhH-ul-2Hs"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="74.5"/>
+        </view>
+    </objects>
+</document>
