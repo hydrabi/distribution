@@ -11,11 +11,6 @@
 @interface CommodityDetailsViewController : UIViewController
 
 /**
- *  购买按钮
- */
-@property (weak,nonatomic)IBOutlet UIButton *purchaseButton;
-
-/**
  *  初始化的同时传入商品id
  *
  *  @param object 商品详情

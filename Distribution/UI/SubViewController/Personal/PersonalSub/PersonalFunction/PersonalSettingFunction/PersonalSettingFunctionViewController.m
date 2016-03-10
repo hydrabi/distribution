@@ -11,6 +11,8 @@
 #import "NSArray+Addition.h"
 #import "UIColor+Addition.h"
 #import "PersonalSettingTableViewCell.h"
+#import "AppDelegate.h"
+#import "PersonalAboutUsViewController.h"
 
 static NSString *personalSettingTableViewCellIdentifier = @"personalSettingTableViewCellIdentifier";
 static NSString *personalSettingNormalTableViewCellIdentifier = @"personalSettingNormalTableViewCellIdentifier";
@@ -20,6 +22,8 @@ static NSString *personalSettingNormalTableViewCellIdentifier = @"personalSettin
 @property (nonatomic,weak)IBOutlet UITableView *tableView;
 @property (nonatomic,strong)NSMutableArray *dataTypeArr;
 @property (nonatomic,strong)UISwitch *mySwitch;
+@property (nonatomic,assign)NSUInteger cacheSize;
+@property (nonatomic,strong)MBProgressHUD *progress;
 @end
 
 @implementation PersonalSettingFunctionViewController
@@ -51,6 +55,20 @@ static NSString *personalSettingNormalTableViewCellIdentifier = @"personalSettin
                            @(PersonalSettingTypeClearCache)]
                          ,@[@(PersonalSettingTypeEvaluate),
                             @(PersonalSettingTypeAboutUs)]].mutableCopy;
+}
+
+-(MBProgressHUD*)progress{
+    if(!_progress){
+        RootViewController *vc = [AppDelegate getRootController];
+        _progress = [[MBProgressHUD alloc] initWithView:vc.view];
+        _progress.mode     = MBProgressHUDModeIndeterminate;
+    }
+    return _progress;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
 }
 
 -(void)navigationConfig{
@@ -166,7 +184,22 @@ static NSString *personalSettingNormalTableViewCellIdentifier = @"personalSettin
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    PersonalSettingType type = [self getSpecificCellTypeWithIndexPath:indexPath];
+    if(type == PersonalSettingTypeClearCache){
+        
+        RootViewController *vc = [AppDelegate getRootController];
+        [vc.view addSubview:self.progress];
+        [self.progress show:YES];
+        __weak typeof(self)weakSelf = self;
+        [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+            [weakSelf.tableView reloadData];
+            [weakSelf.progress hide:YES];
+        }];
+    }
+    else if (type == PersonalSettingTypeAboutUs){
+        PersonalAboutUsViewController *vc = [[PersonalAboutUsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

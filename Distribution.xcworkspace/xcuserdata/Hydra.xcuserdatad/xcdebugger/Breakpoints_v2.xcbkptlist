@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
-            timestampString = "479204007.680206"
+            timestampString = "479290568.750632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "-onReq:"
             landmarkType = "5">
          </BreakpointContent>
@@ -119,8 +119,8 @@
                   symbolName = "-[UIImageView(Addition) compressImage:]"
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479214173.140238"
+                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
+                  timestampString = "479298076.995848"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -134,8 +134,8 @@
                   symbolName = "__Block_byref_object_copy_"
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479214173.1404"
+                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
+                  timestampString = "479298076.996014"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -149,8 +149,8 @@
                   symbolName = "__Block_byref_object_dispose_"
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479214173.140528"
+                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
+                  timestampString = "479298076.996154"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -173,54 +173,6 @@
             startingLineNumber = "80"
             endingLineNumber = "80"
             landmarkName = "-tapAction:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/SubViewController/Home/CommodityDetails/CommodityDetailsCell/CDMainTableViewCell/CDMainTableViewCell.m"
-            timestampString = "479199892.077317"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
-            landmarkName = "-minusButtonAction:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/SubViewController/Personal/PersonalSub/PersonalFunction/PersonalSettingFunction/PersonalSettingFunctionViewController.m"
-            timestampString = "479213679.158567"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-switchValueChange:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/SubViewController/Personal/PersonalSub/PersonalFunction/PersonalSettingFunction/PersonalSettingFunctionViewController.m"
-            timestampString = "479213687.763278"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-UIConfig"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

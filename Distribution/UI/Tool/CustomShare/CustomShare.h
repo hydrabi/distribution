@@ -26,4 +26,5 @@ typedef NS_ENUM(NSInteger,CustomShareType) {
 
 +(instancetype)shareManager;
 -(void)showShareMenuWithObject:(AVObject*)object;
+-(void)saveImagesAndShareToWeiXin:(AVObject*)object;
 @end

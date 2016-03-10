@@ -16,6 +16,8 @@
 #import "RequestData.h"
 #import "NSArray+Addition.h"
 #import "CustomShare.h"
+#import "CustomImageAndTitleButton.h"
+#import "LoginNavigationControllerViewController.h"
 
 @interface CommodityDetailsViewController ()<CommodityDetailsDataSourceDelegate,MWPhotoBrowserDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -37,6 +39,10 @@
  *  商品
  */
 @property (strong,nonatomic) AVObject *object;
+
+@property (weak,nonatomic)IBOutlet CustomImageAndTitleButton *collectButton;
+@property (weak,nonatomic)IBOutlet UIButton *shoppingCarButton;
+@property (weak,nonatomic)IBOutlet UIButton *purchaseButton;
 @end
 
 @implementation CommodityDetailsViewController
@@ -94,13 +100,29 @@
     self.title = @"商品详情";
     self.tableView.backgroundColor = CommodityDetailsTableViewBackgroundColor;
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self purchaseButtonUIConfig];
+    [self buttonUIConfig];
 }
 
--(void)purchaseButtonUIConfig{
-    [self.purchaseButton setTitle:@"点击购买" forState:UIControlStateNormal];
+-(void)buttonUIConfig{
+//    [self.collectButton configButtonImageName:@"favoriteButtonHeart" title:@"收藏" middleOffset:5.0f buttonHeight:CommodityDetailsFavoriteButtonHeight titleFont:[UIFont systemFontOfSize:15.0f]];
+//    [self.collectButton setTitleColor:[UIColor colorWithHexString:@"ff4400" alpha:1] forState:UIControlStateNormal];
+    [self.collectButton addTarget:self action:@selector(collectButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    AVUser *user                   = [AVUser currentUser];
+    if(user){
+        BOOL favorited                 = [user containFavoriteObjectId:self.object.objectId];
+        [self hadAddFavorite:favorited];
+    }
+    
+    
+    [self.shoppingCarButton setBackgroundColor:[UIColor colorWithHexString:@"ff4400" alpha:0.6]];
+    [self.shoppingCarButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.shoppingCarButton setTitle:@"加入购物车" forState:UIControlStateNormal];
+    self.shoppingCarButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
+    
     [self.purchaseButton setBackgroundColor:[UIColor colorWithHexString:@"ff4400" alpha:1]];
-    [self.purchaseButton addTarget:self action:@selector(purchaseButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.purchaseButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.purchaseButton setTitle:@"点击购买" forState:UIControlStateNormal];
+    self.purchaseButton.titleLabel.font = [UIFont systemFontOfSize:15.0f];
 }
 
 -(void)progressHUDConfig{
@@ -124,6 +146,32 @@
 //分享
 -(void)shareButtonClick{
     [[CustomShare shareManager] showShareMenuWithObject:self.object];
+}
+
+/**按钮点击事件*/
+-(void)collectButtonClick{
+    AVUser *user = [AVUser currentUser];
+    //已经登录
+    if(user){
+        BOOL favorited = [user containFavoriteObjectId:self.object.objectId];
+        //未加入收藏，商品加入收藏
+        if(!favorited){
+            [user addFavoriteWithObjectId:self.object];
+            [MBProgressHUD showSuccess:@"加入收藏成功！"];
+            [self hadAddFavorite:YES];
+            
+        }
+        else{
+            [user removeFavoriteWithObjectId:self.object];
+            [MBProgressHUD showSuccess:@"取消收藏成功！"];
+            [self hadAddFavorite:NO];
+            
+        }
+    }
+    //未登录，弹出登录框
+    else{
+        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
+    }
 }
 
 #pragma mark - 配置数据源
@@ -188,4 +236,23 @@
     NSLog(@"Did start viewing photo at index %lu", (unsigned long)index);
 }
 
+
+#pragma mark - 收藏
+
+/**根据是否收藏按钮的显示状态不同*/
+-(void)hadAddFavorite:(BOOL)favorite{
+    UIFont *font                           = [UIFont systemFontOfSize:15.0f];
+    //未加入收藏
+    if(!favorite){
+        [self.collectButton configButtonImageName:@"favoriteButtonHeart" title:@"收藏" middleOffset:5.0f buttonHeight:CommodityDetailsFavoriteButtonHeight titleFont:font];
+        [self.collectButton setTitleColor:[UIColor colorWithHexString:@"ff4400" alpha:1] forState:UIControlStateNormal];
+        
+    }
+    //已加入收藏
+    else{
+        [self.collectButton configButtonImageName:nil title:@"  取消收藏" middleOffset:5.0f buttonHeight:CommodityDetailsFavoriteButtonHeight titleFont:font];
+        [self.collectButton setTitleColor:[UIColor colorWithHexString:@"3d3d3d" alpha:1] forState:UIControlStateNormal];
+        
+    }
+}
 @end

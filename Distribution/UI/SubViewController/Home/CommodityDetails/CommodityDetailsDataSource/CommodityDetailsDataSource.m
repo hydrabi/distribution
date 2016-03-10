@@ -15,6 +15,7 @@
 #import "CDImageTableViewCellDelegate.h"
 #import "CDImageTableViewCell.h"
 #import "MJRefresh.h"
+#import "CustomShare.h"
 
 static NSString *tableViewMainCellIndentifier = @"tableViewMainCellIndentifier";
 static NSString *tableViewIntroduceCellIndentitier = @"tableViewIntroduceCellIndentitier";
@@ -251,6 +252,10 @@ static NSString *tableViewImageCellIndentitier = @"tableViewImageCellIndentitier
             [self.delegate imageClickWithArr:@[productImgUrlStr].mutableCopy clickedIndex:0];
         }
     }
+}
+
+-(void)weixinShareButtonClick{
+    [[CustomShare shareManager] saveImagesAndShareToWeiXin:self.object];
 }
 
 @end

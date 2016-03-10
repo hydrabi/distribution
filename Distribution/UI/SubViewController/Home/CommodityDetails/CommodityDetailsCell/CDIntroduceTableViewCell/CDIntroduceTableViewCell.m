@@ -15,7 +15,7 @@
 @implementation CDIntroduceTableViewCell
 
 - (void)awakeFromNib {
-    self.introduceTitleLabel.text               = @"产品介绍";
+    self.introduceTitleLabel.text               = @"产品介绍:";
     self.introduceTitleLabel.textColor          = [UIColor colorWithHexString:@"303030" alpha:1];
     self.introduceTitleLabel.font               = [UIFont systemFontOfSize:20.0f];
 

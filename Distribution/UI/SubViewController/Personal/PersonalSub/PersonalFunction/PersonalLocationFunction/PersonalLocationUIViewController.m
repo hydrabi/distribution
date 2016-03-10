@@ -111,7 +111,7 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
     self.locateDic = @{}.mutableCopy;
     AVUser *user = [AVUser currentUser];
     if(user.locationDic){
-        self.locateDic = user.locationDic;
+        self.locateDic = [NSMutableDictionary dictionaryWithDictionary:user.locationDic];
     }
     else{
         [self.locateDic setObject:@(0) forKey:AreaRegion];
@@ -119,9 +119,7 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
         [self.locateDic setObject:@(0) forKey:AreaCity];
         [self.locateDic setObject:@(0) forKey:AreaDistricts];
     }
-    
-    
-    
+
     self.locate.region = self.regionArr[0][@"region"];
     self.locate.province = self.provinceArr[0][@"province"];
     self.locate.city = self.cityArr[0][@"city"];

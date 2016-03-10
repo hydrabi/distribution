@@ -24,6 +24,8 @@
 		8081CAC11C5B2760001FD68F /* PersonalNicknameAndSignatureFunction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8081CABF1C5B2760001FD68F /* PersonalNicknameAndSignatureFunction.xib */; };
 		8081CAC51C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8081CAC31C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.m */; };
 		8081CAC61C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8081CAC41C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.xib */; };
+		808238E81C91488A00A932E2 /* PersonalAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808238E61C91488A00A932E2 /* PersonalAboutUsViewController.m */; };
+		808238E91C91488A00A932E2 /* PersonalAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808238E71C91488A00A932E2 /* PersonalAboutUsViewController.xib */; };
 		808AA50E1C3CB7B80072C8DF /* CustomMWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA50D1C3CB7B80072C8DF /* CustomMWPhotoBrowser.m */; };
 		808AA5111C3CBBEF0072C8DF /* AppDelegate+Ease.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA5101C3CBBEF0072C8DF /* AppDelegate+Ease.m */; };
 		808AA5131C3D284E0072C8DF /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 808AA5121C3D284E0072C8DF /* MBProgressHUD.bundle */; };
@@ -211,6 +213,9 @@
 		8081CAC31C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalNicknameAndSignatureTableViewCell.m; sourceTree = "<group>"; };
 		8081CAC41C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalNicknameAndSignatureTableViewCell.xib; sourceTree = "<group>"; };
 		8081CAC71C5B28AB001FD68F /* PersonalNicknameAndSignatureMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalNicknameAndSignatureMacro.h; sourceTree = "<group>"; };
+		808238E51C91488A00A932E2 /* PersonalAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalAboutUsViewController.h; sourceTree = "<group>"; };
+		808238E61C91488A00A932E2 /* PersonalAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalAboutUsViewController.m; sourceTree = "<group>"; };
+		808238E71C91488A00A932E2 /* PersonalAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalAboutUsViewController.xib; sourceTree = "<group>"; };
 		808AA50C1C3CB7B80072C8DF /* CustomMWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMWPhotoBrowser.h; sourceTree = "<group>"; };
 		808AA50D1C3CB7B80072C8DF /* CustomMWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMWPhotoBrowser.m; sourceTree = "<group>"; };
 		808AA50F1C3CBBEF0072C8DF /* AppDelegate+Ease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Ease.h"; sourceTree = "<group>"; };
@@ -590,6 +595,16 @@
 				8081CAC71C5B28AB001FD68F /* PersonalNicknameAndSignatureMacro.h */,
 			);
 			path = PersonalNicknameFunction;
+			sourceTree = "<group>";
+		};
+		808238E41C91487100A932E2 /* PersonalAboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				808238E51C91488A00A932E2 /* PersonalAboutUsViewController.h */,
+				808238E61C91488A00A932E2 /* PersonalAboutUsViewController.m */,
+				808238E71C91488A00A932E2 /* PersonalAboutUsViewController.xib */,
+			);
+			path = PersonalAboutUs;
 			sourceTree = "<group>";
 		};
 		808AA50B1C3CB79A0072C8DF /* CustomMWPhotoBrowser */ = {
@@ -1230,6 +1245,7 @@
 		80D55EFE1C59E33900B2F0EC /* PersonalFunction */ = {
 			isa = PBXGroup;
 			children = (
+				808238E41C91487100A932E2 /* PersonalAboutUs */,
 				809351B51C901E0500836F98 /* PersonalSettingFunction */,
 				80E5E8A61C8D1044001E3A49 /* PersonalTraceFunction */,
 				8081CAB61C5B267C001FD68F /* PersonalNicknameFunction */,
@@ -1783,6 +1799,7 @@
 				802302111C3A6D8C00589979 /* CDImageTableViewCell.xib in Resources */,
 				80D55F2E1C59E33900B2F0EC /* PersonalAgeTableViewCell.xib in Resources */,
 				80D64F021C27E26B00B3493A /* SharePopSelectView.xib in Resources */,
+				808238E91C91488A00A932E2 /* PersonalAboutUsViewController.xib in Resources */,
 				80D55F401C59E33900B2F0EC /* PersonalHeaderCell.xib in Resources */,
 				809BEF591C8C27E7000B42A4 /* FavoriteViewController.xib in Resources */,
 				80D55F661C59FEAD00B2F0EC /* PersonalMainTableViewHeader.xib in Resources */,
@@ -1944,6 +1961,7 @@
 				80D55F641C59FE9D00B2F0EC /* PersonalMainTableViewHeader.m in Sources */,
 				80D55F411C59E33900B2F0EC /* PersonalNormalCell.m in Sources */,
 				80FDE1171C32C82B00652555 /* UIView+Addition.m in Sources */,
+				808238E81C91488A00A932E2 /* PersonalAboutUsViewController.m in Sources */,
 				80F107321C1586C80009FBA4 /* CollectViewController.m in Sources */,
 				80AC83661C58A4D800B955C4 /* RegisterView.m in Sources */,
 				80C377051C21A8DD00464AC0 /* HomeViewController.m in Sources */,

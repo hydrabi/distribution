@@ -46,11 +46,27 @@ typedef NS_ENUM(NSInteger,CDMainCellSizeType){
 /**
  *  收藏按钮
  */
-@property (weak, nonatomic) IBOutlet CustomImageAndTitleButton *favoriteButton;
+@property (weak, nonatomic) IBOutlet CustomImageAndTitleButton *shareButton;
 /**
  *  数量（标题）
  */
 @property (weak,nonatomic)IBOutlet UILabel *numberTitleLabel;
+/**
+ *  货号标题
+ */
+@property (weak,nonatomic)IBOutlet UILabel *productNumberTitleLabel;
+/**
+ *  货号
+ */
+@property (weak,nonatomic)IBOutlet UILabel *productNumberLabel;
+/**
+ *  品牌标题
+ */
+@property (weak,nonatomic)IBOutlet UILabel *brandLabel;
+/**
+ *  品牌
+ */
+@property (weak,nonatomic)IBOutlet UILabel *brandNameLabel;
 
 @property (weak,nonatomic)IBOutlet UIButton *minusButton;
 @property (weak,nonatomic)IBOutlet UIButton *plusButton;

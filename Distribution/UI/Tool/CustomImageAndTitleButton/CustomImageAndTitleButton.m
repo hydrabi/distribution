@@ -39,6 +39,8 @@
 }
 
 -(void)configButtonImageName:(NSString*)imageName title:(NSString*)title middleOffset:(CGFloat)middleOffset buttonHeight:(CGFloat)buttonHeight titleFont:(UIFont*)font{
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.adjustsImageWhenHighlighted = NO;
     self.buttonImage = imageName;
     self.buttonTitle = title;
     self.middleOffset = middleOffset;
@@ -47,15 +49,20 @@
     
     [self.titleLabel setFont:font];
     [self setTitle:title forState:UIControlStateNormal];
-    [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    if(imageName.length>0){
+        [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    }
+    else{
+        [self setImage:nil forState:UIControlStateNormal];
+    }
     [self calculteImageAndTitleSize];
     [self setNeedsDisplay];
 }
 
 -(void)calculteImageAndTitleSize{
     UIImage *image = [UIImage imageNamed:self.buttonImage];
-    if(image.size.height>self.buttonHeight-10){
-        self.buttonImageSize = CGSizeMake(self.buttonHeight-10, self.buttonHeight-10);
+    if(image.size.height>self.buttonHeight-2){
+        self.buttonImageSize = CGSizeMake(self.buttonHeight-2, self.buttonHeight-2);
     }
     else{
         self.buttonImageSize = image.size;
@@ -72,11 +79,18 @@
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     CGFloat imageAndTitleWidth = self.buttonImageSize.width+self.middleOffset+self.buttonTitleSize.width;
+    if(self.buttonImage.length == 0){
+        imageAndTitleWidth -= self.middleOffset;
+    }
+    
     if(contentRect.size.width<imageAndTitleWidth){
         return CGRectZero;
     }
     else{
         CGFloat x = (CGRectGetWidth(contentRect)-imageAndTitleWidth)/2+self.buttonImageSize.width+self.middleOffset;
+        if(self.buttonImage.length == 0){
+            x -= self.middleOffset;
+        }
         CGFloat y = (CGRectGetHeight(contentRect)-self.buttonTitleSize.height)/2;
         if(self.buttonImage.length == 0){
             y = (CGRectGetHeight(self.frame)-self.buttonTitleSize.height)/2;

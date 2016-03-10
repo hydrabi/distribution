@@ -13,5 +13,6 @@
 @optional
 
 -(void)clickImageCell:(CDMainTableViewCell*)imageCell;
+-(void)weixinShareButtonClick;
 
 @end

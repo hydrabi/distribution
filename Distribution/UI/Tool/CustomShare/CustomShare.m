@@ -95,14 +95,14 @@
                                  CustomShareType type = (CustomShareType)[self.shareTypeArr[index]integerValue];
                                  self.selectShareIndex = type;
                                  
-                                 NSString *desc = [[self.object objectForKey:@"localData"] objectForKey:@"productdesc"];
-                                 if(desc.length>0){
-                                     [UIPasteboard generalPasteboard].string = desc;
-                                 }
-                                 [self saveImagesToAlbumWithCompletion:^(BOOL success){
-                                     [self.progressHUD hide:YES];
-                                     [UIAlertView alertWithTitle:@"图片已经存入相册，描述已经复制到剪贴板，分享时可手动黏贴" delegate:self];
-                                 }];
+//                                 NSString *desc = [[self.object objectForKey:@"localData"] objectForKey:@"productdesc"];
+//                                 if(desc.length>0){
+//                                     [UIPasteboard generalPasteboard].string = desc;
+//                                 }
+//                                 [self saveImagesToAlbumWithCompletion:^(BOOL success){
+//                                     
+//                                     [UIAlertView alertWithTitle:@"图片已经存入相册，描述已经复制到剪贴板，分享时可手动黏贴" delegate:self];
+//                                 }];
                                  
                              }];
     }
@@ -121,6 +121,7 @@
     NSArray *imgs = [localData objectForKey:@"imgs"];
     [ImageManager createAlbumWithImgs:imgs completion:^(BOOL success){
         dispatch_async(dispatch_get_main_queue(), ^{
+            [self.progressHUD hide:YES];
             completion(success);
         });
     }];
@@ -319,43 +320,72 @@
     NSLog(@"%@",message);
 }
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    if(buttonIndex == 1){
-        switch (self.selectShareIndex) {
-            case CustomShareTypeQQ:
-            {
-                [self QQShare];
+//-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+//    if(buttonIndex == 1){
+//        switch (self.selectShareIndex) {
+//            case CustomShareTypeQQ:
+//            {
+//                [self QQShare];
+//            }
+//                break;
+//            case CustomShareTypeQQZone:
+//            {
+//                [self QQShare];
+//            }
+//                break;
+//            case CustomShareTypeWeixin:
+//            {
+//                [self weChatShare];
+//            }
+//                break;
+//            case CustomShareTypeWeixinFriends:
+//            {
+//                [self weChatShare];
+//            }
+//                break;
+//            case CustomShareTypeWeiBo:
+//            {
+//                [self weiboShare];
+//            }
+//                break;
+//            case CustomShareTypeZhiFuBao:
+//            {
+//                [self zhiFuBaoShare];
+//            }
+//                break;
+//            default:
+//                break;
+//        }
+//    }
+//}
+
+#pragma mark - 图片保存并分享到微信
+-(void)saveImagesAndShareToWeiXin:(AVObject*)object{
+    //已经安装微信
+    if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weixin://"]]){
+        self.object = object;
+        [[CustomShare shareManager] saveImagesToAlbumWithCompletion:^(BOOL success){
+            if(success){
+                NSString *desc = [[self.object objectForKey:@"localData"] objectForKey:@"productdesc"];
+                if(desc.length>0){
+                    [UIPasteboard generalPasteboard].string = desc;
+                }
+                [UIAlertView alertWithTitle:@"图片已经存入相册，描述已经复制到剪贴板，分享时可手动黏贴" delegate:self];
             }
-                break;
-            case CustomShareTypeQQZone:
-            {
-                [self QQShare];
+            else{
+                [MBProgressHUD showError:@"图片保存失败！"];
             }
-                break;
-            case CustomShareTypeWeixin:
-            {
-                [self weChatShare];
-            }
-                break;
-            case CustomShareTypeWeixinFriends:
-            {
-                [self weChatShare];
-            }
-                break;
-            case CustomShareTypeWeiBo:
-            {
-                [self weiboShare];
-            }
-                break;
-            case CustomShareTypeZhiFuBao:
-            {
-                [self zhiFuBaoShare];
-            }
-                break;
-            default:
-                break;
-        }
+        }];
+        
+    }
+    else{
+        [MBProgressHUD showError:@"未安装微信客户端！"];
     }
 }
 
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 1){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"weixin://"]];
+    }
+}
 @end

@@ -16,9 +16,11 @@
 #define CommodityDetailsTableViewCellLeftSeparatorInset 0.0f
 #define CommodityDetailsTableViewBackgroundColor [UIColor colorWithHexString:@"eeeeee" alpha:1]
 //主cell的高度
-#define CommodityDetailsMainCellHeight 240.0f
+#define CommodityDetailsMainCellHeight 270.0f
 //收藏按钮高度
-#define CommodityDetailsFavoriteButtonHeight 30.0f
+#define CommodityDetailsFavoriteButtonHeight 50.0f
+//微信分享按钮高度
+#define CommodityDetailsWeiXinButtonHeight 35.0f
 //详情图片展示cell的高度
 #define CommodityDetailsImageCellHeight 104.0f
 //详情图片展示cell每行的图片数目
