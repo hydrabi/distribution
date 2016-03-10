@@ -18,11 +18,11 @@
 
 
 //PersonalTableViewCell
-#define PersonalMainNameTableViewCellHeight 80.0f
+#define PersonalMainNameTableViewCellHeight 190.0f
 #define PersonalMainOrderTableViewCellHeight 65.0f
 #define PersonalMainNormalTableViewCellHeight 44.0f
 #define PersonalMainOrderHeaderTableViewHeight 30.0f
 
-#define PersonalMainNameTableViewCell_HeadImageWidthAndHeight 60.0f
+#define PersonalMainNameTableViewCell_HeadImageWidthAndHeight 80.0f
 
 #endif /* PersonalMainMacro_h */

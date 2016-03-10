@@ -9,7 +9,7 @@
 #import "PersonalMainOrderCellButton.h"
 #import "UIColor+Addition.h"
 #pragma mark - 按钮字体
-static const CGFloat customTabBarButtonFontSize = 14.0f;
+static const CGFloat customTabBarButtonFontSize = 15.0f;
 static const CGFloat imageTopOffset = 10.0f;
 static const CGFloat imageWidthAndHeiht = 22.0f;
 static const CGFloat titleBottomOffset = 5.0f;
@@ -19,12 +19,18 @@ static NSString *PersonalMainOrderCellButtonNotPayTitle = @"未付款";
 static NSString *PersonalMainOrderCellButtonNotDeliverTitle  = @"待发货";
 static NSString *PersonalMainOrderCellButtonHadDeliverTitle  = @"已发货";
 static NSString *PersonalMainOrderCellButtonReturn = @"退货/退款";
+static NSString *PersonalMainCellButtonMyPointTitle = @"我的积分";
+static NSString *PersonalMainCellButtonMyWalletTitle = @"我的钱包";
+static NSString *PersonalMainCellButtonMyCollectTitle = @"我的收藏";
 
 #pragma mark - 图片名称
 static NSString *PersonalMainOrderCellButtonNotPayImage              = @"personalOrderCell_notPay";
 static NSString *PersonalMainOrderCellButtonNotDeliverImage           = @"personalOrderCell_notDeliver";
 static NSString *PersonalMainOrderCellButtonHadDeliverImage           = @"personalOrderCell_hadDeliver";
 static NSString *PersonalMainOrderCellButtonReturnImage          = @"personalOrderCell_return";
+static NSString *PersonalMainCellButtonPointImage          = @"personalMain_myPoint";
+static NSString *PersonalMainCellButtonWalletImage          = @"personalMain_myWallet";
+static NSString *PersonalMainCellButtonCollectImage          = @"personalMain_myColllect";
 
 #pragma mark - 图片比例
 static CGFloat customTabBarButtonImagePer = 0.7;
@@ -32,6 +38,8 @@ static CGFloat customTabBarButtonImagePer = 0.7;
 @interface PersonalMainOrderCellButton()
 
 @property (nonatomic,assign)PersonalMainOrderCellButtonType type;
+@property (nonatomic,strong)UIFont *titleFont;
+@property (nonatomic,strong)UIColor *titleColor;
 
 @end
 
@@ -41,6 +49,19 @@ static CGFloat customTabBarButtonImagePer = 0.7;
     self = [super init];
     if(self){
         self.type = type;
+        self.titleFont = [UIFont systemFontOfSize:customTabBarButtonFontSize];
+        self.titleColor = [UIColor colorWithHexString:@"9f9f9f" alpha:1];
+        [self configUI];
+    }
+    return self;
+}
+
+-(instancetype)initWithButtonType:(PersonalMainOrderCellButtonType)type font:(UIFont*)font titleColor:(UIColor*)color{
+    self = [super init];
+    if(self){
+        self.type = type;
+        self.titleFont = font;
+        self.titleColor = color;
         [self configUI];
     }
     return self;
@@ -51,9 +72,9 @@ static CGFloat customTabBarButtonImagePer = 0.7;
 -(void)configUI{
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    self.titleLabel.font = [UIFont systemFontOfSize:customTabBarButtonFontSize];
+    self.titleLabel.font = self.titleFont;
     self.adjustsImageWhenHighlighted = NO;
-    [self setTitleColor:[UIColor colorWithHexString:@"9f9f9f" alpha:1] forState:UIControlStateNormal];
+    [self setTitleColor:self.titleColor forState:UIControlStateNormal];
     [self configAttribute];
 }
 
@@ -110,6 +131,24 @@ static CGFloat customTabBarButtonImagePer = 0.7;
         {
             [self setTitle:[NSString stringWithString:PersonalMainOrderCellButtonReturn] forState:UIControlStateNormal];
             imageName = PersonalMainOrderCellButtonReturnImage;
+        }
+            break;
+        case PersonalMainOrderCellButtonType_myPoint:
+        {
+            [self setTitle:[NSString stringWithString:PersonalMainCellButtonMyPointTitle] forState:UIControlStateNormal];
+            imageName = PersonalMainCellButtonPointImage;
+        }
+            break;
+        case PersonalMainOrderCellButtonType_myWallet:
+        {
+            [self setTitle:[NSString stringWithString:PersonalMainCellButtonMyWalletTitle] forState:UIControlStateNormal];
+            imageName = PersonalMainCellButtonWalletImage;
+        }
+            break;
+        case PersonalMainOrderCellButtonType_myCollect:
+        {
+            [self setTitle:[NSString stringWithString:PersonalMainCellButtonMyCollectTitle] forState:UIControlStateNormal];
+            imageName = PersonalMainCellButtonCollectImage;
         }
             break;
             

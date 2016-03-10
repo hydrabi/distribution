@@ -14,17 +14,9 @@
  */
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
 /**
- *  昵称
+ *  工具栏背景视图
  */
-@property (weak, nonatomic) IBOutlet UILabel *nickNameLabel;
-/**
- *  签名
- */
-@property (weak, nonatomic) IBOutlet UILabel *signatureLabel;
-/**
- *  箭头
- */
-@property (weak, nonatomic) IBOutlet UIImageView *arrowImage;
+@property (weak, nonatomic) IBOutlet UIView *toolBarBackgroundView;
 
 /**
  *  重新加载用户资料

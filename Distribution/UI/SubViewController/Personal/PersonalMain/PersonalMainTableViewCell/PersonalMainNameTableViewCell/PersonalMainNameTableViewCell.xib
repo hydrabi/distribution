@@ -25,10 +25,10 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29i-py-rfq">
-                        <rect key="frame" x="0.0" y="124.5" width="320" height="65"/>
+                        <rect key="frame" x="0.0" y="129.5" width="320" height="60"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="65" id="5kU-DX-eRg"/>
+                            <constraint firstAttribute="height" constant="60" id="5kU-DX-eRg"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -44,6 +44,10 @@
                     <constraint firstAttribute="trailing" secondItem="sFS-QZ-0gO" secondAttribute="trailing" id="sv5-pL-cKH"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="headImage" destination="mu8-H2-7y8" id="tvS-Y4-JYi"/>
+                <outlet property="toolBarBackgroundView" destination="29i-py-rfq" id="5aH-oU-AFS"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

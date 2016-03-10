@@ -120,7 +120,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479298076.995848"
+                  timestampString = "479315280.294007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -135,7 +135,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479298076.996014"
+                  timestampString = "479315280.294152"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -150,7 +150,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479298076.996154"
+                  timestampString = "479315280.29428"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -173,6 +173,22 @@
             startingLineNumber = "80"
             endingLineNumber = "80"
             landmarkName = "-tapAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Distribution/UI/SubViewController/Personal/PersonalMain/PersonalMainTableViewCell/PersonalMainNameTableViewCell/PersonalMainNameTableViewCell.m"
+            timestampString = "479314168.419943"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-awakeFromNib"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
