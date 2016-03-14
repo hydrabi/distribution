@@ -26,30 +26,34 @@
     // Configure the view for the selected state
 }
 
--(void)resetValueWithType:(PersonalAddressDetailCellType)type{
+-(void)resetValueWithType:(PersonalAddressDetailCellType)type addressDic:(NSDictionary*)dic{
     switch (type) {
         case PersonalAddressDetailCellType_consignee:
         {
             self.titleLabel.text = @"收货人：";
             self.titleLabel.textColor = PersonalAddrestDetailCellTitleColor;
+            self.valueLabel.text = dic[AVUserKey_addressConsignee];
         }
             break;
         case PersonalAddressDetailCellType_telephone:
         {
             self.titleLabel.text = @"手机号码：";
             self.titleLabel.textColor = PersonalAddrestDetailCellTitleColor;
+            self.valueLabel.text = dic[AVUserKey_addressTelephone];
         }
             break;
         case PersonalAddressDetailCellType_area:
         {
             self.titleLabel.text = @"所在地区：";
             self.titleLabel.textColor = PersonalAddrestDetailCellTitleColor;
+            self.valueLabel.text = dic[AVUserKey_addressLocation];
         }
             break;
         case PersonalAddressDetailCellType_detailAddress:
         {
             self.titleLabel.text = @"详细地址：";
             self.titleLabel.textColor = PersonalAddrestDetailCellTitleColor;
+            self.valueLabel.text = dic[AVUserKey_addressDetail];
         }
             break;
         case PersonalAddressDetailCellType_delete:

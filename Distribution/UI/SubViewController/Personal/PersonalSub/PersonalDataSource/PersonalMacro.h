@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, PersonalTableDataType) {
 #define PersonalTableViewSectionHeaderHeight 10.0f
 #define PersonalTableViewCellLeftSeparatorInset 12.0f
 #define Notification_LoginStatusChange @"Notification_LoginStatusChange"
-
+#define Notification_PersonalInfoChange @"Notification_PersonalInfoChange"  //用户信息改变
 #pragma mark - PersonalTableViewCell
 
 #define PersonalNormalCellHeight 44.0f

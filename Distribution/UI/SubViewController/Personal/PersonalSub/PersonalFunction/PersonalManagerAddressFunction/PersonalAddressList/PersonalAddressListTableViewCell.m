@@ -32,10 +32,10 @@
     // Configure the view for the selected state
 }
 
--(void)resetValueWith{
-    self.nameLabel.text = @"毕先生";
-    self.telephoneLabel.text = @"13410424125";
-    self.adressLabel.text = @"冻死了客服及阿里的咖啡机拉到就发啦几点睡了房间啊看来对方";
+-(void)resetValueWithAddressDic:(NSDictionary*)dic{
+    self.nameLabel.text = dic[AVUserKey_addressConsignee];
+    self.telephoneLabel.text = dic[AVUserKey_addressTelephone];
+    self.adressLabel.text = dic[AVUserKey_addressDetail];
 }
 
 @end

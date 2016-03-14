@@ -13,5 +13,5 @@
 @property (nonatomic,weak)IBOutlet UILabel *telephoneLabel;
 @property (nonatomic,weak)IBOutlet UILabel *adressLabel;
 
--(void)resetValueWith;
+-(void)resetValueWithAddressDic:(NSDictionary*)dic;
 @end

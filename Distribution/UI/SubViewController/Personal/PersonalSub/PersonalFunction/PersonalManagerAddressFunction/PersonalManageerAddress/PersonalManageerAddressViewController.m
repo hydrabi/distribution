@@ -17,6 +17,7 @@
 #import "AreaObject.h"
 #import "PersonalViewControllerDelegate.h"
 #import "NSString+Addition.h"
+#import "PersonalMacro.h"
 
 static NSString *customInputTextFieldTableViewCellIndentifier = @"customInputTextFieldTableViewCellIndentifier";
 static NSString *customInputTextViewTableViewCellIndentifier = @"customInputTextViewTableViewCellIndentifier";
@@ -215,6 +216,7 @@ static NSString *personalManagerAddressNormalTableViewCellIndentifier = @"person
             else{
                 [user modifyAddressWithDic:self.addressDic index:self.addressDicIndex];
             }
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_PersonalInfoChange object:nil];
             [self returnButtonClick];
         }
     }

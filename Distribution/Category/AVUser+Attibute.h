@@ -138,7 +138,7 @@
  *
  *  @param dic 收货地址信息
  */
--(void)removeAddressWithDic:(NSMutableDictionary*)dic;
+-(void)removeAddressWithDic:(NSDictionary*)dic;
 
 /**
  *  修改收货地址
@@ -147,4 +147,11 @@
  *  @param index 收货地址处于收货地址列表的索引
  */
 -(void)modifyAddressWithDic:(NSMutableDictionary*)dic index:(NSInteger)index;
+
+/**
+ *  设置为默认地址
+ *
+ *  @param dic 收货地址信息
+ */
+-(void)makeDefaultAddressWithDic:(NSDictionary*)dic completition:(void (^)(BOOL success,NSError *error))completition;
 @end

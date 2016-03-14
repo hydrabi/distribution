@@ -12,5 +12,5 @@
 @interface PersonalAddressDetailTableViewCell : UITableViewCell
 @property (nonatomic,weak)IBOutlet UILabel *titleLabel;
 @property (nonatomic,weak)IBOutlet UILabel *valueLabel;
--(void)resetValueWithType:(PersonalAddressDetailCellType)type;
+-(void)resetValueWithType:(PersonalAddressDetailCellType)type addressDic:(NSDictionary*)dic;
 @end

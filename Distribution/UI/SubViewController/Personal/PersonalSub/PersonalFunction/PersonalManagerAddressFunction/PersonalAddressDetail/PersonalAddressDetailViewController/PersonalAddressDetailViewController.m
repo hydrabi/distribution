@@ -13,10 +13,12 @@
 #import "PersonalManagerAddressMacro.h"
 #import "PersonalAddressDetailTableViewCell.h"
 #import "PersonalManageerAddressViewController.h"
+#import "PersonalMacro.h"
+#import "UIAlertView+Addition.h"
 
 static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetailTableViewCellReuseIdentifier";
 
-@interface PersonalAddressDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface PersonalAddressDetailViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 /**
  *  数据源列表
@@ -55,12 +57,17 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
     [self UIConfig];
     [self registerCellNib];
     [self navigitionConfig];
-    // Do any additional setup after loading the view from its nib.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:Notification_PersonalInfoChange object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 //tableViewCell分割线左边距为0
@@ -116,6 +123,17 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
     self.navigationItem.rightBarButtonItem = rightBarButton;
 }
 
+-(void)reloadTableView{
+    AVUser *user = [AVUser currentUser];
+    if(user){
+        NSArray *addressArr = user[AVUserKey_addressList];
+        if(addressArr.count>self.addressDicIndex){
+            self.addressDic = addressArr[self.addressDicIndex];
+            [self.tableView reloadData];
+        }
+    }
+}
+
 #pragma mark - 点击事件
 
 //返回
@@ -125,11 +143,20 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
 }
 
 -(void)defaultAddressButtonClick{
-    
+    AVUser *user = [AVUser currentUser];
+    if(user){
+        [user makeDefaultAddressWithDic:self.addressDic completition:^(BOOL success,NSError *error){
+            if(success){
+                self.addressDicIndex = 0;
+                [[NSNotificationCenter defaultCenter] postNotificationName:Notification_PersonalInfoChange object:nil];
+            }
+        }];
+        
+    }
 }
 
 -(void)modifyButtonClick{
-    PersonalManageerAddressViewController *vc = [[PersonalManageerAddressViewController alloc] init];
+    PersonalManageerAddressViewController *vc = [[PersonalManageerAddressViewController alloc] initWithType:PersonalManagerAddressType_modify addressDic:self.addressDic addressDicIndex:self.addressDicIndex];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -214,7 +241,7 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     PersonalAddressDetailTableViewCell *addressCell = [self.tableView dequeueReusableCellWithIdentifier:tableViewDetailTableViewCellReuseIdentifier forIndexPath:indexPath];
     PersonalAddressDetailCellType type = [self getSpercificTypeWithIndexPath:indexPath];
-    [addressCell resetValueWithType:type];
+    [addressCell resetValueWithType:type addressDic:self.addressDic];
     if(type == PersonalAddressDetailCellType_delete){
         [addressCell setSelectionStyle:UITableViewCellSelectionStyleDefault];
     }
@@ -227,7 +254,10 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    PersonalAddressDetailCellType type = [self getSpercificTypeWithIndexPath:indexPath];
+    if(type == PersonalAddressDetailCellType_delete){
+        [UIAlertView alertWithTitle:@"确定要删除地址吗？" delegate:self];
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -240,6 +270,18 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
     
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsMake(0, 0, 0, 0)];
+    }
+}
+
+#pragma mark - UIAlertViewDelegate
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 1){
+        AVUser *user = [AVUser currentUser];
+        if(user){
+            [user removeAddressWithDic:self.addressDic];
+            [[NSNotificationCenter defaultCenter] postNotificationName:Notification_PersonalInfoChange object:nil];
+            [self returnButtonClick];
+        }
     }
 }
 

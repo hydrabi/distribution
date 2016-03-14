@@ -17,6 +17,7 @@
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "PersonalAddressDetailViewController.h"
 #import "PersonalManageerAddressViewController.h"
+#import "PersonalMacro.h"
 
 static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCellIndentifier";
 
@@ -44,6 +45,10 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 -(PersonalAddressListFooterView*)footerView{
     if(!_footerView){
         _footerView = [[PersonalAddressListFooterView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.tableView.frame), PersonalAddrestListFooterHeight)];
@@ -68,6 +73,7 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     [self navigitionConfig];
     [self footerViewConfig];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(configDataTypeArr) name:Notification_PersonalInfoChange object:nil];
 }
 
 -(void)footerViewConfig{
@@ -101,8 +107,6 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
 //返回
 -(void)returnButtonClick{
     [self.navigationController popViewControllerAnimated:YES];
-    [[AppDelegate getRootController] configTabBarConstraint];
-    
 }
 
 #pragma mark - 配置数据源列表
@@ -114,7 +118,7 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     else{
         self.dataTypeArr = @[].mutableCopy;
     }
-    
+    [self.tableView reloadData];
 }
 
 #pragma mark - 注册tableView要用到的所有CellNib
@@ -138,9 +142,11 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat height = PersonalAddrestListCellHeight;
     
-    height =[self.tableView fd_heightForCellWithIdentifier:tableViewAddressListCellIndentifier configuration:^(PersonalAddressListTableViewCell *cell) {
-        [cell resetValueWith];
-    }];
+    if(self.dataTypeArr.count>indexPath.row){
+        height =[self.tableView fd_heightForCellWithIdentifier:tableViewAddressListCellIndentifier configuration:^(PersonalAddressListTableViewCell *cell) {
+            [cell resetValueWithAddressDic:self.dataTypeArr[indexPath.row]];
+        }];
+    }
     
     return height;
 }
@@ -172,6 +178,9 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     PersonalAddressListTableViewCell *addressCell = [self.tableView dequeueReusableCellWithIdentifier:tableViewAddressListCellIndentifier forIndexPath:indexPath];
+    if(self.dataTypeArr.count>indexPath.row){
+        [addressCell resetValueWithAddressDic:self.dataTypeArr[indexPath.row]];
+    }
     cell = (UITableViewCell*)addressCell;    
     return cell;
 }
@@ -182,6 +191,7 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
         NSDictionary *addressDic = self.dataTypeArr[indexPath.row];
         PersonalAddressDetailViewController *vc = [[PersonalAddressDetailViewController alloc] initWithAddrestDic:addressDic addressDicIndex:indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
+        [[AppDelegate getRootController] hideTabbar];
     }
    
     

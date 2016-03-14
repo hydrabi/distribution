@@ -51,6 +51,11 @@
     self.delegate = self;
 }
 
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    [super pushViewController:viewController animated:YES];
+    [[AppDelegate getRootController] hideTabbar];
+}
+
 #pragma mark - UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -59,17 +64,21 @@
     
     if([viewController isKindOfClass:[HomeViewController class]]){
         [[AppDelegate getRootController] configTabBarConstraint];
+        return;
     }
     if([viewController isKindOfClass:[DiscoverViewController class]]){
         [[AppDelegate getRootController] configTabBarConstraint];
+        return;
     }
     if([viewController isKindOfClass:[PersonalMainViewController class]]){
         [[AppDelegate getRootController] configTabBarConstraint];
+        return;
     }
 //    if([viewController isKindOfClass:[FavoriteViewController class]]){
 //        [[AppDelegate getRootController] configTabBarConstraint];
 //    }
     
+    [[AppDelegate getRootController] hideTabbar];
 }
 
 @end

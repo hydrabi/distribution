@@ -395,10 +395,10 @@
         [user addObject:dic forKey:AVUserKey_addressList];
         [user saveEventually:^(BOOL success,NSError *error){
             if(success){
-                [MBProgressHUD showSuccess:@"地址添加成功"];
+                [MBProgressHUD showSuccess:@"地址添加成功！"];
             }
             else{
-                [MBProgressHUD showError:@"地址添加失败"];
+                [MBProgressHUD showError:@"地址添加失败！"];
             }
         }];
     }
@@ -417,10 +417,10 @@
             [user setObject:tempArr forKey:AVUserKey_addressList];
             [user saveEventually:^(BOOL success,NSError *error){
                 if(success){
-                    [MBProgressHUD showSuccess:@"地址修改成功"];
+                    [MBProgressHUD showSuccess:@"地址修改成功！"];
                 }
                 else{
-                    [MBProgressHUD showError:@"地址修改失败"];
+                    [MBProgressHUD showError:@"地址修改失败！"];
                 }
             }];
         }
@@ -430,7 +430,7 @@
     }
 }
 
--(void)removeAddressWithDic:(NSMutableDictionary*)dic{
+-(void)removeAddressWithDic:(NSDictionary*)dic{
     AVUser *user = [AVUser currentUser];
     if(user && dic){
         NSArray *arr = user[AVUserKey_addressList];
@@ -438,16 +438,41 @@
             [user removeObject:dic forKey:AVUserKey_addressList];
             [user saveEventually:^(BOOL success,NSError *error){
                 if(success){
-                    [MBProgressHUD showSuccess:@"地址删除成功"];
+                    [MBProgressHUD showSuccess:@"地址删除成功！"];
                 }
                 else{
-                    [MBProgressHUD showError:@"地址删除失败"];
+                    [MBProgressHUD showError:@"地址删除失败！"];
                 }
             }];
         }
     }
     else{
         NSLog(@"删除地址失败");
+    }
+}
+
+-(void)makeDefaultAddressWithDic:(NSDictionary*)dic completition:(void (^)(BOOL success,NSError *error))completition{
+    AVUser *user = [AVUser currentUser];
+    if(user && dic){
+        NSArray *arr = user[AVUserKey_addressList];
+        if([arr containsObject:dic]){
+            NSMutableArray *tempArr = arr.mutableCopy;
+            [tempArr removeObject:dic];
+            [tempArr insertObject:dic atIndex:0];
+            [user setObject:tempArr forKey:AVUserKey_addressList];
+            [user saveEventually:^(BOOL success,NSError *error){
+                completition(success,error);
+                if(success){
+                    [MBProgressHUD showSuccess:@"设置默认地址成功！"];
+                }
+                else{
+                    [MBProgressHUD showError:@"设置默认地址失败！"];
+                }
+            }];
+        }
+    }
+    else{
+        NSLog(@"设置默认地址失败");
     }
 }
 @end
