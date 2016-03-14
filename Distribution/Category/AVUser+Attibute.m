@@ -294,6 +294,75 @@
     }
 }
 
+#pragma mark - 微信
+-(NSString*)weixin{
+    AVUser *user = [AVUser currentUser];
+    if(user){
+        NSString *weixin = user[AVUserKey_weixin];
+        return weixin;
+    }
+    else {
+        return nil;
+    }
+}
+
+-(void)setWeixin:(NSString*)weixin{
+    AVUser *user = [AVUser currentUser];
+    if(user!=nil && weixin!=nil){
+        [user setObject:weixin forKey:AVUserKey_weixin];
+        [user saveEventually];
+    }
+    else{
+        NSLog(@"当前未登录或者微信为空！");
+    }
+}
+
+#pragma mark - qq
+-(NSString*)qq{
+    AVUser *user = [AVUser currentUser];
+    if(user){
+        NSString *qq = user[AVUserKey_qq];
+        return qq;
+    }
+    else {
+        return nil;
+    }
+}
+
+-(void)setQq:(NSString*)qq{
+    AVUser *user = [AVUser currentUser];
+    if(user!=nil && qq!=nil){
+        [user setObject:qq forKey:AVUserKey_qq];
+        [user saveEventually];
+    }
+    else{
+        NSLog(@"当前未登录或者qq为空！");
+    }
+}
+
+#pragma mark - 地址管理
+-(NSMutableDictionary*)detailedAddress{
+    AVUser *user = [AVUser currentUser];
+    if(user){
+        NSMutableDictionary *adress = user[AVUserKey_manageAdress];
+        return adress;
+    }
+    else {
+        return nil;
+    }
+}
+
+-(void)setDetailedAddress:(NSMutableDictionary*)address{
+    AVUser *user = [AVUser currentUser];
+    if(user!=nil && address!=nil){
+        [user setObject:address forKey:AVUserKey_manageAdress];
+        [user saveEventually];
+    }
+    else{
+        NSLog(@"当前未登录或者地址为空！");
+    }
+}
+
 #pragma mark - 我的足迹
 -(void)addTraceWithObject:(AVObject*)object{
     AVUser *user = [AVUser currentUser];

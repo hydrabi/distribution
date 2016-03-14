@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef NS_ENUM(NSInteger,PersonalViewTextFieldInputType) {
+    PersonalViewTextFieldInputType_telephone,
+    PersonalViewTextFieldInputType_weixin,
+    PersonalViewTextFieldInputType_qq
+};
 @interface PersonalContactTelephoneTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+
+-(void)resetValueWithType:(PersonalViewTextFieldInputType)type;
 @end

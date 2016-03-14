@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalContactTelephoneViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalAddressListViewController">
             <connections>
-                <outlet property="tableView" destination="Wg6-KC-rd8" id="cKl-pL-lea"/>
+                <outlet property="tableView" destination="tBr-CB-Gme" id="fXP-kM-uqy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,19 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Wg6-KC-rd8">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tBr-CB-Gme">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Wg6-KC-rd8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3tR-JU-Z0e"/>
-                <constraint firstAttribute="bottom" secondItem="Wg6-KC-rd8" secondAttribute="bottom" id="6gL-m9-zvs"/>
-                <constraint firstAttribute="trailing" secondItem="Wg6-KC-rd8" secondAttribute="trailing" id="UOd-JY-XP5"/>
-                <constraint firstItem="Wg6-KC-rd8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tiw-I3-g4j"/>
+                <constraint firstAttribute="bottom" secondItem="tBr-CB-Gme" secondAttribute="bottom" id="IpT-LN-EhX"/>
+                <constraint firstItem="tBr-CB-Gme" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LHf-vJ-Eek"/>
+                <constraint firstAttribute="trailing" secondItem="tBr-CB-Gme" secondAttribute="trailing" id="LWf-wU-9eM"/>
+                <constraint firstItem="tBr-CB-Gme" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g6O-gR-BSn"/>
             </constraints>
-            <point key="canvasLocation" x="258" y="234"/>
+            <point key="canvasLocation" x="220" y="214"/>
         </view>
     </objects>
 </document>

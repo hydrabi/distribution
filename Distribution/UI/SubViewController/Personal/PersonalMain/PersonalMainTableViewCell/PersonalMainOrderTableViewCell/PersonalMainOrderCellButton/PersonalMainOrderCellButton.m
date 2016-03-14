@@ -8,6 +8,7 @@
 
 #import "PersonalMainOrderCellButton.h"
 #import "UIColor+Addition.h"
+#import "PersonalMainMacro.h"
 #pragma mark - 按钮字体
 static const CGFloat customTabBarButtonFontSize = 15.0f;
 static const CGFloat imageTopOffset = 10.0f;
@@ -15,18 +16,20 @@ static const CGFloat imageWidthAndHeiht = 22.0f;
 static const CGFloat titleBottomOffset = 5.0f;
 
 #pragma mark - 按钮标题
-static NSString *PersonalMainOrderCellButtonNotPayTitle = @"未付款";
-static NSString *PersonalMainOrderCellButtonNotDeliverTitle  = @"待发货";
-static NSString *PersonalMainOrderCellButtonHadDeliverTitle  = @"已发货";
-static NSString *PersonalMainOrderCellButtonReturn = @"退货/退款";
-static NSString *PersonalMainCellButtonMyPointTitle = @"我的积分";
-static NSString *PersonalMainCellButtonMyWalletTitle = @"我的钱包";
-static NSString *PersonalMainCellButtonMyCollectTitle = @"我的收藏";
+static NSString *PersonalMainOrderCellButtonNotPayTitle     = @"待付款";
+static NSString *PersonalMainOrderCellButtonNotDeliverTitle = @"待发货";
+static NSString *PersonalMainOrderCellButtonHadDeliverTitle = @"已发货";
+static NSString *PersonalMainOrderCellButtonHadFinishTitle  = @"已完成";
+static NSString *PersonalMainOrderCellButtonReturn          = @"退换货";
+static NSString *PersonalMainCellButtonMyPointTitle         = @"我的积分";
+static NSString *PersonalMainCellButtonMyWalletTitle        = @"我的钱包";
+static NSString *PersonalMainCellButtonMyCollectTitle       = @"我的收藏";
 
 #pragma mark - 图片名称
 static NSString *PersonalMainOrderCellButtonNotPayImage              = @"personalOrderCell_notPay";
 static NSString *PersonalMainOrderCellButtonNotDeliverImage           = @"personalOrderCell_notDeliver";
 static NSString *PersonalMainOrderCellButtonHadDeliverImage           = @"personalOrderCell_hadDeliver";
+static NSString *PersonalMainOrderCellButtonHadFinishImage           = @"personalOrderCell_hadFinish";
 static NSString *PersonalMainOrderCellButtonReturnImage          = @"personalOrderCell_return";
 static NSString *PersonalMainCellButtonPointImage          = @"personalMain_myPoint";
 static NSString *PersonalMainCellButtonWalletImage          = @"personalMain_myWallet";
@@ -123,6 +126,14 @@ static CGFloat customTabBarButtonImagePer = 0.7;
         {
             [self setTitle:[NSString stringWithString:PersonalMainOrderCellButtonHadDeliverTitle] forState:UIControlStateNormal];
             imageName = PersonalMainOrderCellButtonHadDeliverImage;
+            
+        }
+            break;
+            //已完成
+        case PersonalMainOrderCellButtonType_hadFinish:
+        {
+            [self setTitle:[NSString stringWithString:PersonalMainOrderCellButtonHadFinishTitle] forState:UIControlStateNormal];
+            imageName = PersonalMainOrderCellButtonHadFinishImage;
             
         }
             break;

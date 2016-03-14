@@ -53,7 +53,12 @@
             self.detailLabel.text = user.contactTelephone;
         }
             break;
-        
+        case PersonalMainTableDataType_recommend:
+        {
+            self.arrowImage.hidden = NO;
+            self.detailLabel.text = @"";
+        }
+            break;
         case PersonalMainTableDataType_setting:
         {
             self.arrowImage.hidden = NO;
@@ -79,6 +84,9 @@
         case PersonalMainTableDataType_telephone:
             title = @"联系电话";
             break;
+        case PersonalMainTableDataType_recommend:
+            title = @"推荐给好友";
+            break;
         case PersonalMainTableDataType_setting:
             title = @"设置";
             break;
@@ -99,6 +107,9 @@
             break;
         case PersonalMainTableDataType_telephone:
             imageName = @"personalCell_telephone";
+            break;
+        case PersonalMainTableDataType_recommend:
+            imageName = @"personalCell_recommend";
             break;
         case PersonalMainTableDataType_setting:
             imageName = @"personalCell_setting";

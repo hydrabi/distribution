@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "PersonalMainTableViewDataSourceDelegate.h"
+@class PersonalMainViewController;
 @interface PersonalMainTableViewDataSource : NSObject<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,weak)id <PersonalMainTableViewDataSourceDelegate> delegate;
+@property (nonatomic,weak)PersonalMainViewController<PersonalMainTableViewDataSourceDelegate> *delegate;
 
 /**
  *  初始化的同时传递tableView

@@ -9,6 +9,7 @@
 
 //color
 #define Global_NavigationTitleColor [UIColor colorWithHexString:@"#0f0f0f" alpha:1]
+#define Global_TableViewBackgroundColor [UIColor colorWithHexString:@"eeeeee" alpha:1]
 
 //font
 #define Global_NavigationTitleFont [UIFont systemFontOfSize:20]

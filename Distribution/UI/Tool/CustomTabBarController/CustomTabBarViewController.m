@@ -61,7 +61,7 @@ static CGFloat tabBarHeight = 49;
         HomeViewController *vc = [[HomeViewController alloc] init];
         NavigationController *nav = [[NavigationController alloc] initWithRootViewController:vc];
         
-        FavoriteViewController *vc1 = [[FavoriteViewController alloc] init];
+        UIViewController *vc1 = [[UIViewController alloc] init];
         NavigationController *nav1 = [[NavigationController alloc] initWithRootViewController:vc1];
         
         DiscoverViewController *vc2 = [[DiscoverViewController alloc] init];

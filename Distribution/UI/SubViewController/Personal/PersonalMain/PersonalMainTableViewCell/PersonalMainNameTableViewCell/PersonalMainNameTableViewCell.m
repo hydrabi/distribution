@@ -28,6 +28,8 @@
             PersonalMainOrderCellButton *button = [[PersonalMainOrderCellButton alloc] initWithButtonType:i font:[UIFont systemFontOfSize:14] titleColor:[UIColor whiteColor]];
             [self.toolBarBackgroundView addSubview:button];
             [self.buttonsArr addObject:button];
+            [button addTarget:self action:@selector(orderCellButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+            button.tag = i;
         }
         
         [self UIConfig];
@@ -59,28 +61,25 @@
             }
         }];
         
-        button.tag = i;
-        
         lastButton = button;
     }
     
 }
 
 -(void)reloadUserData{
-//    AVUser *user = [AVUser currentUser];
-//    if(user){
-//        [self userHadLogin];
-//    }
-//    else{
-//        [self userAnonymous];
-//    }
-    
+
     if([[PersonlInfoManager shareManager] hadLogin]){
         AVUser *user = [AVUser currentUser];
         [self.headImage setImage:[ImageManager userHeadImageWithImageName:user]];
     }
     else{
         [self.headImage setImage:[UIImage imageNamed:@"personalHeader_headDefault"]];
+    }
+}
+
+-(void)orderCellButtonClick:(UIButton*)sender{
+    if(self.delegate && [self.delegate respondsToSelector:@selector(mainButtonClickWithType:)]){
+        [self.delegate mainButtonClickWithType:sender.tag];
     }
 }
 

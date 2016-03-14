@@ -64,9 +64,24 @@
             [self fillDetailLabelText:user.nickname];
         }
             break;
-        case PersonalTableDataType_signature:
+        case PersonalTableDataType_weixin:
         {
-            [self fillDetailLabelText:user.signature];
+            [self fillDetailLabelText:user.weixin];
+        }
+            break;
+        case PersonalTableDataType_qq:
+        {
+            [self fillDetailLabelText:user.qq];
+        }
+            break;
+        case PersonalTableDataType_manageAdress:
+        {
+            self.detailLabel.text = @"";
+        }
+            break;
+        case PersonalTableDataType_modifyPassword:
+        {
+            self.detailLabel.text = @"";
         }
             break;
         default:

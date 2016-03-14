@@ -10,13 +10,11 @@
 
 @interface AreaObject : NSObject
 
-//区域
-@property (copy, nonatomic) NSString *region;
-//省名
-@property (copy, nonatomic) NSString *province;
+//区域或省
+@property (copy, nonatomic) NSString *state;
 //城市名
 @property (copy, nonatomic) NSString *city;
-//区县名
-@property (copy, nonatomic) NSString *area;
+//区县或者城市
+@property (copy, nonatomic) NSString *district;
 
 @end

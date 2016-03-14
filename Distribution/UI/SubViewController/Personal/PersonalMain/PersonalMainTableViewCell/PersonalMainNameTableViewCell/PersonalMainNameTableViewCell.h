@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PersonalMainNameTableViewCellDelegate.h"
 @interface PersonalMainNameTableViewCell : UITableViewCell
 /**
  *  头像
@@ -17,6 +17,8 @@
  *  工具栏背景视图
  */
 @property (weak, nonatomic) IBOutlet UIView *toolBarBackgroundView;
+
+@property (weak,nonatomic)id <PersonalMainNameTableViewCellDelegate> delegate;
 
 /**
  *  重新加载用户资料

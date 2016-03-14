@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UITabelViewSeparatorView.h"
 #import "PersonalTableViewDataSourceDelegate.h"
+#import "PersonalMacro.h"
 
 @interface PersonalNormalCell : UITabelViewSeparatorView
 @property (weak, nonatomic) IBOutlet UILabel *titleLable;

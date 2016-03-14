@@ -6,15 +6,7 @@
 //  Copyright © 2016年 distribution. All rights reserved.
 //
 
-typedef NS_ENUM(NSInteger, PersonalMainTableDataType) {
-    PersonalMainTableDataType_name,         /**<名称签名等*/
-    PersonalMainTableDataType_orderHeader,  /**<订单头部*/
-    PersonalMainTableDataType_order,        /**<订单*/
-    PersonalMainTableDataType_footprint,    /**<足迹*/
-    PersonalMainTableDataType_location,     /**<位置*/
-    PersonalMainTableDataType_telephone,    /**<电话*/
-    PersonalMainTableDataType_setting,      /**<设置*/
-};
+#import "PersonalMainMacro.h"
 
 /**
  *  用于回调个人控制器操作

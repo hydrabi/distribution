@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgp-F3-e8A">
-                    <rect key="frame" x="12" y="16" width="296" height="44"/>
+                    <rect key="frame" x="12" y="8" width="296" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="lNh-9d-fo3"/>
                     </constraints>
@@ -21,8 +21,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Sgp-F3-e8A" secondAttribute="bottom" id="Fwy-4M-71K"/>
                 <constraint firstAttribute="trailing" secondItem="Sgp-F3-e8A" secondAttribute="trailing" constant="12" id="MLm-iP-B0E"/>
+                <constraint firstItem="Sgp-F3-e8A" firstAttribute="centerY" secondItem="mcD-3f-DDa" secondAttribute="centerY" id="SlF-KC-ZdL"/>
                 <constraint firstItem="Sgp-F3-e8A" firstAttribute="leading" secondItem="mcD-3f-DDa" secondAttribute="leading" constant="12" id="ZDS-7e-PvY"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

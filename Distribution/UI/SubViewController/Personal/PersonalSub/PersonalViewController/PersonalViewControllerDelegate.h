@@ -6,8 +6,7 @@
 //  Copyright © 2016年 distribution. All rights reserved.
 //
 
-#define AreaRegion @"region"
-#define AreaProvince @"Province"
+#define AreaState @"state"
 #define AreaCity @"city"
 #define AreaDistricts @"districts"
 

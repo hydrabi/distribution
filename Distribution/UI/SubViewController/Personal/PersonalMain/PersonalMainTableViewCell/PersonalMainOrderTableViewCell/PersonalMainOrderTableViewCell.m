@@ -7,6 +7,7 @@
 //
 
 #import "PersonalMainOrderTableViewCell.h"
+#import "PersonalMainMacro.h"
 @interface PersonalMainOrderTableViewCell()
 
 @property (nonatomic,strong)NSMutableArray *buttonsArr;
@@ -19,10 +20,11 @@
     // Initialization code
     if(!self.buttonsArr){
         self.buttonsArr = @[].mutableCopy;
-        for(NSInteger i =0;i<4;i++){
+        for(PersonalMainOrderCellButtonType i =PersonalMainOrderCellButtonType_notPay;i<=PersonalMainOrderCellButtonType_Return;i++){
             PersonalMainOrderCellButton *button = [[PersonalMainOrderCellButton alloc] initWithButtonType:i];
             [self.contentView addSubview:button];
             [self.buttonsArr addObject:button];
+            button.tag = i;
         }
         [self configUI];
     }
@@ -49,7 +51,7 @@
             }
         }];
         
-        button.tag = i;
+        
         //重置按钮的属性
 //        BOOL highlighted = (i==self.currentIndex)?YES:NO;
 //        [button configAttributeWithHighlighted:highlighted];

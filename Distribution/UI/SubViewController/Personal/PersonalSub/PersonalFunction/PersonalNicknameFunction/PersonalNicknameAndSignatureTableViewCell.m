@@ -14,14 +14,7 @@
 - (void)awakeFromNib {
     self.textFileld.textColor = [UIColor colorWithHexString:@"3f3f3f" alpha:1];
     self.textFileld.font = [UIFont systemFontOfSize:16.0f];
-    
-//    if(user.contactTelephone.length>0){
-//        self.textFileld.text = user.contactTelephone;
-//    }
-//    else{
-//        self.textField.text = @"";
-//        self.textField.placeholder = @"请输入联系电话";
-//    }
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

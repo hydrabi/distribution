@@ -13,12 +13,16 @@
 #import "PersonalMainOrderHeaderTableViewCell.h"
 #import "PersonalMainMacro.h"
 #import "PersonalMainTableViewHeader.h"
+#import "PersonalMainViewController.h"
+#import "PersonalMainNameTableViewCellDelegate.h"
+#import "PersonalMainMacro.h"
+
 static NSString *tableViewNameCellIndentifier = @"tableViewNameCellIndentifier";
 static NSString *tableViewOrderCellIndentifier = @"tableViewOrderCellIndentifier";
 static NSString *tableViewNormalCellIndentifier = @"tableViewNormalCellIndentifier";
 static NSString *tableViewOrderHeaderCellIndentifier = @"tableViewOrderHeaderCellIndentifier";
 
-@interface PersonalMainTableViewDataSource()
+@interface PersonalMainTableViewDataSource()<PersonalMainNameTableViewCellDelegate>
 /**
  *  从about中传递过来的tableView
  */
@@ -60,7 +64,8 @@ static NSString *tableViewOrderHeaderCellIndentifier = @"tableViewOrderHeaderCel
                                   @(PersonalMainTableDataType_order)]];
     [self.dataTypeArr addObject:@[@(PersonalMainTableDataType_footprint),
                                   @(PersonalMainTableDataType_location),
-                                  @(PersonalMainTableDataType_telephone)]];
+                                  @(PersonalMainTableDataType_telephone),
+                                  @(PersonalMainTableDataType_recommend),]];
     [self.dataTypeArr addObject:@[@(PersonalMainTableDataType_setting)]];
 }
 
@@ -160,6 +165,8 @@ static NSString *tableViewOrderHeaderCellIndentifier = @"tableViewOrderHeaderCel
         {
             PersonalMainNameTableViewCell *nameCell = [self.tableView dequeueReusableCellWithIdentifier:tableViewNameCellIndentifier forIndexPath:indexPath];
             [nameCell reloadUserData];
+            nameCell.selectionStyle = UITableViewCellSelectionStyleNone;
+            nameCell.delegate = self;
             cell = (UITableViewCell*)nameCell;
         }
             break;
@@ -202,6 +209,11 @@ static NSString *tableViewOrderHeaderCellIndentifier = @"tableViewOrderHeaderCel
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - PersonalMainNameTableViewCellDelegate
+-(void)mainButtonClickWithType:(PersonalMainOrderCellButtonType)type{
+    self.delegate.callBack(type);
 }
 
 @end

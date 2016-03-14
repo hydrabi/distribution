@@ -16,6 +16,7 @@
 #import "LoginNavigationControllerViewController.h"
 #import "PersonalTraceFunction.h"
 #import "PersonalSettingFunctionViewController.h"
+#import "FavoriteViewController.h"
 
 @interface PersonalMainViewController ()<PersonalMainTableViewDataSourceDelegate>
 
@@ -34,6 +35,10 @@
     [self configUI];
     [self configDataSoucre];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStatusChange) name:Notification_LoginStatusChange object:nil];
+    __weak typeof(self)weakSelf = self;
+    self.callBack = ^(PersonalMainOrderCellButtonType type){
+        [weakSelf clickButtonWithType:type];
+    };
 }
 
 - (void)didReceiveMemoryWarning {
@@ -99,4 +104,18 @@
     }
 }
 
+-(void)clickButtonWithType:(PersonalMainOrderCellButtonType)type{
+    switch (type) {
+        case PersonalMainOrderCellButtonType_myCollect:
+        {
+            FavoriteViewController *favorite = [[FavoriteViewController alloc] init];
+            [self.navigationController pushViewController:favorite animated:YES];
+            [[AppDelegate getRootController]hideTabbar];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
 @end

@@ -90,6 +90,21 @@
 
 -(void)setSignature:(NSString *)signature;
 
+#pragma mark - 微信
+-(NSString*)weixin;
+
+-(void)setWeixin:(NSString*)weixin;
+
+#pragma mark - qq
+-(NSString*)qq;
+
+-(void)setQq:(NSString*)qq;
+
+#pragma mark - 地址管理
+-(NSMutableDictionary*)detailedAddress;
+
+-(void)setDetailedAddress:(NSMutableDictionary*)address;
+
 #pragma mark - 我的足迹
 /**
  *  添加足迹

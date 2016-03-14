@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PersonalAddressListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalAddressList_telephone" translatesAutoresizingMaskIntoConstraints="NO" id="DH0-Un-oYt">
+                        <rect key="frame" x="190" y="15" width="12" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="8Ef-73-8sH"/>
+                            <constraint firstAttribute="height" constant="20" id="ts9-M4-Vi4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L73-ht-QFd">
+                        <rect key="frame" x="206" y="25" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalAddressList_adress" translatesAutoresizingMaskIntoConstraints="NO" id="P2G-zv-9Io">
+                        <rect key="frame" x="16" y="50" width="13" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="Pt0-aZ-Dam"/>
+                            <constraint firstAttribute="height" constant="19" id="r4N-bb-ebV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sof-na-laf">
+                        <rect key="frame" x="33" y="50" width="275" height="34.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalAddressList_name" translatesAutoresizingMaskIntoConstraints="NO" id="hp0-Lx-mLK">
+                        <rect key="frame" x="12" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Yzz-Ez-5xS"/>
+                            <constraint firstAttribute="height" constant="20" id="fk1-ZC-883"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeu-gQ-U4T">
+                        <rect key="frame" x="36" y="25.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="sof-na-laf" secondAttribute="trailing" constant="12" id="1pS-uc-LBQ"/>
+                    <constraint firstItem="sof-na-laf" firstAttribute="top" secondItem="P2G-zv-9Io" secondAttribute="bottom" constant="-8" id="52h-4i-05I"/>
+                    <constraint firstItem="hp0-Lx-mLK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="6AM-Yc-sCG"/>
+                    <constraint firstItem="L73-ht-QFd" firstAttribute="top" secondItem="DH0-Un-oYt" secondAttribute="top" id="7d1-od-tNh"/>
+                    <constraint firstItem="sof-na-laf" firstAttribute="leading" secondItem="P2G-zv-9Io" secondAttribute="trailing" constant="4" id="7l6-Bq-MPm"/>
+                    <constraint firstItem="Zeu-gQ-U4T" firstAttribute="leading" secondItem="hp0-Lx-mLK" secondAttribute="trailing" constant="4" id="EIS-cM-onk"/>
+                    <constraint firstAttribute="bottom" secondItem="sof-na-laf" secondAttribute="bottom" constant="15" id="EkJ-pT-6wk"/>
+                    <constraint firstItem="L73-ht-QFd" firstAttribute="leading" secondItem="DH0-Un-oYt" secondAttribute="trailing" constant="4" id="GHO-2a-75N"/>
+                    <constraint firstItem="sof-na-laf" firstAttribute="top" secondItem="P2G-zv-9Io" secondAttribute="top" id="Gi8-Ge-AvK"/>
+                    <constraint firstItem="Zeu-gQ-U4T" firstAttribute="centerY" secondItem="hp0-Lx-mLK" secondAttribute="centerY" id="PPo-yH-U3r"/>
+                    <constraint firstItem="P2G-zv-9Io" firstAttribute="top" secondItem="hp0-Lx-mLK" secondAttribute="bottom" constant="15" id="Xbp-VS-XIv"/>
+                    <constraint firstItem="L73-ht-QFd" firstAttribute="centerY" secondItem="DH0-Un-oYt" secondAttribute="centerY" id="XvH-RE-GBI"/>
+                    <constraint firstItem="P2G-zv-9Io" firstAttribute="top" secondItem="sof-na-laf" secondAttribute="bottom" constant="-25" id="YsP-Vt-NYS"/>
+                    <constraint firstItem="L73-ht-QFd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="Zia-Jb-Qnl"/>
+                    <constraint firstItem="sof-na-laf" firstAttribute="top" secondItem="P2G-zv-9Io" secondAttribute="top" id="aPI-de-mpD"/>
+                    <constraint firstItem="P2G-zv-9Io" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="h3A-0c-5i1"/>
+                    <constraint firstItem="sof-na-laf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="hkx-O9-8zD"/>
+                    <constraint firstItem="hp0-Lx-mLK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="jHd-kG-Cn3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DH0-Un-oYt" secondAttribute="trailing" constant="110" id="mpe-Kk-yNy"/>
+                    <constraint firstItem="DH0-Un-oYt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="vT4-N1-w8p"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="YsP-Vt-NYS"/>
+                        <exclude reference="52h-4i-05I"/>
+                        <exclude reference="Gi8-Ge-AvK"/>
+                        <exclude reference="aPI-de-mpD"/>
+                        <exclude reference="7d1-od-tNh"/>
+                        <exclude reference="Zia-Jb-Qnl"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adressLabel" destination="sof-na-laf" id="2zJ-hI-aXY"/>
+                <outlet property="nameLabel" destination="Zeu-gQ-U4T" id="N7w-pl-FBC"/>
+                <outlet property="telephoneLabel" destination="L73-ht-QFd" id="ogr-Ah-N0X"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="personalAddressList_adress" width="13" height="19"/>
+        <image name="personalAddressList_name" width="17" height="17"/>
+        <image name="personalAddressList_telephone" width="12" height="20"/>
+    </resources>
+</document>

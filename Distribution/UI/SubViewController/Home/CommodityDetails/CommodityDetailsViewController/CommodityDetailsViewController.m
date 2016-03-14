@@ -140,8 +140,6 @@
 //返回
 -(void)returnButtonClick{
     [self.navigationController popViewControllerAnimated:YES];
-    [[AppDelegate getRootController] configTabBarConstraint];
-    
 }
 //分享
 -(void)shareButtonClick{

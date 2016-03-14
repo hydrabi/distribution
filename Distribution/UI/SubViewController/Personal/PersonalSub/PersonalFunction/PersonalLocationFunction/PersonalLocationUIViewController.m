@@ -19,8 +19,7 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
 @interface PersonalLocationUIViewController ()<UITableViewDataSource,UITableViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-//区域 数组
-@property (strong, nonatomic) NSArray *regionArr;
+
 //省 数组
 @property (strong, nonatomic) NSMutableArray *provinceArr;
 //城市 数组
@@ -52,30 +51,26 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
     AVUser *user = [AVUser currentUser];
     if(user.locationDic){
         
-        NSInteger regionRow = [user.locationDic[AreaRegion] integerValue];
-        NSInteger provinceRow = [user.locationDic[AreaProvince] integerValue];
+        NSInteger stateRow = [user.locationDic[AreaState] integerValue];
         NSInteger cityRow = [user.locationDic[AreaCity] integerValue];
         NSInteger disRow = [user.locationDic[AreaDistricts] integerValue];
         
-        self.provinceArr = self.regionArr[regionRow][@"provinces"];
-        self.cityArr = self.provinceArr[provinceRow][@"cities"];
+        self.cityArr = self.provinceArr[stateRow][@"cities"];
         self.areaArr = self.cityArr[cityRow][@"areas"];
         [self.pickerView reloadAllComponents];
         
-        [self.pickerView selectRow:regionRow inComponent:0 animated:NO];
-        [self.pickerView selectRow:provinceRow inComponent:1 animated:NO];
-        [self.pickerView selectRow:cityRow inComponent:2 animated:NO];
+        [self.pickerView selectRow:stateRow inComponent:0 animated:NO];
+        [self.pickerView selectRow:cityRow inComponent:1 animated:NO];
         if(disRow>0){
-            [self.pickerView selectRow:disRow inComponent:3 animated:NO];
+            [self.pickerView selectRow:disRow inComponent:2 animated:NO];
         }
         
-        self.locate.region = self.regionArr[regionRow][@"region"];
-        self.locate.province = self.provinceArr[provinceRow][@"province"];
+        self.locate.state = self.provinceArr[stateRow][@"state"];
         self.locate.city = self.cityArr[cityRow][@"city"];
         if (disRow>0) {
-            self.locate.area = self.areaArr[disRow];
+            self.locate.district = self.areaArr[disRow];
         }else{
-            self.locate.area = @"";
+            self.locate.district = @"";
         }
     }
     
@@ -103,8 +98,7 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
 }
 
 -(void)pickerDataConfig{
-    self.regionArr = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AreaPlist.plist" ofType:nil]];
-    self.provinceArr = self.regionArr[0][@"provinces"];
+    self.provinceArr = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"area.plist" ofType:nil]].mutableCopy;
     self.cityArr = self.provinceArr[0][@"cities"];
     self.areaArr = self.cityArr[0][@"areas"];
     
@@ -114,19 +108,17 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
         self.locateDic = [NSMutableDictionary dictionaryWithDictionary:user.locationDic];
     }
     else{
-        [self.locateDic setObject:@(0) forKey:AreaRegion];
-        [self.locateDic setObject:@(0) forKey:AreaProvince];
+        [self.locateDic setObject:@(0) forKey:AreaState];
         [self.locateDic setObject:@(0) forKey:AreaCity];
         [self.locateDic setObject:@(0) forKey:AreaDistricts];
     }
 
-    self.locate.region = self.regionArr[0][@"region"];
-    self.locate.province = self.provinceArr[0][@"province"];
+    self.locate.state = self.provinceArr[0][@"state"];
     self.locate.city = self.cityArr[0][@"city"];
     if (self.areaArr.count) {
-        self.locate.area = self.areaArr[0];
+        self.locate.district = self.areaArr[0];
     }else{
-        self.locate.area = @"";
+        self.locate.district = @"";
     }
 }
 
@@ -233,25 +225,20 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
 
 #pragma mark - pickerView dataSource
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 4;
+    return 3;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     switch (component) {
         case 0:
-            return self.regionArr.count;
-            break;
-        case 1:
             return self.provinceArr.count;
             break;
-        case 2:
+        case 1:
             return self.cityArr.count;
             break;
-        case 3:
-            if (self.areaArr.count) {
-                return self.areaArr.count;
-                break;
-            }
+        case 2:
+            return self.areaArr.count;
+            break;
         default:
             return 0;
             break;
@@ -275,16 +262,13 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
 - (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component __TVOS_PROHIBITED{
     switch (component) {
         case 0:
-            return [[self.regionArr objectAtIndex:row] objectForKey:@"region"];
+            return [[self.provinceArr objectAtIndex:row] objectForKey:@"state"];
             break;
         case 1:
-            return [[self.provinceArr objectAtIndex:row] objectForKey:@"province"];
-            break;
-        case 2:
             return [[self.cityArr objectAtIndex:row] objectForKey:@"city"];
             break;
-        case 3:
-            if (self.areaArr.count) {
+        case 2:
+            if (self.areaArr.count>row) {
                 return [self.areaArr objectAtIndex:row];
                 break;
             }
@@ -297,83 +281,66 @@ static NSString *personalLocationCellIndentifier = @"personalLocationCellIndenti
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component __TVOS_PROHIBITED{
     switch (component) {
         case 0:{
-            self.provinceArr = self.regionArr[row][@"provinces"];
+            self.cityArr = self.provinceArr[row][@"cities"];
             [self.pickerView reloadComponent:1];
             [self.pickerView selectRow:0 inComponent:1 animated:YES];
             
-            
-            self.cityArr = [[self.provinceArr objectAtIndex:0] objectForKey:@"cities"];
+            self.areaArr = [[self.cityArr objectAtIndex:0] objectForKey:@"areas"];
             [self.pickerView reloadComponent:2];
             [self.pickerView selectRow:0 inComponent:2 animated:YES];
             
-            
-            self.areaArr = [[self.cityArr objectAtIndex:0] objectForKey:@"areas"];
-            [self.pickerView reloadComponent:3];
-            [self.pickerView selectRow:0 inComponent:3 animated:YES];
-            
-            self.locate.region = self.regionArr[row][@"region"];
-            self.locate.province = self.provinceArr[0][@"province"];
+            self.locate.state = self.provinceArr[row][@"state"];
             self.locate.city = self.cityArr[0][@"city"];
-            if (self.areaArr.count) {
-                self.locate.area = self.areaArr[0];
+            if (self.areaArr.count>0) {
+                self.locate.district = self.areaArr[0];
             }else{
-                self.locate.area = @"";
+                self.locate.district = @"";
             }
             
-            [self.locateDic setObject:@(row) forKey:AreaRegion];
+            [self.locateDic setObject:@(row) forKey:AreaState];
+            [self.locateDic setObject:@(0) forKey:AreaCity];
+            [self.locateDic setObject:@(0) forKey:AreaDistricts];
             
             break;
         }
         case 1:
         {
-            self.cityArr = [[self.provinceArr objectAtIndex:row] objectForKey:@"cities"];
+//            self.cityArr = [[self.provinceArr objectAtIndex:row] objectForKey:@"cities"];
+//            [self.pickerView reloadComponent:2];
+//            [self.pickerView selectRow:0 inComponent:2 animated:YES];
+            
+            
+            self.areaArr = [[self.cityArr objectAtIndex:row] objectForKey:@"areas"];
             [self.pickerView reloadComponent:2];
             [self.pickerView selectRow:0 inComponent:2 animated:YES];
             
-            
-            self.areaArr = [[self.cityArr objectAtIndex:0] objectForKey:@"areas"];
-            [self.pickerView reloadComponent:3];
-            [self.pickerView selectRow:0 inComponent:3 animated:YES];
-            
-            self.locate.province = self.provinceArr[row][@"province"];
-            self.locate.city = self.cityArr[0][@"city"];
-            if (self.areaArr.count) {
-                self.locate.area = self.areaArr[0];
-            }else{
-                self.locate.area = @"";
-            }
-            
-            [self.locateDic setObject:@(row) forKey:AreaProvince];
-            
-            break;
-        }
-        case 2:{
-            self.areaArr = [[self.cityArr objectAtIndex:row] objectForKey:@"areas"];
-            [self.pickerView reloadComponent:3];
-            [self.pickerView selectRow:0 inComponent:3 animated:YES];
-            
             self.locate.city = self.cityArr[row][@"city"];
-            if (self.areaArr.count) {
-                self.locate.area = self.areaArr[0];
+            if (self.areaArr.count>0) {
+                self.locate.district = self.areaArr[0];
             }else{
-                self.locate.area = @"";
+                self.locate.district = @"";
             }
             
             [self.locateDic setObject:@(row) forKey:AreaCity];
-            
-            break;
+            [self.locateDic setObject:@(0) forKey:AreaDistricts];
         }
-        case 3:{
-            if (self.areaArr.count) {
-                self.locate.area = self.areaArr[row];
-                [self.locateDic setObject:@(row) forKey:AreaDistricts];
+            break;
+        case 2:
+        {
+//            self.areaArr = [[self.cityArr objectAtIndex:row] objectForKey:@"areas"];
+//            [self.pickerView reloadComponent:3];
+//            [self.pickerView selectRow:0 inComponent:3 animated:YES];
+            
+//            self.locate.city = self.cityArr[row][@"city"];
+            if (self.areaArr.count>0) {
+                self.locate.district = self.areaArr[row];
             }else{
-                self.locate.area = @"";
-                [self.locateDic setObject:@(-1) forKey:AreaDistricts];
+                self.locate.district = @"";
             }
             
-            break;
+            [self.locateDic setObject:@(row) forKey:AreaDistricts];
         }
+            break;
         default:
             break;
     }

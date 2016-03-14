@@ -66,9 +66,9 @@
     if([viewController isKindOfClass:[PersonalMainViewController class]]){
         [[AppDelegate getRootController] configTabBarConstraint];
     }
-    if([viewController isKindOfClass:[FavoriteViewController class]]){
-        [[AppDelegate getRootController] configTabBarConstraint];
-    }
+//    if([viewController isKindOfClass:[FavoriteViewController class]]){
+//        [[AppDelegate getRootController] configTabBarConstraint];
+//    }
     
 }
 

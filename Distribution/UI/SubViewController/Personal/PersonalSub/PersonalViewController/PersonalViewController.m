@@ -20,11 +20,12 @@
 #import "PersonalAgeViewController.h"
 #import "PersonalViewControllerDelegate.h"
 #import "PersonalGenderViewController.h"
-#import "PersonalContactTelephoneViewController.h"
+#import "PersonalTextFieldInputViewController.h"
 #import "PersonalLocationUIViewController.h"
 #import "CustomControllerTitleView.h"
 #import "PersonalNicknameAndSignatureFunction.h"
 #import "NSArray+Addition.h"
+#import "PersonalAddressListViewController.h"
 @interface PersonalViewController ()<PersonalTableViewDataSourceDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,PersonalViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -121,9 +122,25 @@
             break;
         case PersonalTableDataType_telephone:
         {
-            PersonalContactTelephoneViewController *telephoneVc = [[PersonalContactTelephoneViewController alloc] init];
+            PersonalTextFieldInputViewController *telephoneVc = [[PersonalTextFieldInputViewController alloc] initWithPersonalViewTextFieldInputType:PersonalViewTextFieldInputType_telephone];
             telephoneVc.delegate = self;
             [self.navigationController pushViewController:telephoneVc animated:YES];
+            [[AppDelegate getRootController]hideTabbar];
+        }
+            break;
+        case PersonalTableDataType_weixin:
+        {
+            PersonalTextFieldInputViewController *weixinVc = [[PersonalTextFieldInputViewController alloc] initWithPersonalViewTextFieldInputType:PersonalViewTextFieldInputType_weixin];
+            weixinVc.delegate = self;
+            [self.navigationController pushViewController:weixinVc animated:YES];
+            [[AppDelegate getRootController]hideTabbar];
+        }
+            break;
+        case PersonalTableDataType_qq:
+        {
+            PersonalTextFieldInputViewController *qqVc = [[PersonalTextFieldInputViewController alloc] initWithPersonalViewTextFieldInputType:PersonalViewTextFieldInputType_qq];
+            qqVc.delegate = self;
+            [self.navigationController pushViewController:qqVc animated:YES];
             [[AppDelegate getRootController]hideTabbar];
         }
             break;
@@ -142,11 +159,16 @@
             [[AppDelegate getRootController]hideTabbar];
         }
             break;
-        case PersonalTableDataType_signature:{
-            PersonalNicknameAndSignatureFunction *vc = [[PersonalNicknameAndSignatureFunction alloc] initWithType:PersonalInputAttributeType_signature];
-            vc.delegate = self;
+        case PersonalTableDataType_manageAdress:
+        {
+            PersonalAddressListViewController *vc = [[PersonalAddressListViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
-            [[AppDelegate getRootController]hideTabbar];
+
+        }
+            break;
+        case PersonalTableDataType_modifyPassword:
+        {
+            
         }
             break;
         default:

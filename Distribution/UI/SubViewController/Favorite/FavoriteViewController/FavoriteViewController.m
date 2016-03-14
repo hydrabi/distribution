@@ -15,6 +15,7 @@
 #import "AppDelegate.h"
 #import "MJRefresh.h"
 #import "RequestData.h"
+#import "NSArray+Addition.h"
 
 @interface FavoriteViewController ()
 
@@ -36,6 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self navigationItemConfig];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStatusChange) name:Notification_LoginStatusChange object:nil];
     
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -61,6 +63,18 @@
 -(void)configUI{
     [super configUI];
     self.title = Global_FavoriteNavigationTitleName;
+}
+
+#pragma mark - 点击事件
+//返回
+-(void)returnButtonClick{
+    [self.navigationController popViewControllerAnimated:YES];
+    [[AppDelegate getRootController] configTabBarConstraint];
+    
+}
+-(void)navigationItemConfig{
+    NSArray *leftBarButton = [NSArray navigationItemsReturnWithTarget:self selecter:@selector(returnButtonClick)];
+    self.navigationItem.leftBarButtonItems = leftBarButton;
 }
 
 #pragma mark - 配置数据源

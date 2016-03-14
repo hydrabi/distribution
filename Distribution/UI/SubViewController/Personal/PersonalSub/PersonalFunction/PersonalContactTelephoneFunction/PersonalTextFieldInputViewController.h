@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "PersonalViewControllerDelegate.h"
-@interface PersonalContactTelephoneViewController : UIViewController
+#import "PersonalContactTelephoneTableViewCell.h"
+
+@interface PersonalTextFieldInputViewController : UIViewController
 @property (nonatomic,weak)id<PersonalViewControllerDelegate> delegate;
+-(instancetype)initWithPersonalViewTextFieldInputType:(PersonalViewTextFieldInputType)type;
 @end

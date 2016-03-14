@@ -14,7 +14,7 @@
 #import "AppDelegate.h"
 #import "LoginAndRegisterViewController.h"
 #import "LoginNavigationControllerViewController.h"
-
+#import "PersonalMacro.h"
 
 static NSString *tableViewNormalCellIndentifier = @"tableViewNormalCellIndentifier";
 static NSString *tableViewHeadCellIndentifier = @"tableViewHeadCellIndentifier";
@@ -114,11 +114,14 @@ static NSString *tableViewHeadCellIndentifier = @"tableViewHeadCellIndentifier";
     [self.dataTypeArr addObject: @[@(PersonalTableDataType_nickname),
                                    @(PersonalTableDataType_age),
                                    @(PersonalTableDataType_gender),
-                                   @(PersonalTableDataType_signature),
+                                   @(PersonalTableDataType_weixin),
+                                   @(PersonalTableDataType_qq),
                                    @(PersonalTableDataType_telephone)]
      ];
     
-    [self.dataTypeArr addObject: @[@(PersonalTableDataType_location)
+    [self.dataTypeArr addObject: @[@(PersonalTableDataType_location),
+                                   @(PersonalTableDataType_manageAdress),
+                                   @(PersonalTableDataType_modifyPassword),
                                    ]
      ];
 }
@@ -167,8 +170,17 @@ static NSString *tableViewHeadCellIndentifier = @"tableViewHeadCellIndentifier";
         case PersonalTableDataType_nickname:
             title = @"昵称";
             break;
-        case PersonalTableDataType_signature:
-            title = @"个人签名";
+        case PersonalTableDataType_weixin:
+            title = @"微信";
+            break;
+        case PersonalTableDataType_qq:
+            title = @"QQ";
+            break;
+        case PersonalTableDataType_manageAdress:
+            title = @"地址管理";
+            break;
+        case PersonalTableDataType_modifyPassword:
+            title = @"修改密码";
             break;
         default:
             break;

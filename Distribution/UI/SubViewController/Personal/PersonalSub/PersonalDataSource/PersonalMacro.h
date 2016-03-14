@@ -11,6 +11,19 @@
 
 #pragma mark - PersonalTableView
 
+typedef NS_ENUM(NSInteger, PersonalTableDataType) {
+    PersonalTableDataType_head,
+    PersonalTableDataType_age,
+    PersonalTableDataType_gender,
+    PersonalTableDataType_location,
+    PersonalTableDataType_telephone,
+    PersonalTableDataType_nickname,
+    PersonalTableDataType_weixin,
+    PersonalTableDataType_qq,
+    PersonalTableDataType_manageAdress,
+    PersonalTableDataType_modifyPassword,
+};
+
 #define PersonalTableViewBackgroundColor [UIColor colorWithHexString:@"eeeeee" alpha:1]
 #define PersonalTableViewSectionHeaderHeight 10.0f
 #define PersonalTableViewCellLeftSeparatorInset 12.0f
