@@ -17,6 +17,12 @@
 		801FB9CD1C4C97A900A47FD4 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 801FB9C81C4C97A900A47FD4 /* read_me.txt */; };
 		802302101C3A6D8C00589979 /* CDImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8023020E1C3A6D8C00589979 /* CDImageTableViewCell.m */; };
 		802302111C3A6D8C00589979 /* CDImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8023020F1C3A6D8C00589979 /* CDImageTableViewCell.xib */; };
+		804CDBAD1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 804CDBA81C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.m */; };
+		804CDBAE1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804CDBA91C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib */; };
+		804CDBAF1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 804CDBAB1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m */; };
+		804CDBB01C96872A009ABDF6 /* CustomInputTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804CDBAC1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.xib */; };
+		804CDBB41C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 804CDBB21C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.m */; };
+		804CDBB51C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804CDBB31C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.xib */; };
 		8080F4AA1C8E9FC8005306EA /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8080F4A91C8E9FC8005306EA /* UIImageView+Addition.m */; };
 		8081CAB41C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8081CAB21C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.m */; };
 		8081CAB51C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8081CAB31C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.xib */; };
@@ -164,6 +170,9 @@
 		80DAB3A21C3A0A1300BAF1F4 /* CDIntroduceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DAB3A01C3A0A1300BAF1F4 /* CDIntroduceTableViewCell.xib */; };
 		80DAB3A71C3A17BA00BAF1F4 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DAB3A61C3A17BA00BAF1F4 /* UITableView+FDTemplateLayoutCell.m */; };
 		80E3E63E1C354BD100C066FA /* UserImformation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E3E63C1C354BD100C066FA /* UserImformation.xcdatamodeld */; };
+		80E5DB001C96568100C2B773 /* PersonalManageerAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5DAFE1C96568100C2B773 /* PersonalManageerAddressViewController.m */; };
+		80E5DB011C96568100C2B773 /* PersonalManageerAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E5DAFF1C96568100C2B773 /* PersonalManageerAddressViewController.xib */; };
+		80E5DB0F1C96682700C2B773 /* PlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5DB0E1C96682700C2B773 /* PlaceHolderTextView.m */; };
 		80E5E8A91C8D106A001E3A49 /* PersonalTraceFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5E8A81C8D106A001E3A49 /* PersonalTraceFunction.m */; };
 		80F106F91C157A430009FBA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F106F81C157A430009FBA4 /* main.m */; };
 		80F107071C157A430009FBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F107051C157A430009FBA4 /* LaunchScreen.storyboard */; };
@@ -210,6 +219,15 @@
 		8023020E1C3A6D8C00589979 /* CDImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDImageTableViewCell.m; sourceTree = "<group>"; };
 		8023020F1C3A6D8C00589979 /* CDImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDImageTableViewCell.xib; sourceTree = "<group>"; };
 		802302121C3A747100589979 /* CDImageTableViewCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDImageTableViewCellDelegate.h; sourceTree = "<group>"; };
+		804CDBA71C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInputTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		804CDBA81C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInputTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		804CDBA91C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		804CDBAA1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInputTextViewTableViewCell.h; sourceTree = "<group>"; };
+		804CDBAB1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInputTextViewTableViewCell.m; sourceTree = "<group>"; };
+		804CDBAC1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputTextViewTableViewCell.xib; sourceTree = "<group>"; };
+		804CDBB11C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalManagerAddressNormalTableViewCell.h; sourceTree = "<group>"; };
+		804CDBB21C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalManagerAddressNormalTableViewCell.m; sourceTree = "<group>"; };
+		804CDBB31C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalManagerAddressNormalTableViewCell.xib; sourceTree = "<group>"; };
 		8080F4A81C8E9FC8005306EA /* UIImageView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Addition.h"; sourceTree = "<group>"; };
 		8080F4A91C8E9FC8005306EA /* UIImageView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Addition.m"; sourceTree = "<group>"; };
 		8081CAB11C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalMainOrderHeaderTableViewCell.h; sourceTree = "<group>"; };
@@ -471,6 +489,11 @@
 		80DAB3A51C3A17BA00BAF1F4 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
 		80DAB3A61C3A17BA00BAF1F4 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
 		80E3E63D1C354BD100C066FA /* UserImformation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserImformation.xcdatamodel; sourceTree = "<group>"; };
+		80E5DAFD1C96568100C2B773 /* PersonalManageerAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalManageerAddressViewController.h; sourceTree = "<group>"; };
+		80E5DAFE1C96568100C2B773 /* PersonalManageerAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalManageerAddressViewController.m; sourceTree = "<group>"; };
+		80E5DAFF1C96568100C2B773 /* PersonalManageerAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalManageerAddressViewController.xib; sourceTree = "<group>"; };
+		80E5DB0D1C96682700C2B773 /* PlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHolderTextView.h; sourceTree = "<group>"; };
+		80E5DB0E1C96682700C2B773 /* PlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHolderTextView.m; sourceTree = "<group>"; };
 		80E5E8A71C8D106A001E3A49 /* PersonalTraceFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTraceFunction.h; sourceTree = "<group>"; };
 		80E5E8A81C8D106A001E3A49 /* PersonalTraceFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTraceFunction.m; sourceTree = "<group>"; };
 		80F106F41C157A430009FBA4 /* 衣云时尚.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "衣云时尚.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -598,6 +621,22 @@
 			path = Frameworks/SDK1.6.2;
 			sourceTree = "<group>";
 		};
+		804CDBA61C96872A009ABDF6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				804CDBA71C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.h */,
+				804CDBA81C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.m */,
+				804CDBA91C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib */,
+				804CDBAA1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.h */,
+				804CDBAB1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m */,
+				804CDBAC1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.xib */,
+				804CDBB11C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.h */,
+				804CDBB21C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.m */,
+				804CDBB31C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		8081CAB01C5B10F2001FD68F /* PersonalMainOrderHeaderTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,7 +699,11 @@
 		808797E51C942F8A003F91E3 /* PersonalManageerAddress */ = {
 			isa = PBXGroup;
 			children = (
+				804CDBA61C96872A009ABDF6 /* Cell */,
 				808797EB1C943124003F91E3 /* PersonalManagerAddressMacro.h */,
+				80E5DAFD1C96568100C2B773 /* PersonalManageerAddressViewController.h */,
+				80E5DAFE1C96568100C2B773 /* PersonalManageerAddressViewController.m */,
+				80E5DAFF1C96568100C2B773 /* PersonalManageerAddressViewController.xib */,
 			);
 			path = PersonalManageerAddress;
 			sourceTree = "<group>";
@@ -1534,6 +1577,15 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		80E5DB0C1C96682700C2B773 /* PlaceHolderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				80E5DB0D1C96682700C2B773 /* PlaceHolderTextView.h */,
+				80E5DB0E1C96682700C2B773 /* PlaceHolderTextView.m */,
+			);
+			path = PlaceHolderTextView;
+			sourceTree = "<group>";
+		};
 		80E5E8A61C8D1044001E3A49 /* PersonalTraceFunction */ = {
 			isa = PBXGroup;
 			children = (
@@ -1641,6 +1693,7 @@
 		80F107151C157BEF0009FBA4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				80E5DB0C1C96682700C2B773 /* PlaceHolderTextView */,
 				809BEF4B1C8C1A6D000B42A4 /* CustomBaseProductList */,
 				80AEC17A1C48C61600467D92 /* CustomShare */,
 				80AEC16A1C48C45C00467D92 /* SGActionView */,
@@ -1859,9 +1912,11 @@
 				809BEF561C8C1A9A000B42A4 /* CustomBaseProductListViewController.xib in Resources */,
 				80D55F321C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.xib in Resources */,
 				80F1072E1C157F870009FBA4 /* Assets.xcassets in Resources */,
+				804CDBAE1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib in Resources */,
 				808797EA1C943068003F91E3 /* PersonalAddressListViewController.xib in Resources */,
 				80ABE25C1C38BBE000D4041C /* CDMainTableViewCell.xib in Resources */,
 				80D55F361C59E33900B2F0EC /* PersonalGenderTableViewCell.xib in Resources */,
+				804CDBB01C96872A009ABDF6 /* CustomInputTextViewTableViewCell.xib in Resources */,
 				80D55F301C59E33900B2F0EC /* PersonalAgeViewController.xib in Resources */,
 				809351BF1C90275E00836F98 /* PersonalSettingTableViewCell.xib in Resources */,
 				80C376F81C21A6A800464AC0 /* SCNavTabBar.bundle in Resources */,
@@ -1880,6 +1935,7 @@
 				80D55F3E1C59E33900B2F0EC /* PersonalLocationUIViewController.xib in Resources */,
 				80B0A6F11C899D31008194E2 /* SearchProductViewController.xib in Resources */,
 				80D55F381C59E33900B2F0EC /* PersonalGenderViewController.xib in Resources */,
+				80E5DB011C96568100C2B773 /* PersonalManageerAddressViewController.xib in Resources */,
 				80FF3E7A1C2262DA00A08713 /* CollectionViewCell.xib in Resources */,
 				80F107071C157A430009FBA4 /* LaunchScreen.storyboard in Resources */,
 				80D55F2C1C59E33900B2F0EC /* PersonalTableViewFooter.xib in Resources */,
@@ -1890,6 +1946,7 @@
 				80D55F491C59E47500B2F0EC /* PersonalMainViewController.xib in Resources */,
 				802302111C3A6D8C00589979 /* CDImageTableViewCell.xib in Resources */,
 				80D55F2E1C59E33900B2F0EC /* PersonalAgeTableViewCell.xib in Resources */,
+				804CDBB51C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.xib in Resources */,
 				80D64F021C27E26B00B3493A /* SharePopSelectView.xib in Resources */,
 				808238E91C91488A00A932E2 /* PersonalAboutUsViewController.xib in Resources */,
 				80D55F401C59E33900B2F0EC /* PersonalHeaderCell.xib in Resources */,
@@ -1975,6 +2032,7 @@
 				80ABE2551C38B79600D4041C /* CommodityDetailsDataSource.m in Sources */,
 				809351BE1C90275E00836F98 /* PersonalSettingTableViewCell.m in Sources */,
 				80C376FA1C21A6A800464AC0 /* SCNavTabBar.m in Sources */,
+				804CDBB41C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.m in Sources */,
 				80FF3E641C224D0300A08713 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				80D55F481C59E47500B2F0EC /* PersonalMainViewController.m in Sources */,
 				80D55EEC1C59AD7900B2F0EC /* DiscoverTableViewDataSource.m in Sources */,
@@ -2003,6 +2061,7 @@
 				80FF3E781C22628F00A08713 /* CollectionViewCell.m in Sources */,
 				808797EE1C9431F0003F91E3 /* PersonalAddressListFooterView.m in Sources */,
 				80D55F711C5A0A3200B2F0EC /* PersonalMainOrderTableViewCell.m in Sources */,
+				804CDBAD1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.m in Sources */,
 				80AC83631C58A4D800B955C4 /* LoginNavigationControllerViewController.m in Sources */,
 				80C376FB1C21A6A800464AC0 /* SCPopView.m in Sources */,
 				80D55F371C59E33900B2F0EC /* PersonalGenderViewController.m in Sources */,
@@ -2017,6 +2076,7 @@
 				80ABE25B1C38BBE000D4041C /* CDMainTableViewCell.m in Sources */,
 				809351B31C8FAE9600836F98 /* ClassifyViewTableViewHeader.m in Sources */,
 				8098A9581C36373300D3D7DF /* UIAlertView+Addition.m in Sources */,
+				80E5DB001C96568100C2B773 /* PersonalManageerAddressViewController.m in Sources */,
 				80A514201C37E279007C549B /* FavoriteViewController.m in Sources */,
 				809D31761C8F1146002D3A1F /* ClassifyView.m in Sources */,
 				808797E91C943068003F91E3 /* PersonalAddressListViewController.m in Sources */,
@@ -2041,6 +2101,7 @@
 				8009BE461C4E43340035A3A1 /* RequestData.m in Sources */,
 				809BEF551C8C1A9A000B42A4 /* CustomBaseProductListViewController.m in Sources */,
 				800AD69E1C50A91D005BE6A1 /* MyMD5.m in Sources */,
+				804CDBAF1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m in Sources */,
 				80F107211C157BEF0009FBA4 /* CustomTabBarViewController.m in Sources */,
 				8081CAC01C5B2760001FD68F /* PersonalNicknameAndSignatureFunction.m in Sources */,
 				80E3E63E1C354BD100C066FA /* UserImformation.xcdatamodeld in Sources */,
@@ -2053,6 +2114,7 @@
 				809D0CD61C3F5754008B1648 /* ConversationListViewController.m in Sources */,
 				80D55F521C59E4E700B2F0EC /* PersonalMainTableViewDataSource.m in Sources */,
 				80ABE2601C38CCB200D4041C /* CustomImageAndTitleButton.m in Sources */,
+				80E5DB0F1C96682700C2B773 /* PlaceHolderTextView.m in Sources */,
 				80AEC1771C48C45C00467D92 /* SGBaseMenu.m in Sources */,
 				80D55F391C59E33900B2F0EC /* AreaObject.m in Sources */,
 				80D55F2D1C59E33900B2F0EC /* PersonalAgeTableViewCell.m in Sources */,

@@ -101,9 +101,7 @@
 -(void)setQq:(NSString*)qq;
 
 #pragma mark - 地址管理
--(NSMutableDictionary*)detailedAddress;
 
--(void)setDetailedAddress:(NSMutableDictionary*)address;
 
 #pragma mark - 我的足迹
 /**
@@ -126,4 +124,27 @@
  *  @return 所有足迹的列表
  */
 -(NSArray *)getAllTraceObject;
+
+#pragma mark - 地址管理
+/**
+ *  添加新的收货地址
+ *
+ *  @param dic 收货地址信息
+ */
+-(void)addAddressWithDic:(NSMutableDictionary*)dic;
+
+/**
+ *  删除收货地址
+ *
+ *  @param dic 收货地址信息
+ */
+-(void)removeAddressWithDic:(NSMutableDictionary*)dic;
+
+/**
+ *  修改收货地址
+ *
+ *  @param dic   收货地址信息
+ *  @param index 收货地址处于收货地址列表的索引
+ */
+-(void)modifyAddressWithDic:(NSMutableDictionary*)dic index:(NSInteger)index;
 @end

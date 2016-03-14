@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PersonalAddressDetailViewController : UIViewController
-
+-(instancetype)initWithAddrestDic:(NSDictionary*)addressDic addressDicIndex:(NSInteger)index;
 @end

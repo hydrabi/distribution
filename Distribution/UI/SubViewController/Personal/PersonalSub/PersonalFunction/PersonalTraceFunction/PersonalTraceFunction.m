@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self navigationItemConfig];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self refreshData];
     }];
@@ -44,7 +44,6 @@
 -(void)returnButtonClick{
     [self.navigationController popViewControllerAnimated:YES];
     [[AppDelegate getRootController] configTabBarConstraint];
-    
 }
 
 #pragma mark - configUI

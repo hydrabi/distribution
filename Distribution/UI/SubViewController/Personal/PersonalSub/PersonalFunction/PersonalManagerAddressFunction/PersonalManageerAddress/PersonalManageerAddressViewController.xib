@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalManageerAddressViewController">
+            <connections>
+                <outlet property="pickerView" destination="N08-4a-LJc" id="7kJ-KT-Ush"/>
+                <outlet property="saveButton" destination="OXh-7M-V37" id="NRw-bd-xy9"/>
+                <outlet property="tableView" destination="y6t-Ef-Tcf" id="Gau-xi-kSQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="y6t-Ef-Tcf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N08-4a-LJc">
+                    <rect key="frame" x="0.0" y="352" width="320" height="166"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="166" id="NaB-ka-K65"/>
+                    </constraints>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXh-7M-V37">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="dEV-FM-d8s"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OXh-7M-V37" secondAttribute="bottom" id="7ps-to-fpN"/>
+                <constraint firstItem="N08-4a-LJc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JAz-k0-Z1Y"/>
+                <constraint firstItem="OXh-7M-V37" firstAttribute="top" secondItem="N08-4a-LJc" secondAttribute="bottom" id="Rbe-VD-Bh4"/>
+                <constraint firstAttribute="trailing" secondItem="OXh-7M-V37" secondAttribute="trailing" id="Ru3-fI-zK3"/>
+                <constraint firstItem="y6t-Ef-Tcf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SG9-Pb-UiU"/>
+                <constraint firstItem="N08-4a-LJc" firstAttribute="top" secondItem="y6t-Ef-Tcf" secondAttribute="bottom" id="Skf-s4-bUq"/>
+                <constraint firstAttribute="trailing" secondItem="N08-4a-LJc" secondAttribute="trailing" id="Zvw-tE-4o1"/>
+                <constraint firstAttribute="trailing" secondItem="y6t-Ef-Tcf" secondAttribute="trailing" id="dPY-d7-7f1"/>
+                <constraint firstItem="OXh-7M-V37" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uab-NH-xAe"/>
+                <constraint firstItem="y6t-Ef-Tcf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yMU-Lh-tXQ"/>
+            </constraints>
+            <point key="canvasLocation" x="203" y="214"/>
+        </view>
+    </objects>
+</document>

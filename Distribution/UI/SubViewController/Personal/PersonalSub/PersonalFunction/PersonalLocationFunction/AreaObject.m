@@ -10,7 +10,7 @@
 @implementation AreaObject
 
 - (NSString *)description{
-    return [NSString stringWithFormat:@"%@ %@ %@",self.state,self.city,self.district];
+    return [NSString stringWithFormat:@"%@%@%@",self.state,self.city,self.district];
 }
 
 @end

@@ -340,29 +340,6 @@
     }
 }
 
-#pragma mark - 地址管理
--(NSMutableDictionary*)detailedAddress{
-    AVUser *user = [AVUser currentUser];
-    if(user){
-        NSMutableDictionary *adress = user[AVUserKey_manageAdress];
-        return adress;
-    }
-    else {
-        return nil;
-    }
-}
-
--(void)setDetailedAddress:(NSMutableDictionary*)address{
-    AVUser *user = [AVUser currentUser];
-    if(user!=nil && address!=nil){
-        [user setObject:address forKey:AVUserKey_manageAdress];
-        [user saveEventually];
-    }
-    else{
-        NSLog(@"当前未登录或者地址为空！");
-    }
-}
-
 #pragma mark - 我的足迹
 -(void)addTraceWithObject:(AVObject*)object{
     AVUser *user = [AVUser currentUser];
@@ -373,11 +350,11 @@
             [tempArr removeObject:object.objectId];
             [tempArr addObject:object.objectId];
             [user setObject:tempArr forKey:AVUserKey_trace];
-            [user saveInBackground];
+            [user saveEventually];
         }
         else{
             [user addObject:object.objectId forKey:AVUserKey_trace];
-            [user saveInBackground];
+            [user saveEventually];
         }
     }
     else{
@@ -409,5 +386,68 @@
         NSLog(@"当前未登录");
     }
     return arr;
+}
+
+#pragma mark - 地址管理
+-(void)addAddressWithDic:(NSMutableDictionary*)dic{
+    AVUser *user = [AVUser currentUser];
+    if(user && dic){
+        [user addObject:dic forKey:AVUserKey_addressList];
+        [user saveEventually:^(BOOL success,NSError *error){
+            if(success){
+                [MBProgressHUD showSuccess:@"地址添加成功"];
+            }
+            else{
+                [MBProgressHUD showError:@"地址添加失败"];
+            }
+        }];
+    }
+    else{
+        NSLog(@"添加新地址失败");
+    }
+}
+
+-(void)modifyAddressWithDic:(NSMutableDictionary*)dic index:(NSInteger)index{
+    AVUser *user = [AVUser currentUser];
+    if(user && dic){
+        NSArray *arr = user[AVUserKey_addressList];
+        if(arr!=nil && arr.count>index){
+            NSMutableArray *tempArr = arr.mutableCopy;
+            [tempArr replaceObjectAtIndex:index withObject:dic];
+            [user setObject:tempArr forKey:AVUserKey_addressList];
+            [user saveEventually:^(BOOL success,NSError *error){
+                if(success){
+                    [MBProgressHUD showSuccess:@"地址修改成功"];
+                }
+                else{
+                    [MBProgressHUD showError:@"地址修改失败"];
+                }
+            }];
+        }
+    }
+    else{
+        [MBProgressHUD showSuccess:@"地址修改成功"];
+    }
+}
+
+-(void)removeAddressWithDic:(NSMutableDictionary*)dic{
+    AVUser *user = [AVUser currentUser];
+    if(user && dic){
+        NSArray *arr = user[AVUserKey_addressList];
+        if([arr containsObject:dic]){
+            [user removeObject:dic forKey:AVUserKey_addressList];
+            [user saveEventually:^(BOOL success,NSError *error){
+                if(success){
+                    [MBProgressHUD showSuccess:@"地址删除成功"];
+                }
+                else{
+                    [MBProgressHUD showError:@"地址删除失败"];
+                }
+            }];
+        }
+    }
+    else{
+        NSLog(@"删除地址失败");
+    }
 }
 @end

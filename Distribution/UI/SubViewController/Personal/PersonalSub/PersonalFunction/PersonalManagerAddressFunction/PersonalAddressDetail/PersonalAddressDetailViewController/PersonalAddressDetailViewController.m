@@ -12,6 +12,7 @@
 #import "UIColor+Addition.h"
 #import "PersonalManagerAddressMacro.h"
 #import "PersonalAddressDetailTableViewCell.h"
+#import "PersonalManageerAddressViewController.h"
 
 static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetailTableViewCellReuseIdentifier";
 
@@ -25,9 +26,26 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
  *  默认收货地址按钮
  */
 @property (nonatomic,strong)UIButton *defaultAddressButton;
+/**
+ *  收货地址信息
+ */
+@property (nonatomic,strong)NSDictionary *addressDic;
+/**
+ *  收货地址相对于收货地址列表的索引
+ */
+@property (nonatomic,assign)NSInteger addressDicIndex;
 @end
 
 @implementation PersonalAddressDetailViewController
+
+-(instancetype)initWithAddrestDic:(NSDictionary*)addressDic addressDicIndex:(NSInteger)index{
+    self = [super init];
+    if(self){
+        self.addressDic      = addressDic;
+        self.addressDicIndex = index;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,6 +85,7 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
     [self.defaultAddressButton setBackgroundColor:PersonalAddressDetailDefaultButtonBackgroundColor];
     [self.defaultAddressButton setTitleColor:PersonalAddressDetailDefaultButtonTitleColor forState:UIControlStateNormal];
     [self.defaultAddressButton addTarget:self action:@selector(defaultAddressButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.defaultAddressButton.titleLabel setFont:PersonalManagerAddrestSaveButtonFont];
     [self.view addSubview:self.defaultAddressButton];
     
     __weak typeof(self)weakSelf = self;
@@ -93,6 +112,8 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
     NSArray *leftBarButton = [NSArray navigationItemsReturnWithTarget:self selecter:@selector(returnButtonClick)];
     self.navigationItem.leftBarButtonItems = leftBarButton;
     
+    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithTitle:@"修改" style:UIBarButtonItemStyleBordered target:self action:@selector(modifyButtonClick)];
+    self.navigationItem.rightBarButtonItem = rightBarButton;
 }
 
 #pragma mark - 点击事件
@@ -100,11 +121,16 @@ static NSString *tableViewDetailTableViewCellReuseIdentifier = @"tableViewDetail
 //返回
 -(void)returnButtonClick{
     [self.navigationController popViewControllerAnimated:YES];
-    
+    [[AppDelegate getRootController] hideTabbar];
 }
 
 -(void)defaultAddressButtonClick{
     
+}
+
+-(void)modifyButtonClick{
+    PersonalManageerAddressViewController *vc = [[PersonalManageerAddressViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 配置数据源列表

@@ -772,7 +772,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>浙江</string>
+		<string>浙江省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -1051,7 +1051,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>广东</string>
+		<string>广东省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -1255,7 +1255,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>江苏</string>
+		<string>江苏省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -1521,7 +1521,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>山东</string>
+		<string>山东省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -1676,7 +1676,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>福建</string>
+		<string>福建省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -1907,7 +1907,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>安徽</string>
+		<string>安徽省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -2242,7 +2242,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>四川</string>
+		<string>四川省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -2462,7 +2462,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>湖北</string>
+		<string>湖北省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -2718,7 +2718,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>河北</string>
+		<string>河北省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -2966,7 +2966,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>云南</string>
+		<string>云南省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -3194,7 +3194,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>黑龙江</string>
+		<string>黑龙江省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -3324,7 +3324,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>吉林</string>
+		<string>吉林省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -3529,7 +3529,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>辽宁</string>
+		<string>辽宁省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -3667,7 +3667,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>海南</string>
+		<string>海南省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -3894,7 +3894,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>湖南</string>
+		<string>湖南省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -4179,7 +4179,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>河南</string>
+		<string>河南省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -4337,7 +4337,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>贵州</string>
+		<string>贵州省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -4520,7 +4520,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>江西</string>
+		<string>江西省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -4734,7 +4734,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>广西</string>
+		<string>广西省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -4918,7 +4918,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>陕西</string>
+		<string>陕西省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -5121,7 +5121,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>山西</string>
+		<string>山西省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -5227,7 +5227,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>青海</string>
+		<string>青海省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -5290,7 +5290,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>宁夏</string>
+		<string>宁夏省</string>
 	</dict>
 	<dict>
 		<key>cities</key>
@@ -5480,7 +5480,7 @@
 			</dict>
 		</array>
 		<key>state</key>
-		<string>甘肃</string>
+		<string>甘肃省</string>
 	</dict>
 	<dict>
 		<key>cities</key>

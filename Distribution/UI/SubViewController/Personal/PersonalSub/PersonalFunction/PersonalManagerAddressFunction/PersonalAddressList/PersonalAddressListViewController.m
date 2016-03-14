@@ -16,6 +16,7 @@
 #import "PersonalAddressListTableViewCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "PersonalAddressDetailViewController.h"
+#import "PersonalManageerAddressViewController.h"
 
 static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCellIndentifier";
 
@@ -73,12 +74,6 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     self.tableView.tableFooterView = self.footerView;
 }
 
-//返回
--(void)returnButtonClick{
-    [self.navigationController popViewControllerAnimated:YES];
-    [[AppDelegate getRootController] configTabBarConstraint];
-    
-}
 -(void)navigitionConfig{
     NSArray *leftBarButton = [NSArray navigationItemsReturnWithTarget:self selecter:@selector(returnButtonClick)];
     self.navigationItem.leftBarButtonItems = leftBarButton;
@@ -97,16 +92,29 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     }
 }
 
-#pragma mark - 添加新地址
+#pragma mark - 点击事件
 -(void)footerViewClick{
+    PersonalManageerAddressViewController *vc = [[PersonalManageerAddressViewController alloc] initWithType:PersonalManagerAddressType_new addressDic:nil addressDicIndex:0];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+//返回
+-(void)returnButtonClick{
+    [self.navigationController popViewControllerAnimated:YES];
+    [[AppDelegate getRootController] configTabBarConstraint];
     
 }
 
 #pragma mark - 配置数据源列表
 -(void)configDataTypeArr{
-    self.dataTypeArr = @[@(1),
-                         @(2)].mutableCopy;
-
+    AVUser *user = [AVUser currentUser];
+    if(user){
+        self.dataTypeArr = user[AVUserKey_addressList];
+    }
+    else{
+        self.dataTypeArr = @[].mutableCopy;
+    }
+    
 }
 
 #pragma mark - 注册tableView要用到的所有CellNib
@@ -115,7 +123,6 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     [self.tableView registerNib:tableViewNormalCellNib forCellReuseIdentifier:tableViewAddressListCellIndentifier];
 
 }
-
 
 #pragma mark - UITableViewDelegateAndDataSource
 
@@ -171,9 +178,12 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    PersonalAddressDetailViewController *vc = [[PersonalAddressDetailViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    if(self.dataTypeArr.count>indexPath.row){
+        NSDictionary *addressDic = self.dataTypeArr[indexPath.row];
+        PersonalAddressDetailViewController *vc = [[PersonalAddressDetailViewController alloc] initWithAddrestDic:addressDic addressDicIndex:indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+   
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

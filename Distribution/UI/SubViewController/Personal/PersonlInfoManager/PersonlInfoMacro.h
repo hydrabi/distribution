@@ -32,7 +32,6 @@ typedef NS_ENUM(NSInteger,AVUserAttributeType) {
 #define AVUserKey_trace                  @"AVUserKey_trace"                 //我的足迹
 #define AVUserKey_weixin                 @"AVUserKey_weixin"                //微信
 #define AVUserKey_qq                     @"AVUserKey_qq"                    //qq
-#define AVUserKey_manageAdress           @"AVUserKey_manageAdress"          //地址管理
 #define AVUserKey_modifyPassword         @"AVUserKey_modifyPassword"        //修改密码
 #define AVUserKey_addressList            @"AVUserKey_adressList"            //收货地址列表
 #define AVUserKey_addressConsignee       @"AVUserKey_addressConsignee"      //收货人

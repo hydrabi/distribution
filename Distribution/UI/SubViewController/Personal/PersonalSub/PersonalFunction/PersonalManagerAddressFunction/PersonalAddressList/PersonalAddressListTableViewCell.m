@@ -13,13 +13,13 @@
 
 - (void)awakeFromNib {
     self.nameLabel.textColor = PersonalAddrestListCellTitleColor;
-    self.nameLabel.font = [UIFont systemFontOfSize:16];
+    self.nameLabel.font = [UIFont systemFontOfSize:15];
     
     self.telephoneLabel.textColor = PersonalAddrestListCellTitleColor;
-    self.telephoneLabel.font = [UIFont systemFontOfSize:16];
+    self.telephoneLabel.font = [UIFont systemFontOfSize:15];
     
     self.adressLabel.textColor = PersonalAddrestListCellTitleColor;
-    self.adressLabel.font = [UIFont systemFontOfSize:16];
+    self.adressLabel.font = [UIFont systemFontOfSize:15];
     
     self.nameLabel.text = @"毕先生";
     self.telephoneLabel.text = @"13410424125";

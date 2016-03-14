@@ -36,4 +36,25 @@ typedef NS_ENUM(NSInteger,PersonalAddressDetailCellType) {
 #define PersonalAddressDetailDefaultButtonTitle @"设为默认收货地址"
 #define PersonalAddressDetailDefaultButtonHeight 50.0f
 
+typedef NS_ENUM(NSInteger,PersonalManagerAddressType) {
+    PersonalManagerAddressType_new,             //新建收货地址
+    PersonalManagerAddressType_modify           //修改已有收货地址
+};
+
+typedef NS_ENUM(NSInteger,CustomInputTextFieldCellType) {
+    CustomInputTextFieldCell_consignee,             //收货人
+    CustomInputTextFieldCell_telephone              //手机号码
+};
+
+#define PersonalManagerAddrestTitleFont [UIFont systemFontOfSize:16.0f]
+#define PersonalManagerAddrestSaveButtonBackgroundColor [UIColor colorWithHexString:@"ff4400" alpha:1]
+#define PersonalManagerAddrestSaveButtonTitleColor [UIColor whiteColor]
+#define PersonalManagerAddrestSaveButtonTitle @"保存"
+#define PersonalManagerAddrestSaveButtonFont [UIFont systemFontOfSize:18.0f]
+#define PersonalManagerAddrestSaveButtonHeight 50.0f
+#define PersonalManagerAddrestPickerHeight 166.0f;
+#define PersonalManagerAddrestConsigneeMaxLength 15
+#define PersonalManagerAddrestDetailMaxLength 60
+#define PersonalManagerAddrestTextViewCellHeight 80.0f
+#define PersonalManagerAddrestNomalCellDefaultTitle @"省，市，区"
 #endif /* PersonalManagerAddressMacro_h */

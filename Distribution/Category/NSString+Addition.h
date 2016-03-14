@@ -58,4 +58,13 @@ static NSString *const CHARACTER_LETTERS_NUMS_SPACE_LINE_BREAK_AND_R_LINE_BREAK 
  *  @return 字符串在以上限制条件的情况下的宽高
  */
 -(CGSize)stringSizeWithLableHeight:(CGFloat)height width:(CGFloat)width font:(UIFont*)fontSize;
+
+/**
+ *  是否符合手机号码规则
+ *
+ *  @param mobile 手机号码
+ *
+ *  @return 符合返回yes，否则返回no
+ */
+-(BOOL)validateMobile;
 @end
