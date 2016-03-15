@@ -95,7 +95,9 @@
             [ImageManager advancedCreateAlbumWithBlock:^(BOOL success){
                 if(success){
                     [ImageManager advancedAddAssetsWithImage:imagesArr completion:^(BOOL success){
-                        completion(success);
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            completion(success);
+                        });
                         return;
                     }];
                 }
@@ -105,8 +107,9 @@
         else{
             [ImageManager backwardAddImageWithImage:imagesArr
                                           WithBlock:^(BOOL success){
-                                              completion(success);
-                                              return;
+                                              dispatch_async(dispatch_get_main_queue(), ^{
+                                                  completion(success);
+                                              });
                                           }];
         }
     }];

@@ -15,6 +15,8 @@
 #import "DiscoverViewController.h"
 #import "PersonalMainViewController.h"
 #import "FavoriteViewController.h"
+#import "ShoppingCarViewController.h"
+#import "ClassifyViewController.h"
 @interface NavigationController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end
@@ -74,9 +76,14 @@
         [[AppDelegate getRootController] configTabBarConstraint];
         return;
     }
-//    if([viewController isKindOfClass:[FavoriteViewController class]]){
-//        [[AppDelegate getRootController] configTabBarConstraint];
-//    }
+    if([viewController isKindOfClass:[ClassifyViewController class]]){
+        [[AppDelegate getRootController] configTabBarConstraint];
+        return;
+    }
+    if([viewController isKindOfClass:[ShoppingCarViewController class]]){
+        [[AppDelegate getRootController] configTabBarConstraint];
+        return;
+    }
     
     [[AppDelegate getRootController] hideTabbar];
 }

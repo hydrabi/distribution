@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
-            timestampString = "479290568.750632"
+            timestampString = "479714128.040198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
             landmarkName = "-onReq:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Distribution/UI/SubViewController/Personal/ImageManager/ImageManager.m"
-            timestampString = "478681337.544851"
+            timestampString = "479705003.457136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "281"
-            endingLineNumber = "281">
+            startingLineNumber = "284"
+            endingLineNumber = "284">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,7 +104,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479661192.081402"
+                  timestampString = "479729047.461253"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -119,7 +119,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479661192.081589"
+                  timestampString = "479729047.461407"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -134,7 +134,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479661192.081724"
+                  timestampString = "479729047.461537"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -173,6 +173,38 @@
             startingLineNumber = "284"
             endingLineNumber = "284"
             landmarkName = "-pickerView:didSelectRow:inComponent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
+            timestampString = "479708555.221267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "-QQShare"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
+            timestampString = "479714128.040198"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "-onResp:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

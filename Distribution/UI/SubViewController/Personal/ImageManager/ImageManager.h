@@ -38,7 +38,7 @@
 +(BOOL)haveAuthorizationOfPhoto;
 
 /**
- *  创建相册
+ *  创建相册并下载图片存入相册
  *
  *  @param completion 创建成功，回调yes，否则no
  */

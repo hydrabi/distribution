@@ -19,15 +19,21 @@ static const CGFloat badgeImageCenterXOffset = 18.0f;
 
 #pragma mark - 按钮标题
 static NSString *customTabBarButtonHomeTitle     = @"首页";
-static NSString *customTabBarButtonCollectTitle  = @"收藏";
+static NSString *customTabBarButtonClassifyTitle = @"分类";
+//static NSString *customTabBarButtonCollectTitle  = @"收藏";
 static NSString *customTabBarButtonDiscoverTitle  = @"发现";
+static NSString *customTabBarButtonShoppingCarTitle = @"购物车";
 static NSString *customTabBarButtonPersonalTitle = @"个人";
 
 #pragma mark - 图片名称
 static NSString *customTabbarButtonHomeImage_selected     = @"CustomTabBarHome_Selected";
 static NSString *customTabbarButtonHomeImage              = @"CustomTabBarHome_UnSelected";
-static NSString *customTabbarButtonCollectImage_selected  = @"CustomTabBarCollect_Selected";
-static NSString *customTabbarButtonCollectImage           = @"CustomTabBarCollect_UnSelected";
+//static NSString *customTabbarButtonCollectImage_selected  = @"CustomTabBarCollect_Selected";
+//static NSString *customTabbarButtonCollectImage           = @"CustomTabBarCollect_UnSelected";
+static NSString *customTabbarButtonClassifyImage_selected = @"CustomTabBarClassify_Selected";
+static NSString *customTabbarButtonClassifyImage_unSelected = @"CustomTabBarClassify_UnSelected";
+static NSString *customTabbarButtonShoppingCarImage_selected = @"CustomTabBarShoppingCar_Selected";
+static NSString *customTabbarButtonShoppingCarImage_unSelected = @"CustomTabBarShoppingCar_UnSelected";
 static NSString *customTabbarButtonDiscoverImage_selected  = @"CustomTabBarDiscover_Selected";
 static NSString *customTabbarButtonDiscoverImage           = @"CustomTabBarDiscover_UnSelected";
 static NSString *customTabbarButtonPersonalImage_selected = @"CustomTabBarPersonal_Selected";
@@ -157,16 +163,29 @@ static CGFloat customTabBarButtonImagePer = 0.7;
             }
         }
             break;
-        //收藏
-        case CustomTabBarButtonType_favorite:
+        //分类
+        case CustomTabBarButtonType_classify:
         {
-            [self setTitle:[NSString stringWithString:customTabBarButtonCollectTitle] forState:UIControlStateNormal];
+            [self setTitle:[NSString stringWithString:customTabBarButtonClassifyTitle] forState:UIControlStateNormal];
             if(highlighted){
-                imageName = customTabbarButtonCollectImage_selected;
+                imageName = customTabbarButtonClassifyImage_selected;
                 titleColor = customTabbarButtonTitleSelectedColor;
             }
             else{
-                imageName = customTabbarButtonCollectImage;
+                imageName = customTabbarButtonClassifyImage_unSelected;
+            }
+        }
+            break;
+            //购物车
+        case CustomTabBarButtonType_shoppingCar:
+        {
+            [self setTitle:[NSString stringWithString:customTabBarButtonShoppingCarTitle] forState:UIControlStateNormal];
+            if(highlighted){
+                imageName = customTabbarButtonShoppingCarImage_selected;
+                titleColor = customTabbarButtonTitleSelectedColor;
+            }
+            else{
+                imageName = customTabbarButtonShoppingCarImage_unSelected;
             }
         }
             break;

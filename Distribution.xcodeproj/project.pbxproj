@@ -45,6 +45,20 @@
 		809351BA1C901E4500836F98 /* PersonalSettingFunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809351B81C901E4500836F98 /* PersonalSettingFunctionViewController.xib */; };
 		809351BE1C90275E00836F98 /* PersonalSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 809351BC1C90275E00836F98 /* PersonalSettingTableViewCell.m */; };
 		809351BF1C90275E00836F98 /* PersonalSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809351BD1C90275E00836F98 /* PersonalSettingTableViewCell.xib */; };
+		8096E7861C97A0B600A8344E /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7841C97A0B600A8344E /* ClassifyViewController.m */; };
+		8096E7871C97A0B600A8344E /* ClassifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E7851C97A0B600A8344E /* ClassifyViewController.xib */; };
+		8096E78B1C97A0C600A8344E /* ShoppingCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7891C97A0C600A8344E /* ShoppingCarViewController.m */; };
+		8096E78C1C97A0C600A8344E /* ShoppingCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E78A1C97A0C600A8344E /* ShoppingCarViewController.xib */; };
+		8096E79D1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E79B1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m */; };
+		8096E79E1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E79C1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.xib */; };
+		8096E7A71C98161300A8344E /* VerifyButtonTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7A51C98161300A8344E /* VerifyButtonTextFieldTableViewCell.m */; };
+		8096E7A81C98161300A8344E /* VerifyButtonTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E7A61C98161300A8344E /* VerifyButtonTextFieldTableViewCell.xib */; };
+		8096E7AC1C98193B00A8344E /* CustomLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7AA1C98193B00A8344E /* CustomLoginViewController.m */; };
+		8096E7AD1C98193B00A8344E /* CustomLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E7AB1C98193B00A8344E /* CustomLoginViewController.xib */; };
+		8096E7BA1C981D3300A8344E /* BaseAccountReleateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7B81C981D3300A8344E /* BaseAccountReleateViewController.m */; };
+		8096E7BB1C981D3300A8344E /* BaseAccountReleateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E7B91C981D3300A8344E /* BaseAccountReleateViewController.xib */; };
+		8096E7BE1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7BD1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.m */; };
+		8096E7C11C981D7500A8344E /* BaseAccountReleateTableViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7C01C981D7500A8344E /* BaseAccountReleateTableViewFooter.m */; };
 		80976C071C34E0F200AB6A7D /* UITabelViewSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80976C061C34E0F200AB6A7D /* UITabelViewSeparatorView.m */; };
 		8098A9521C36217600D3D7DF /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098A94F1C36217600D3D7DF /* User+CoreDataProperties.m */; };
 		8098A9531C36217600D3D7DF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8098A9511C36217600D3D7DF /* User.m */; };
@@ -267,6 +281,29 @@
 		809351BB1C90275E00836F98 /* PersonalSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSettingTableViewCell.h; sourceTree = "<group>"; };
 		809351BC1C90275E00836F98 /* PersonalSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSettingTableViewCell.m; sourceTree = "<group>"; };
 		809351BD1C90275E00836F98 /* PersonalSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalSettingTableViewCell.xib; sourceTree = "<group>"; };
+		8096E7831C97A0B600A8344E /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		8096E7841C97A0B600A8344E /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		8096E7851C97A0B600A8344E /* ClassifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyViewController.xib; sourceTree = "<group>"; };
+		8096E7881C97A0C600A8344E /* ShoppingCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCarViewController.h; sourceTree = "<group>"; };
+		8096E7891C97A0C600A8344E /* ShoppingCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCarViewController.m; sourceTree = "<group>"; };
+		8096E78A1C97A0C600A8344E /* ShoppingCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCarViewController.xib; sourceTree = "<group>"; };
+		8096E79A1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPrefixInputTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		8096E79B1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPrefixInputTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		8096E79C1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPrefixInputTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		8096E7A41C98161300A8344E /* VerifyButtonTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyButtonTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		8096E7A51C98161300A8344E /* VerifyButtonTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyButtonTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		8096E7A61C98161300A8344E /* VerifyButtonTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerifyButtonTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		8096E7A91C98193B00A8344E /* CustomLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLoginViewController.h; sourceTree = "<group>"; };
+		8096E7AA1C98193B00A8344E /* CustomLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLoginViewController.m; sourceTree = "<group>"; };
+		8096E7AB1C98193B00A8344E /* CustomLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomLoginViewController.xib; sourceTree = "<group>"; };
+		8096E7B61C981D1C00A8344E /* LoginRegisterAndPasswordMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRegisterAndPasswordMacro.h; sourceTree = "<group>"; };
+		8096E7B71C981D3300A8344E /* BaseAccountReleateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAccountReleateViewController.h; sourceTree = "<group>"; };
+		8096E7B81C981D3300A8344E /* BaseAccountReleateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAccountReleateViewController.m; sourceTree = "<group>"; };
+		8096E7B91C981D3300A8344E /* BaseAccountReleateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseAccountReleateViewController.xib; sourceTree = "<group>"; };
+		8096E7BC1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAccountReleateTableViewHeader.h; sourceTree = "<group>"; };
+		8096E7BD1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAccountReleateTableViewHeader.m; sourceTree = "<group>"; };
+		8096E7BF1C981D7500A8344E /* BaseAccountReleateTableViewFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAccountReleateTableViewFooter.h; sourceTree = "<group>"; };
+		8096E7C01C981D7500A8344E /* BaseAccountReleateTableViewFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAccountReleateTableViewFooter.m; sourceTree = "<group>"; };
 		80976C051C34E0F200AB6A7D /* UITabelViewSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabelViewSeparatorView.h; sourceTree = "<group>"; };
 		80976C061C34E0F200AB6A7D /* UITabelViewSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabelViewSeparatorView.m; sourceTree = "<group>"; };
 		8098A94E1C36217600D3D7DF /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -750,6 +787,113 @@
 			path = PersonalSettingFunction;
 			sourceTree = "<group>";
 		};
+		8096E77F1C97A09E00A8344E /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7801C97A09E00A8344E /* ClassifyViewController */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		8096E7801C97A09E00A8344E /* ClassifyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7831C97A0B600A8344E /* ClassifyViewController.h */,
+				8096E7841C97A0B600A8344E /* ClassifyViewController.m */,
+				8096E7851C97A0B600A8344E /* ClassifyViewController.xib */,
+			);
+			path = ClassifyViewController;
+			sourceTree = "<group>";
+		};
+		8096E7811C97A09E00A8344E /* ShoppingCar */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7821C97A09E00A8344E /* ShoppingCarViewController */,
+			);
+			path = ShoppingCar;
+			sourceTree = "<group>";
+		};
+		8096E7821C97A09E00A8344E /* ShoppingCarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7881C97A0C600A8344E /* ShoppingCarViewController.h */,
+				8096E7891C97A0C600A8344E /* ShoppingCarViewController.m */,
+				8096E78A1C97A0C600A8344E /* ShoppingCarViewController.xib */,
+			);
+			path = ShoppingCarViewController;
+			sourceTree = "<group>";
+		};
+		8096E7991C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8096E79A1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.h */,
+				8096E79B1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m */,
+				8096E79C1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.xib */,
+			);
+			path = CustomPrefixInputTextFieldTableViewCell;
+			sourceTree = "<group>";
+		};
+		8096E79F1C9815B400A8344E /* LoginRegisterAndPassword */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7B51C981D1C00A8344E /* BaseAccountReleate */,
+				8096E7A31C9815E600A8344E /* VerifyButtonTextFieldTableViewCell */,
+				8096E7A01C9815B400A8344E /* CustomForgetPasswordViewController */,
+				8096E7A11C9815B400A8344E /* CustomLoginViewController */,
+				8096E7A21C9815B400A8344E /* CustomRegisterViewController */,
+			);
+			path = LoginRegisterAndPassword;
+			sourceTree = "<group>";
+		};
+		8096E7A01C9815B400A8344E /* CustomForgetPasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomForgetPasswordViewController;
+			sourceTree = "<group>";
+		};
+		8096E7A11C9815B400A8344E /* CustomLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7A91C98193B00A8344E /* CustomLoginViewController.h */,
+				8096E7AA1C98193B00A8344E /* CustomLoginViewController.m */,
+				8096E7AB1C98193B00A8344E /* CustomLoginViewController.xib */,
+			);
+			path = CustomLoginViewController;
+			sourceTree = "<group>";
+		};
+		8096E7A21C9815B400A8344E /* CustomRegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomRegisterViewController;
+			sourceTree = "<group>";
+		};
+		8096E7A31C9815E600A8344E /* VerifyButtonTextFieldTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7A41C98161300A8344E /* VerifyButtonTextFieldTableViewCell.h */,
+				8096E7A51C98161300A8344E /* VerifyButtonTextFieldTableViewCell.m */,
+				8096E7A61C98161300A8344E /* VerifyButtonTextFieldTableViewCell.xib */,
+			);
+			path = VerifyButtonTextFieldTableViewCell;
+			sourceTree = "<group>";
+		};
+		8096E7B51C981D1C00A8344E /* BaseAccountReleate */ = {
+			isa = PBXGroup;
+			children = (
+				8096E7B61C981D1C00A8344E /* LoginRegisterAndPasswordMacro.h */,
+				8096E7B71C981D3300A8344E /* BaseAccountReleateViewController.h */,
+				8096E7B81C981D3300A8344E /* BaseAccountReleateViewController.m */,
+				8096E7B91C981D3300A8344E /* BaseAccountReleateViewController.xib */,
+				8096E7BC1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.h */,
+				8096E7BD1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.m */,
+				8096E7BF1C981D7500A8344E /* BaseAccountReleateTableViewFooter.h */,
+				8096E7C01C981D7500A8344E /* BaseAccountReleateTableViewFooter.m */,
+			);
+			path = BaseAccountReleate;
+			sourceTree = "<group>";
+		};
 		80976C041C34E0F200AB6A7D /* UITabelViewSeparatorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1205,6 +1349,8 @@
 		80C376FC1C21A7FF00464AC0 /* SubViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8096E77F1C97A09E00A8344E /* Classify */,
+				8096E7811C97A09E00A8344E /* ShoppingCar */,
 				80D55EE01C59AC0200B2F0EC /* Discover */,
 				809D0CD21C3F56FB008B1648 /* Conversation */,
 				80A514191C37E1A1007C549B /* Favorite */,
@@ -1616,6 +1762,7 @@
 		80F106F61C157A430009FBA4 /* Distribution */ = {
 			isa = PBXGroup;
 			children = (
+				8096E79F1C9815B400A8344E /* LoginRegisterAndPassword */,
 				80AC83471C58A4D800B955C4 /* LoginAndRegister */,
 				800AD6A01C50E599005BE6A1 /* Tool */,
 				8009BE431C4E42600035A3A1 /* Request */,
@@ -1693,6 +1840,7 @@
 		80F107151C157BEF0009FBA4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				8096E7991C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell */,
 				80E5DB0C1C96682700C2B773 /* PlaceHolderTextView */,
 				809BEF4B1C8C1A6D000B42A4 /* CustomBaseProductList */,
 				80AEC17A1C48C61600467D92 /* CustomShare */,
@@ -1907,6 +2055,7 @@
 				80A0E9831C95115C0070F091 /* area.plist in Resources */,
 				80D55F3A1C59E33900B2F0EC /* AreaPlist.plist in Resources */,
 				80D55EF31C59B2A200B2F0EC /* DiscoverTableViewCell.xib in Resources */,
+				8096E7A81C98161300A8344E /* VerifyButtonTextFieldTableViewCell.xib in Resources */,
 				80DAB3A21C3A0A1300BAF1F4 /* CDIntroduceTableViewCell.xib in Resources */,
 				808AA5131C3D284E0072C8DF /* MBProgressHUD.bundle in Resources */,
 				809BEF561C8C1A9A000B42A4 /* CustomBaseProductListViewController.xib in Resources */,
@@ -1931,6 +2080,7 @@
 				809D0CED1C3F92D0008B1648 /* Localizable.strings in Resources */,
 				80AC83651C58A4D800B955C4 /* LoginView.xib in Resources */,
 				80D55F5C1C59F4AE00B2F0EC /* PersonalMainNameTableViewCell.xib in Resources */,
+				8096E7AD1C98193B00A8344E /* CustomLoginViewController.xib in Resources */,
 				80A514261C37E292007C549B /* FavoriteTableViewCell.xib in Resources */,
 				80D55F3E1C59E33900B2F0EC /* PersonalLocationUIViewController.xib in Resources */,
 				80B0A6F11C899D31008194E2 /* SearchProductViewController.xib in Resources */,
@@ -1947,15 +2097,19 @@
 				802302111C3A6D8C00589979 /* CDImageTableViewCell.xib in Resources */,
 				80D55F2E1C59E33900B2F0EC /* PersonalAgeTableViewCell.xib in Resources */,
 				804CDBB51C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.xib in Resources */,
+				8096E79E1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.xib in Resources */,
 				80D64F021C27E26B00B3493A /* SharePopSelectView.xib in Resources */,
 				808238E91C91488A00A932E2 /* PersonalAboutUsViewController.xib in Resources */,
+				8096E7871C97A0B600A8344E /* ClassifyViewController.xib in Resources */,
 				80D55F401C59E33900B2F0EC /* PersonalHeaderCell.xib in Resources */,
 				80A0E9901C9555820070F091 /* PersonalAddressDetailTableViewCell.xib in Resources */,
 				809BEF591C8C27E7000B42A4 /* FavoriteViewController.xib in Resources */,
 				80D55F661C59FEAD00B2F0EC /* PersonalMainTableViewHeader.xib in Resources */,
+				8096E78C1C97A0C600A8344E /* ShoppingCarViewController.xib in Resources */,
 				80D55F441C59E33900B2F0EC /* PersonalViewController.xib in Resources */,
 				80AC83611C58A4D800B955C4 /* ForgetPasswordView.xib in Resources */,
 				80D55F3C1C59E33900B2F0EC /* PersonalLocationUITableViewCell.xib in Resources */,
+				8096E7BB1C981D3300A8344E /* BaseAccountReleateViewController.xib in Resources */,
 				801FB9CD1C4C97A900A47FD4 /* read_me.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2025,6 +2179,7 @@
 				80AC83621C58A4D800B955C4 /* LoginAndRegisterViewController.m in Sources */,
 				80F1072C1C157D920009FBA4 /* UIColor+Addition.m in Sources */,
 				80D55F351C59E33900B2F0EC /* PersonalGenderTableViewCell.m in Sources */,
+				8096E7AC1C98193B00A8344E /* CustomLoginViewController.m in Sources */,
 				80A3D4D61C2F871E0057F251 /* PlaceHolderView.m in Sources */,
 				80F1071E1C157BEF0009FBA4 /* RootViewController.m in Sources */,
 				80D55F6D1C5A030900B2F0EC /* PersonalMainOrderCellButton.m in Sources */,
@@ -2044,6 +2199,7 @@
 				80AEC1791C48C45C00467D92 /* SGSheetMenu.m in Sources */,
 				809D0CDB1C3F6525008B1648 /* ChatViewController.m in Sources */,
 				80C376F91C21A6A800464AC0 /* SCNavTabBarController.m in Sources */,
+				8096E7BA1C981D3300A8344E /* BaseAccountReleateViewController.m in Sources */,
 				80AAEA111C45E20400BE5BC5 /* AVUser+Attibute.m in Sources */,
 				80A0E98A1C95518F0070F091 /* PersonalAddressDetailViewController.m in Sources */,
 				80C376E51C21A33E00464AC0 /* NavigationController.m in Sources */,
@@ -2086,14 +2242,18 @@
 				80AEC1781C48C45C00467D92 /* SGGridMenu.m in Sources */,
 				8098A9681C366C6A00D3D7DF /* ImageManager.m in Sources */,
 				8098A9691C366C6A00D3D7DF /* PersonlInfoManager.m in Sources */,
+				8096E78B1C97A0C600A8344E /* ShoppingCarViewController.m in Sources */,
 				80D55F3D1C59E33900B2F0EC /* PersonalLocationUIViewController.m in Sources */,
 				808AA50E1C3CB7B80072C8DF /* CustomMWPhotoBrowser.m in Sources */,
 				800117A01C23FB1E00996726 /* CustomArrowButton.m in Sources */,
 				802302101C3A6D8C00589979 /* CDImageTableViewCell.m in Sources */,
+				8096E79D1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m in Sources */,
 				80B0A6F01C899D31008194E2 /* SearchProductViewController.m in Sources */,
+				8096E7861C97A0B600A8344E /* ClassifyViewController.m in Sources */,
 				80AC83641C58A4D800B955C4 /* LoginView.m in Sources */,
 				8081CAB41C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.m in Sources */,
 				80AC835F1C58A4D800B955C4 /* CustomPresentViewController.m in Sources */,
+				8096E7C11C981D7500A8344E /* BaseAccountReleateTableViewFooter.m in Sources */,
 				80D55F311C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.m in Sources */,
 				80D55EE81C59ACC700B2F0EC /* DiscoverViewController.m in Sources */,
 				80F107201C157BEF0009FBA4 /* CustomTabBarButton.m in Sources */,
@@ -2104,11 +2264,13 @@
 				804CDBAF1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m in Sources */,
 				80F107211C157BEF0009FBA4 /* CustomTabBarViewController.m in Sources */,
 				8081CAC01C5B2760001FD68F /* PersonalNicknameAndSignatureFunction.m in Sources */,
+				8096E7A71C98161300A8344E /* VerifyButtonTextFieldTableViewCell.m in Sources */,
 				80E3E63E1C354BD100C066FA /* UserImformation.xcdatamodeld in Sources */,
 				80F106F91C157A430009FBA4 /* main.m in Sources */,
 				80F107241C157C050009FBA4 /* AppDelegate.m in Sources */,
 				80A514251C37E292007C549B /* FavoriteTableViewCell.m in Sources */,
 				80976C071C34E0F200AB6A7D /* UITabelViewSeparatorView.m in Sources */,
+				8096E7BE1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.m in Sources */,
 				80A514291C37E2A2007C549B /* FavoriteDataSource.m in Sources */,
 				809BEF501C8C1A7A000B42A4 /* CustomBaseProductListDataSource.m in Sources */,
 				809D0CD61C3F5754008B1648 /* ConversationListViewController.m in Sources */,

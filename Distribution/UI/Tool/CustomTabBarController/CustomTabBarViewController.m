@@ -15,6 +15,8 @@
 #import "EMSDKFull.h"
 #import "DiscoverViewController.h"
 #import "PersonalMainViewController.h"
+#import "ShoppingCarViewController.h"
+#import "ClassifyViewController.h"
 
 static CGFloat tabBarHeight = 49;
 
@@ -61,18 +63,22 @@ static CGFloat tabBarHeight = 49;
         HomeViewController *vc = [[HomeViewController alloc] init];
         NavigationController *nav = [[NavigationController alloc] initWithRootViewController:vc];
         
-        UIViewController *vc1 = [[UIViewController alloc] init];
+        ClassifyViewController *vc1 = [[ClassifyViewController alloc] init];
         NavigationController *nav1 = [[NavigationController alloc] initWithRootViewController:vc1];
         
         DiscoverViewController *vc2 = [[DiscoverViewController alloc] init];
         NavigationController *nav2 = [[NavigationController alloc] initWithRootViewController:vc2];
         
-        PersonalMainViewController *vc3 = [[PersonalMainViewController alloc] init];
+        ShoppingCarViewController *vc3 = [[ShoppingCarViewController alloc] init];
         NavigationController *nav3 = [[NavigationController alloc] initWithRootViewController:vc3];
+        
+        PersonalMainViewController *vc4 = [[PersonalMainViewController alloc] init];
+        NavigationController *nav4 = [[NavigationController alloc] initWithRootViewController:vc4];
         _controllersArr = @[nav,
                             nav1,
                             nav2,
-                            nav3];
+                            nav3,
+                            nav4];
     }
 }
 

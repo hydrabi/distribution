@@ -113,7 +113,8 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
 -(void)configDataTypeArr{
     AVUser *user = [AVUser currentUser];
     if(user){
-        self.dataTypeArr = user[AVUserKey_addressList];
+        NSArray *temp = user[AVUserKey_addressList];
+        self.dataTypeArr = temp.mutableCopy;
     }
     else{
         self.dataTypeArr = @[].mutableCopy;
@@ -208,6 +209,45 @@ static NSString *tableViewAddressListCellIndentifier = @"tableViewAddressListCel
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsMake(0, 0, 0, 0)];
     }
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+-(NSString*)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return @"删除地址";
+}
+
+//删除收藏
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        
+        [self removeObjectWithIndexPath:indexPath];
+        [tableView beginUpdates];
+        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:[NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationLeft];
+        [tableView endUpdates];
+        
+        if(self.dataTypeArr.count == 0){
+            [tableView reloadData];
+        }
+    }
+}
+
+-(void)removeObjectWithIndexPath:(NSIndexPath*)indexPath{
+    if(self.dataTypeArr.count>indexPath.row){
+        NSDictionary *addressDic = self.dataTypeArr[indexPath.row];
+        AVUser *user = [AVUser currentUser];
+        if(user){
+            [user removeAddressWithDic:addressDic];
+        }
+        [self.dataTypeArr removeObjectAtIndex:indexPath.row];
+    }
+    
 }
 
 #pragma mark - DZNEmptyDataSetDelegate

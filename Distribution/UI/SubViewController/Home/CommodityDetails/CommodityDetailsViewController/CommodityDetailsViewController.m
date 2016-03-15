@@ -112,7 +112,9 @@
         BOOL favorited                 = [user containFavoriteObjectId:self.object.objectId];
         [self hadAddFavorite:favorited];
     }
-    
+    else{
+        [self hadAddFavorite:NO];
+    }
     
     [self.shoppingCarButton setBackgroundColor:[UIColor colorWithHexString:@"ff4400" alpha:0.6]];
     [self.shoppingCarButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -200,7 +202,7 @@
     
     self.photos = photos;
     // Create browser
-    CustomMWPhotoBrowser *browser = [[CustomMWPhotoBrowser alloc] initWithDelegate:self];
+    CustomMWPhotoBrowser *browser = [[CustomMWPhotoBrowser alloc] initWithPhotos:imageArr delegate:self];
     //右上角按钮
     browser.displayActionButton = YES;
     //底部页面切换toolBar

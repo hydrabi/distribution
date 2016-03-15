@@ -72,15 +72,17 @@ static CGFloat tabBarHeight = 44.0f;
 #pragma mark - 定制当前需要使用的tabbar按钮
 +(CustomTabBar*)customFoodDeliverTabBar{
     CustomTabBarButton *button = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_home];
-    CustomTabBarButton *button1 = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_favorite];
+    CustomTabBarButton *button1 = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_classify];
     CustomTabBarButton *button2 = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_discover];
-    CustomTabBarButton *button3 = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_personal];
+    CustomTabBarButton *button3 = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_shoppingCar];
+    CustomTabBarButton *button4 = [[CustomTabBarButton alloc] initWithButtonType:CustomTabBarButtonType_personal];
     
     CustomTabBar *tabBar = [[CustomTabBar alloc] initWithButtonsArr:@[
                                                                       button,
                                                                       button1,
                                                                       button2,
-                                                                      button3
+                                                                      button3,
+                                                                      button4
                                                                       ]
                                                        defaultIndex:0];
     return tabBar;

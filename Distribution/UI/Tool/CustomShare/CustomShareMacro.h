@@ -22,6 +22,7 @@
 #define WeiXinFriendsShareTitle @"微信朋友圈"
 #define WeiBoShareTitle @"新浪微博"
 #define ZhiFuBaoShareTitle @"支付宝"
+#define ZhiFuBaoHomeShareTitle @"支付宝生活圈"
 
 #define TencentShareImageName @"share_qq"
 #define TencentZoneShareImageName @"share_qq"
@@ -29,5 +30,6 @@
 #define WeiXinFrinedsShareImageName @"share_friends"
 #define WeiBoShareImageName @"share_weibo"
 #define ZhiFuBaoShareImageName @"share_zhifubao"
+#define ZhiFuBaoHomeShareImageName @"share_zhifubao"
 
 #endif /* CustomShareMacro_h */

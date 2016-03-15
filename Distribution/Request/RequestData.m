@@ -101,7 +101,9 @@
 //        }];
 //        [dataTask resume];
         
-        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:imageUrls[i]] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize){
+        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:imageUrls[i]]
+                                                              options:SDWebImageDownloaderUseNSURLCache
+                                                             progress:^(NSInteger receivedSize, NSInteger expectedSize){
             
         }completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished){
             if(image){

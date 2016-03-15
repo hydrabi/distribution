@@ -11,8 +11,9 @@
 /**定制tabBar按钮类型*/
 typedef NS_ENUM(NSInteger,CustomTabBarButtonType) {
     CustomTabBarButtonType_home,                    /**<首页*/
-    CustomTabBarButtonType_favorite,                /**<收藏*/
+    CustomTabBarButtonType_classify,                /**<分类*/
     CustomTabBarButtonType_discover,                /**<发现*/
+    CustomTabBarButtonType_shoppingCar,             /**<购物车*/
     CustomTabBarButtonType_personal                 /**<个人*/
 };
 
