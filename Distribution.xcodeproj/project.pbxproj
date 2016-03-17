@@ -125,6 +125,13 @@
 		80AEC1961C48E1E400467D92 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AEC1951C48E1E400467D92 /* libstdc++.tbd */; };
 		80B0A6F01C899D31008194E2 /* SearchProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B0A6EE1C899D31008194E2 /* SearchProductViewController.m */; };
 		80B0A6F11C899D31008194E2 /* SearchProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B0A6EF1C899D31008194E2 /* SearchProductViewController.xib */; };
+		80C139E61C999B0300BD7D35 /* CustomForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C139E41C999B0300BD7D35 /* CustomForgetPasswordViewController.m */; };
+		80C139E71C999B0300BD7D35 /* CustomForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C139E51C999B0300BD7D35 /* CustomForgetPasswordViewController.xib */; };
+		80C139EB1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C139E91C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m */; };
+		80C139EC1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C139EA1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.xib */; };
+		80C139F01C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C139EE1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m */; };
+		80C139F11C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C139EF1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib */; };
+		80C139F41C99A47F00BD7D35 /* AccountNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C139F31C99A47F00BD7D35 /* AccountNavigationManager.m */; };
 		80C376E51C21A33E00464AC0 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C376E41C21A33E00464AC0 /* NavigationController.m */; };
 		80C376F81C21A6A800464AC0 /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80C376EF1C21A6A800464AC0 /* SCNavTabBar.bundle */; };
 		80C376F91C21A6A800464AC0 /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C376F21C21A6A800464AC0 /* SCNavTabBarController.m */; };
@@ -421,6 +428,17 @@
 		80B0A6EE1C899D31008194E2 /* SearchProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchProductViewController.m; sourceTree = "<group>"; };
 		80B0A6EF1C899D31008194E2 /* SearchProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchProductViewController.xib; sourceTree = "<group>"; };
 		80BA9D421C44F9B800A6057F /* PersonlInfoMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonlInfoMacro.h; sourceTree = "<group>"; };
+		80C139E31C999B0300BD7D35 /* CustomForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomForgetPasswordViewController.h; sourceTree = "<group>"; };
+		80C139E41C999B0300BD7D35 /* CustomForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomForgetPasswordViewController.m; sourceTree = "<group>"; };
+		80C139E51C999B0300BD7D35 /* CustomForgetPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		80C139E81C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRegisterFirstStepViewController.h; sourceTree = "<group>"; };
+		80C139E91C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRegisterFirstStepViewController.m; sourceTree = "<group>"; };
+		80C139EA1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRegisterFirstStepViewController.xib; sourceTree = "<group>"; };
+		80C139ED1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRegisterSecondStepViewController.h; sourceTree = "<group>"; };
+		80C139EE1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRegisterSecondStepViewController.m; sourceTree = "<group>"; };
+		80C139EF1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRegisterSecondStepViewController.xib; sourceTree = "<group>"; };
+		80C139F21C99A47F00BD7D35 /* AccountNavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountNavigationManager.h; sourceTree = "<group>"; };
+		80C139F31C99A47F00BD7D35 /* AccountNavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountNavigationManager.m; sourceTree = "<group>"; };
 		80C376E31C21A33E00464AC0 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		80C376E41C21A33E00464AC0 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		80C376EE1C21A6A800464AC0 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
@@ -836,6 +854,7 @@
 		8096E79F1C9815B400A8344E /* LoginRegisterAndPassword */ = {
 			isa = PBXGroup;
 			children = (
+				80C139E21C999A2B00BD7D35 /* AccountNavigationManager */,
 				8096E7B51C981D1C00A8344E /* BaseAccountReleate */,
 				8096E7A31C9815E600A8344E /* VerifyButtonTextFieldTableViewCell */,
 				8096E7A01C9815B400A8344E /* CustomForgetPasswordViewController */,
@@ -848,6 +867,9 @@
 		8096E7A01C9815B400A8344E /* CustomForgetPasswordViewController */ = {
 			isa = PBXGroup;
 			children = (
+				80C139E31C999B0300BD7D35 /* CustomForgetPasswordViewController.h */,
+				80C139E41C999B0300BD7D35 /* CustomForgetPasswordViewController.m */,
+				80C139E51C999B0300BD7D35 /* CustomForgetPasswordViewController.xib */,
 			);
 			path = CustomForgetPasswordViewController;
 			sourceTree = "<group>";
@@ -865,6 +887,12 @@
 		8096E7A21C9815B400A8344E /* CustomRegisterViewController */ = {
 			isa = PBXGroup;
 			children = (
+				80C139E81C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.h */,
+				80C139E91C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m */,
+				80C139EA1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.xib */,
+				80C139ED1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.h */,
+				80C139EE1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m */,
+				80C139EF1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib */,
 			);
 			path = CustomRegisterViewController;
 			sourceTree = "<group>";
@@ -1304,6 +1332,15 @@
 				80B0A6EF1C899D31008194E2 /* SearchProductViewController.xib */,
 			);
 			path = SearchProductViewController;
+			sourceTree = "<group>";
+		};
+		80C139E21C999A2B00BD7D35 /* AccountNavigationManager */ = {
+			isa = PBXGroup;
+			children = (
+				80C139F21C99A47F00BD7D35 /* AccountNavigationManager.h */,
+				80C139F31C99A47F00BD7D35 /* AccountNavigationManager.m */,
+			);
+			path = AccountNavigationManager;
 			sourceTree = "<group>";
 		};
 		80C376E21C21A32100464AC0 /* NavigationController */ = {
@@ -2052,6 +2089,7 @@
 				80AEC1871C48DEFB00467D92 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				80D55F721C5A0A3200B2F0EC /* PersonalMainOrderTableViewCell.xib in Resources */,
 				80D55F611C59FA0700B2F0EC /* PersonalMainNormalTableViewCell.xib in Resources */,
+				80C139E71C999B0300BD7D35 /* CustomForgetPasswordViewController.xib in Resources */,
 				80A0E9831C95115C0070F091 /* area.plist in Resources */,
 				80D55F3A1C59E33900B2F0EC /* AreaPlist.plist in Resources */,
 				80D55EF31C59B2A200B2F0EC /* DiscoverTableViewCell.xib in Resources */,
@@ -2061,6 +2099,7 @@
 				809BEF561C8C1A9A000B42A4 /* CustomBaseProductListViewController.xib in Resources */,
 				80D55F321C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.xib in Resources */,
 				80F1072E1C157F870009FBA4 /* Assets.xcassets in Resources */,
+				80C139EC1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.xib in Resources */,
 				804CDBAE1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib in Resources */,
 				808797EA1C943068003F91E3 /* PersonalAddressListViewController.xib in Resources */,
 				80ABE25C1C38BBE000D4041C /* CDMainTableViewCell.xib in Resources */,
@@ -2068,6 +2107,7 @@
 				804CDBB01C96872A009ABDF6 /* CustomInputTextViewTableViewCell.xib in Resources */,
 				80D55F301C59E33900B2F0EC /* PersonalAgeViewController.xib in Resources */,
 				809351BF1C90275E00836F98 /* PersonalSettingTableViewCell.xib in Resources */,
+				80C139F11C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib in Resources */,
 				80C376F81C21A6A800464AC0 /* SCNavTabBar.bundle in Resources */,
 				80A0E9811C9506FE0070F091 /* PersonalAddressListTableViewCell.xib in Resources */,
 				80A514371C380917007C549B /* CustomControllerTitleView.xib in Resources */,
@@ -2209,6 +2249,7 @@
 				80A514351C38090E007C549B /* CustomControllerTitleView.m in Sources */,
 				8098A9521C36217600D3D7DF /* User+CoreDataProperties.m in Sources */,
 				80AEC1801C48D20C00467D92 /* AppDelegate+OpenShare.m in Sources */,
+				80C139F01C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m in Sources */,
 				80D55F4F1C59E4A700B2F0EC /* PersonalTableViewDataSource.m in Sources */,
 				80AC83601C58A4D800B955C4 /* ForgetPasswordView.m in Sources */,
 				809351B91C901E4500836F98 /* PersonalSettingFunctionViewController.m in Sources */,
@@ -2234,12 +2275,14 @@
 				8098A9581C36373300D3D7DF /* UIAlertView+Addition.m in Sources */,
 				80E5DB001C96568100C2B773 /* PersonalManageerAddressViewController.m in Sources */,
 				80A514201C37E279007C549B /* FavoriteViewController.m in Sources */,
+				80C139EB1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m in Sources */,
 				809D31761C8F1146002D3A1F /* ClassifyView.m in Sources */,
 				808797E91C943068003F91E3 /* PersonalAddressListViewController.m in Sources */,
 				8080F4AA1C8E9FC8005306EA /* UIImageView+Addition.m in Sources */,
 				80D55F431C59E33900B2F0EC /* PersonalViewController.m in Sources */,
 				80AEC1761C48C45C00467D92 /* SGAlertMenu.m in Sources */,
 				80AEC1781C48C45C00467D92 /* SGGridMenu.m in Sources */,
+				80C139F41C99A47F00BD7D35 /* AccountNavigationManager.m in Sources */,
 				8098A9681C366C6A00D3D7DF /* ImageManager.m in Sources */,
 				8098A9691C366C6A00D3D7DF /* PersonlInfoManager.m in Sources */,
 				8096E78B1C97A0C600A8344E /* ShoppingCarViewController.m in Sources */,
@@ -2281,6 +2324,7 @@
 				80D55F391C59E33900B2F0EC /* AreaObject.m in Sources */,
 				80D55F2D1C59E33900B2F0EC /* PersonalAgeTableViewCell.m in Sources */,
 				80D55F641C59FE9D00B2F0EC /* PersonalMainTableViewHeader.m in Sources */,
+				80C139E61C999B0300BD7D35 /* CustomForgetPasswordViewController.m in Sources */,
 				80D55F411C59E33900B2F0EC /* PersonalNormalCell.m in Sources */,
 				80FDE1171C32C82B00652555 /* UIView+Addition.m in Sources */,
 				808238E81C91488A00A932E2 /* PersonalAboutUsViewController.m in Sources */,

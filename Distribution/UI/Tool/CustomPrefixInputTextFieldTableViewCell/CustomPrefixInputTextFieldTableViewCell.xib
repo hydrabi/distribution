@@ -17,11 +17,11 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2i-F0-Fl7">
                         <rect key="frame" x="12" y="22" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIv-Fl-QQT">
-                        <rect key="frame" x="12" y="0.0" width="296" height="43.5"/>
+                        <rect key="frame" x="24" y="0.0" width="284" height="43.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
@@ -30,7 +30,7 @@
                     <constraint firstItem="i2i-F0-Fl7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0aD-Kh-uTM"/>
                     <constraint firstAttribute="trailing" secondItem="lIv-Fl-QQT" secondAttribute="trailing" constant="12" id="4Me-1P-H9G"/>
                     <constraint firstAttribute="bottom" secondItem="lIv-Fl-QQT" secondAttribute="bottom" id="5GM-ce-NkA"/>
-                    <constraint firstItem="lIv-Fl-QQT" firstAttribute="leading" secondItem="i2i-F0-Fl7" secondAttribute="trailing" id="CEZ-zP-RpL"/>
+                    <constraint firstItem="lIv-Fl-QQT" firstAttribute="leading" secondItem="i2i-F0-Fl7" secondAttribute="trailing" constant="12" id="CEZ-zP-RpL"/>
                     <constraint firstItem="i2i-F0-Fl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ncS-yc-45B"/>
                     <constraint firstItem="lIv-Fl-QQT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xoE-oU-TwH"/>
                 </constraints>

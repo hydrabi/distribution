@@ -17,6 +17,7 @@
 #import "FavoriteViewController.h"
 #import "ShoppingCarViewController.h"
 #import "ClassifyViewController.h"
+#import "BaseAccountReleateViewController.h"
 @interface NavigationController ()<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 
 @end
@@ -55,7 +56,13 @@
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     [super pushViewController:viewController animated:YES];
+    
+    if([viewController isKindOfClass:[BaseAccountReleateViewController class]]){
+        return;
+    }
+    
     [[AppDelegate getRootController] hideTabbar];
+    
 }
 
 #pragma mark - UINavigationControllerDelegate
@@ -82,6 +89,11 @@
     }
     if([viewController isKindOfClass:[ShoppingCarViewController class]]){
         [[AppDelegate getRootController] configTabBarConstraint];
+        return;
+    }
+    
+    if([viewController isKindOfClass:[BaseAccountReleateViewController class]]){
+        
         return;
     }
     

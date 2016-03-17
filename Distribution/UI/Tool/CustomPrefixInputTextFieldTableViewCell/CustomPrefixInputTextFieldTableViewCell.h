@@ -7,8 +7,9 @@
 //  带有前缀的textField输入cell
 
 #import <UIKit/UIKit.h>
-
+#import "LoginRegisterAndPasswordMacro.h"
 @interface CustomPrefixInputTextFieldTableViewCell : UITableViewCell
 @property (nonatomic,weak)IBOutlet UILabel *titleLabel;
 @property (nonatomic,weak)IBOutlet UITextField *textField;
+@property (nonatomic,assign)AccountReleateCellType type;
 @end

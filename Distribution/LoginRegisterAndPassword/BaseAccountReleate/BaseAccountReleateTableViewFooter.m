@@ -18,6 +18,7 @@
     self = [super initWithFrame:frame];
     if(self){
         self.type = type;
+        self.userInteractionEnabled = YES;
         [self UIConfig];
     }
     return self;
@@ -25,7 +26,7 @@
 
 -(UIButton*)mainButton{
     if(!_mainButton){
-        _mainButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _mainButton = [[UIButton alloc] init];
         [_mainButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_mainButton setBackgroundColor:[UIColor colorWithHexString:@"ff5000" alpha:1]];
         _mainButton.titleLabel.font = [UIFont systemFontOfSize:18.0f];
@@ -37,9 +38,10 @@
 
 -(UIButton*)subButton{
     if(!_subButton){
-        _subButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _subButton = [[UIButton alloc] init];
         [_subButton setTitleColor:[UIColor colorWithHexString:@"9b9ba3" alpha:1] forState:UIControlStateNormal];
-        _subButton.titleLabel.font = [UIFont systemFontOfSize:18.0f];
+        [_subButton.titleLabel setTextAlignment:NSTextAlignmentRight];
+        _subButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
     }
     return _subButton;
 }
@@ -58,7 +60,8 @@
     }];
 
     [self.subButton makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(weakSelf.mainButton.bottom).offset(@10);
+        make.top.equalTo(weakSelf.mainButton.bottom);
+        make.height.equalTo(@40);
         make.trailing.equalTo(weakSelf.mainButton.trailingMargin);
     }];
     [self resetTitleWithMyType];

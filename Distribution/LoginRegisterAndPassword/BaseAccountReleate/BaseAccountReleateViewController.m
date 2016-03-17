@@ -16,7 +16,7 @@
 #import "BaseAccountReleateTableViewFooter.h"
 
 @interface BaseAccountReleateViewController ()
-@property (nonatomic,weak)IBOutlet UITableView *tableView;
+@property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)BaseAccountReleateTableViewFooter *footerView;
 @end
 
@@ -58,9 +58,20 @@
 
 #pragma mark - configUI
 -(void)UIConfig{
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    [self.view addSubview:self.tableView];
+    __weak typeof(self)weakSelf = self;
+    [self.tableView makeConstraints:^(MASConstraintMaker* make){
+        make.leading.equalTo(weakSelf.view.leading);
+        make.trailing.equalTo(weakSelf.view.trailing);
+        make.top.equalTo(weakSelf.view.top);
+        make.bottom.equalTo(weakSelf.view.bottom);
+    }];
+    
     self.tableView.backgroundColor      = Global_TableViewBackgroundColor;
     self.tableView.delegate             = self;
     self.tableView.dataSource           = self;
+    self.tableView.keyboardDismissMode  = UIScrollViewKeyboardDismissModeOnDrag;
     
     if(self.type!=AccountReleateViewControllerType_Login){
         self.tableView.tableHeaderView = [[BaseAccountReleateTableViewHeader alloc] initWithType:self.type frame:CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), BaseAccountTableViewHeaderHeight)];
@@ -98,6 +109,15 @@
     
     
 }
+
+-(AccountReleateCellType)getSpecificTypeWithIndexPath:(NSIndexPath*)indexPath{
+    AccountReleateCellType type;
+    if(self.dataTypeArr.count>indexPath.row){
+        type = (AccountReleateCellType)[self.dataTypeArr[indexPath.row] integerValue];
+    }
+    return type;
+}
+
 #pragma mark - 注册tableView要用到的所有CellNib
 -(void)registerCellNib{
     UINib *verifyCellNib = [UINib nibWithNibName:NSStringFromClass([VerifyButtonTextFieldTableViewCell class]) bundle:nil];
@@ -140,7 +160,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     CGFloat height = 10;
-    if(self.type == AccountReleateViewControllerType_Login){
+    if(self.type != AccountReleateViewControllerType_Login){
         height = 0.1;
     }
     return height;

@@ -10,6 +10,7 @@
 #import "LoginAndRegisterViewController.h"
 #import "AppDelegate.h"
 #import "UIColor+Addition.h"
+#import "AccountNavigationManager.h"
 #define animationDuration 0.3f
 @interface LoginNavigationControllerViewController ()
 
@@ -48,8 +49,10 @@
 }
 
 -(void)showWithRootViewController{
-    RootViewController *root = [AppDelegate getRootController];
-    [[LoginNavigationControllerViewController shareInstance] showWithParent:root.view];
+//    RootViewController *root = [AppDelegate getRootController];
+//    [[LoginNavigationControllerViewController shareInstance] showWithParent:root.view];
+    
+    
 }
 
 -(void)showWithParent:(UIView *)parentView{

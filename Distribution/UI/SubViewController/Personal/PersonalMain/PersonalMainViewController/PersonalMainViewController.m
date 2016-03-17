@@ -17,6 +17,7 @@
 #import "PersonalTraceFunction.h"
 #import "PersonalSettingFunctionViewController.h"
 #import "FavoriteViewController.h"
+#import "AccountNavigationManager.h"
 
 @interface PersonalMainViewController ()<PersonalMainTableViewDataSourceDelegate>
 
@@ -73,7 +74,8 @@
 -(void)didSelectRowOfPersonalMainDataType:(PersonalMainTableDataType)type{
     if(![[PersonlInfoManager shareManager] hadLogin]){
         //未登录，弹出登录框
-        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
+//        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
+        [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_Login];
         return;
     }
     
