@@ -12,6 +12,7 @@
 #import "ConversationListViewController.h"
 #import "AppDelegate.h"
 #import "NSArray+Addition.h"
+#import "DiscoverSubListViewController.h"
 @interface DiscoverViewController ()<DiscoverTableViewDataSourceDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -66,6 +67,13 @@
             ConversationListViewController *vc = [[ConversationListViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             [[AppDelegate getRootController] hideTabbar];
+        }
+            break;
+        case DiscoverTableDataType_newActivity:
+        case DiscoverTableDataType_notification:
+        {
+            DiscoverSubListViewController *vc = [[DiscoverSubListViewController alloc] initWithType:type];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             

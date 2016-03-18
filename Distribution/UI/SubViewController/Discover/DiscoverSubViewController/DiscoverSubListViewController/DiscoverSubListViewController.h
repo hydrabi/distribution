@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DiscoverlMacro.h"
 @interface DiscoverSubListViewController : UIViewController
-
+-(instancetype)initWithType:(DiscoverTableDataType)type;
 @end

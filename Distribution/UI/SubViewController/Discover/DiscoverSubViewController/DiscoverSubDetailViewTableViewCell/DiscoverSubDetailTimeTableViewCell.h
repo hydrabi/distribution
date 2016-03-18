@@ -1,5 +1,5 @@
 //
-//  DiscoverSubViewListTableViewCell.h
+//  DiscoverSubDetailTimeTableViewCell.h
 //  Distribution
 //
 //  Created by Hydra on 16/3/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiscoverSubViewListTableViewCell : UITableViewCell
--(void)resetValueWithObject:(AVObject*)object;
+@interface DiscoverSubDetailTimeTableViewCell : UITableViewCell
+
 @end

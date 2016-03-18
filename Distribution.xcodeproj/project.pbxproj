@@ -10,6 +10,16 @@
 		8001179C1C23D90600996726 /* CollectionViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8001179B1C23D90600996726 /* CollectionViewFooter.m */; };
 		800117A01C23FB1E00996726 /* CustomArrowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8001179F1C23FB1E00996726 /* CustomArrowButton.m */; };
 		800117A31C23FD5100996726 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 800117A21C23FD5100996726 /* NSString+Addition.m */; };
+		8006CA3E1C9C4AEA006D6634 /* DiscoverSubDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006CA3C1C9C4AEA006D6634 /* DiscoverSubDetailViewController.m */; };
+		8006CA3F1C9C4AEA006D6634 /* DiscoverSubDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8006CA3D1C9C4AEA006D6634 /* DiscoverSubDetailViewController.xib */; };
+		8006CA431C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006CA411C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.m */; };
+		8006CA441C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8006CA421C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.xib */; };
+		8006CA481C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006CA461C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.m */; };
+		8006CA491C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8006CA471C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.xib */; };
+		8006CA4D1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006CA4B1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.m */; };
+		8006CA4E1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8006CA4C1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.xib */; };
+		8006CA521C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8006CA501C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.m */; };
+		8006CA531C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8006CA511C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.xib */; };
 		8009BE461C4E43340035A3A1 /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8009BE451C4E43340035A3A1 /* RequestData.m */; };
 		800AD69E1C50A91D005BE6A1 /* MyMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 800AD69D1C50A91D005BE6A1 /* MyMD5.m */; };
 		800AD6A41C50E599005BE6A1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 800AD6A31C50E599005BE6A1 /* Reachability.m */; };
@@ -222,6 +232,21 @@
 		8001179F1C23FB1E00996726 /* CustomArrowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomArrowButton.m; sourceTree = "<group>"; };
 		800117A11C23FD5100996726 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
 		800117A21C23FD5100996726 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		8006CA3B1C9C4AEA006D6634 /* DiscoverSubDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubDetailViewController.h; sourceTree = "<group>"; };
+		8006CA3C1C9C4AEA006D6634 /* DiscoverSubDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubDetailViewController.m; sourceTree = "<group>"; };
+		8006CA3D1C9C4AEA006D6634 /* DiscoverSubDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubDetailViewController.xib; sourceTree = "<group>"; };
+		8006CA401C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubDetailTitleTableViewCell.h; sourceTree = "<group>"; };
+		8006CA411C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubDetailTitleTableViewCell.m; sourceTree = "<group>"; };
+		8006CA421C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubDetailTitleTableViewCell.xib; sourceTree = "<group>"; };
+		8006CA451C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubDetailImageTableViewCell.h; sourceTree = "<group>"; };
+		8006CA461C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubDetailImageTableViewCell.m; sourceTree = "<group>"; };
+		8006CA471C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubDetailImageTableViewCell.xib; sourceTree = "<group>"; };
+		8006CA4A1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubDetailIntroduceTableViewCell.h; sourceTree = "<group>"; };
+		8006CA4B1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubDetailIntroduceTableViewCell.m; sourceTree = "<group>"; };
+		8006CA4C1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubDetailIntroduceTableViewCell.xib; sourceTree = "<group>"; };
+		8006CA4F1C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubDetailTimeTableViewCell.h; sourceTree = "<group>"; };
+		8006CA501C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubDetailTimeTableViewCell.m; sourceTree = "<group>"; };
+		8006CA511C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubDetailTimeTableViewCell.xib; sourceTree = "<group>"; };
 		8009BE441C4E43340035A3A1 /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
 		8009BE451C4E43340035A3A1 /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
 		800AD69C1C50A91D005BE6A1 /* MyMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMD5.h; sourceTree = "<group>"; };
@@ -618,6 +643,35 @@
 				8001179F1C23FB1E00996726 /* CustomArrowButton.m */,
 			);
 			path = CustomArrowButton;
+			sourceTree = "<group>";
+		};
+		8006CA391C9C4AC9006D6634 /* DiscoverSubDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8006CA3B1C9C4AEA006D6634 /* DiscoverSubDetailViewController.h */,
+				8006CA3C1C9C4AEA006D6634 /* DiscoverSubDetailViewController.m */,
+				8006CA3D1C9C4AEA006D6634 /* DiscoverSubDetailViewController.xib */,
+			);
+			path = DiscoverSubDetailViewController;
+			sourceTree = "<group>";
+		};
+		8006CA3A1C9C4AC9006D6634 /* DiscoverSubDetailViewTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8006CA401C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.h */,
+				8006CA411C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.m */,
+				8006CA421C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.xib */,
+				8006CA451C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.h */,
+				8006CA461C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.m */,
+				8006CA471C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.xib */,
+				8006CA4A1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.h */,
+				8006CA4B1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.m */,
+				8006CA4C1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.xib */,
+				8006CA4F1C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.h */,
+				8006CA501C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.m */,
+				8006CA511C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.xib */,
+			);
+			path = DiscoverSubDetailViewTableViewCell;
 			sourceTree = "<group>";
 		};
 		8009BE431C4E42600035A3A1 /* Request */ = {
@@ -1400,6 +1454,8 @@
 		80D55EE31C59AC0200B2F0EC /* DiscoverSubViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8006CA391C9C4AC9006D6634 /* DiscoverSubDetailViewController */,
+				8006CA3A1C9C4AC9006D6634 /* DiscoverSubDetailViewTableViewCell */,
 				80C1EF371C9C2386003A827D /* DiscoverSubListViewController */,
 				80C1EF3B1C9C2386003A827D /* DiscoverSubViewListTableViewCell */,
 			);
@@ -2038,6 +2094,7 @@
 				80DAB3A21C3A0A1300BAF1F4 /* CDIntroduceTableViewCell.xib in Resources */,
 				808AA5131C3D284E0072C8DF /* MBProgressHUD.bundle in Resources */,
 				809BEF561C8C1A9A000B42A4 /* CustomBaseProductListViewController.xib in Resources */,
+				8006CA3F1C9C4AEA006D6634 /* DiscoverSubDetailViewController.xib in Resources */,
 				80D55F321C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.xib in Resources */,
 				80F1072E1C157F870009FBA4 /* Assets.xcassets in Resources */,
 				80C1EF421C9C23E6003A827D /* DiscoverSubViewListTableViewCell.xib in Resources */,
@@ -2059,11 +2116,13 @@
 				80D55EE91C59ACC700B2F0EC /* DiscoverViewController.xib in Resources */,
 				8081CAB51C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.xib in Resources */,
 				809D0CED1C3F92D0008B1648 /* Localizable.strings in Resources */,
+				8006CA531C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.xib in Resources */,
 				80D55F5C1C59F4AE00B2F0EC /* PersonalMainNameTableViewCell.xib in Resources */,
 				80C1EF3D1C9C2386003A827D /* DiscoverSubListViewController.xib in Resources */,
 				8096E7AD1C98193B00A8344E /* CustomLoginViewController.xib in Resources */,
 				80A514261C37E292007C549B /* FavoriteTableViewCell.xib in Resources */,
 				80D55F3E1C59E33900B2F0EC /* PersonalLocationUIViewController.xib in Resources */,
+				8006CA491C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.xib in Resources */,
 				80B0A6F11C899D31008194E2 /* SearchProductViewController.xib in Resources */,
 				80D55F381C59E33900B2F0EC /* PersonalGenderViewController.xib in Resources */,
 				80E5DB011C96568100C2B773 /* PersonalManageerAddressViewController.xib in Resources */,
@@ -2071,6 +2130,7 @@
 				80F107071C157A430009FBA4 /* LaunchScreen.storyboard in Resources */,
 				80D55F2C1C59E33900B2F0EC /* PersonalTableViewFooter.xib in Resources */,
 				80ABE2521C38B63900D4041C /* CommodityDetailsViewController.xib in Resources */,
+				8006CA441C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.xib in Resources */,
 				80D55F421C59E33900B2F0EC /* PersonalNormalCell.xib in Resources */,
 				8081CAC11C5B2760001FD68F /* PersonalNicknameAndSignatureFunction.xib in Resources */,
 				80D64F041C27E26B00B3493A /* SharePopSelectViewTableViewCell.xib in Resources */,
@@ -2088,6 +2148,7 @@
 				8096E78C1C97A0C600A8344E /* ShoppingCarViewController.xib in Resources */,
 				80D55F441C59E33900B2F0EC /* PersonalViewController.xib in Resources */,
 				80D55F3C1C59E33900B2F0EC /* PersonalLocationUITableViewCell.xib in Resources */,
+				8006CA4E1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.xib in Resources */,
 				8096E7BB1C981D3300A8344E /* BaseAccountReleateViewController.xib in Resources */,
 				801FB9CD1C4C97A900A47FD4 /* read_me.txt in Resources */,
 			);
@@ -2193,6 +2254,7 @@
 				809351B91C901E4500836F98 /* PersonalSettingFunctionViewController.m in Sources */,
 				8001179C1C23D90600996726 /* CollectionViewFooter.m in Sources */,
 				808AA5111C3CBBEF0072C8DF /* AppDelegate+Ease.m in Sources */,
+				8006CA3E1C9C4AEA006D6634 /* DiscoverSubDetailViewController.m in Sources */,
 				80FF3E781C22628F00A08713 /* CollectionViewCell.m in Sources */,
 				808797EE1C9431F0003F91E3 /* PersonalAddressListFooterView.m in Sources */,
 				80D55F711C5A0A3200B2F0EC /* PersonalMainOrderTableViewCell.m in Sources */,
@@ -2213,6 +2275,7 @@
 				80C1EF311C9C18CF003A827D /* ClassifyViewController.m in Sources */,
 				80A514201C37E279007C549B /* FavoriteViewController.m in Sources */,
 				80C139EB1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m in Sources */,
+				8006CA481C9C4D08006D6634 /* DiscoverSubDetailImageTableViewCell.m in Sources */,
 				80C1EF411C9C23E6003A827D /* DiscoverSubViewListTableViewCell.m in Sources */,
 				808797E91C943068003F91E3 /* PersonalAddressListViewController.m in Sources */,
 				8080F4AA1C8E9FC8005306EA /* UIImageView+Addition.m in Sources */,
@@ -2229,6 +2292,7 @@
 				802302101C3A6D8C00589979 /* CDImageTableViewCell.m in Sources */,
 				8096E79D1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m in Sources */,
 				80B0A6F01C899D31008194E2 /* SearchProductViewController.m in Sources */,
+				8006CA4D1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.m in Sources */,
 				8081CAB41C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.m in Sources */,
 				8096E7C11C981D7500A8344E /* BaseAccountReleateTableViewFooter.m in Sources */,
 				80D55F311C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.m in Sources */,
@@ -2236,7 +2300,9 @@
 				80F107201C157BEF0009FBA4 /* CustomTabBarButton.m in Sources */,
 				80D55F2B1C59E33900B2F0EC /* PersonalTableViewFooter.m in Sources */,
 				8009BE461C4E43340035A3A1 /* RequestData.m in Sources */,
+				8006CA431C9C4CEA006D6634 /* DiscoverSubDetailTitleTableViewCell.m in Sources */,
 				809BEF551C8C1A9A000B42A4 /* CustomBaseProductListViewController.m in Sources */,
+				8006CA521C9C4D48006D6634 /* DiscoverSubDetailTimeTableViewCell.m in Sources */,
 				800AD69E1C50A91D005BE6A1 /* MyMD5.m in Sources */,
 				804CDBAF1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m in Sources */,
 				80F107211C157BEF0009FBA4 /* CustomTabBarViewController.m in Sources */,

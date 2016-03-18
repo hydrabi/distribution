@@ -1,5 +1,5 @@
 //
-//  DiscoverSubViewListTableViewCell.h
+//  DiscoverSubDetailIntroduceTableViewCell.h
 //  Distribution
 //
 //  Created by Hydra on 16/3/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiscoverSubViewListTableViewCell : UITableViewCell
+@interface DiscoverSubDetailIntroduceTableViewCell : UITableViewCell
 -(void)resetValueWithObject:(AVObject*)object;
 @end

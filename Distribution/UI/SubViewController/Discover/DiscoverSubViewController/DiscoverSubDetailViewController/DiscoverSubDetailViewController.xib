@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoverSubListViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoverSubDetailViewController">
             <connections>
-                <outlet property="tableView" destination="hvN-QW-zgj" id="qPr-2l-HZn"/>
+                <outlet property="tableView" destination="a5W-Y4-IuZ" id="W3B-au-zBh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,17 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hvN-QW-zgj">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5W-Y4-IuZ">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="hvN-QW-zgj" secondAttribute="bottom" id="54r-Y2-iSi"/>
-                <constraint firstItem="hvN-QW-zgj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Apc-U4-lbB"/>
-                <constraint firstAttribute="trailing" secondItem="hvN-QW-zgj" secondAttribute="trailing" id="GUh-sL-4qy"/>
-                <constraint firstItem="hvN-QW-zgj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hdt-Ze-xj0"/>
+                <constraint firstItem="a5W-Y4-IuZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sq9-MB-0cY"/>
+                <constraint firstAttribute="trailing" secondItem="a5W-Y4-IuZ" secondAttribute="trailing" id="TrD-Rh-Yo0"/>
+                <constraint firstItem="a5W-Y4-IuZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Y2Q-zq-lDZ"/>
+                <constraint firstAttribute="bottom" secondItem="a5W-Y4-IuZ" secondAttribute="bottom" id="q6n-vH-2h7"/>
             </constraints>
             <point key="canvasLocation" x="168" y="221"/>
         </view>

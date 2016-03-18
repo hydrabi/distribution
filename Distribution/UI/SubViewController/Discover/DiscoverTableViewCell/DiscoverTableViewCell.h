@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DiscoverTableViewDataSourceDelegate.h"
+#import "DiscoverlMacro.h"
 
 @interface DiscoverTableViewCell : UITableViewCell
 

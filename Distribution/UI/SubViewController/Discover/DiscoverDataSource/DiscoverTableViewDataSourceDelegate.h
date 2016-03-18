@@ -6,11 +6,7 @@
 //  Copyright © 2016年 distribution. All rights reserved.
 //
 
-typedef NS_ENUM(NSInteger, DiscoverTableDataType) {
-    DiscoverTableDataType_service,          /**<客服*/
-    DiscoverTableDataType_notification,     /**<通知*/
-    DiscoverTableDataType_newActivity,      /**<最新活动*/
-};
+#import "DiscoverlMacro.h"
 
 /**
  *  用于回调发现控制器操作
