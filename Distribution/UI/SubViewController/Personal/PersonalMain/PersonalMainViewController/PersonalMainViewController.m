@@ -13,11 +13,10 @@
 #import "UIColor+Addition.h"
 #import "PersonalViewController.h"
 #import "AppDelegate.h"
-#import "LoginNavigationControllerViewController.h"
 #import "PersonalTraceFunction.h"
 #import "PersonalSettingFunctionViewController.h"
 #import "FavoriteViewController.h"
-#import "AccountNavigationManager.h"
+#import "RequestLocation.h"
 
 @interface PersonalMainViewController ()<PersonalMainTableViewDataSourceDelegate>
 
@@ -36,6 +35,7 @@
     [self configUI];
     [self configDataSoucre];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStatusChange) name:Notification_LoginStatusChange object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStatusChange) name:Notification_LocationChange object:nil];
     __weak typeof(self)weakSelf = self;
     self.callBack = ^(PersonalMainOrderCellButtonType type){
         [weakSelf clickButtonWithType:type];
@@ -74,7 +74,6 @@
 -(void)didSelectRowOfPersonalMainDataType:(PersonalMainTableDataType)type{
     if(![[PersonlInfoManager shareManager] hadLogin]){
         //未登录，弹出登录框
-//        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
         [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_Login];
         return;
     }
@@ -99,6 +98,11 @@
             PersonalSettingFunctionViewController *setting = [[PersonalSettingFunctionViewController alloc] init];
             [self.navigationController pushViewController:setting animated:YES];
             [[AppDelegate getRootController]hideTabbar];
+        }
+            break;
+        case PersonalMainTableDataType_location:
+        {
+            [[RequestLocation shareInstance] openGPSWithHUD:YES];
         }
             break;
         default:

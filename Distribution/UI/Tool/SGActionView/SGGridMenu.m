@@ -8,7 +8,7 @@
 
 #import "SGGridMenu.h"
 #import <QuartzCore/QuartzCore.h>
-
+#import "UIColor+Addition.h"
 #define kMAX_CONTENT_SCROLLVIEW_HEIGHT   400
 
 @interface SGGridItem : UIButton
@@ -26,6 +26,7 @@
         self.titleLabel.font = [UIFont systemFontOfSize:13];
         self.titleLabel.backgroundColor = [UIColor clearColor];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.adjustsFontSizeToFitWidth = YES;
         [self setTitle:title forState:UIControlStateNormal];
         [self setTitleColor:BaseMenuTextColor(self.menu.style) forState:UIControlStateNormal];
         [self setImage:image forState:UIControlStateNormal];

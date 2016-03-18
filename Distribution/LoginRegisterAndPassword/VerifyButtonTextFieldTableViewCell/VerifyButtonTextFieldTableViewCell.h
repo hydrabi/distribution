@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^verifyButtonCallBack) (BOOL canVerify);
+
+@protocol VerifyButtonTextFieldTableViewCellDelegate <NSObject>
+
+-(void)verifyButtonClick:(void(^)(BOOL canVery))callBack;
+
+@end
+
 @interface VerifyButtonTextFieldTableViewCell : UITableViewCell
 @property (nonatomic,weak)IBOutlet UILabel *titleLabel;
 @property (nonatomic,weak)IBOutlet UITextField *textField;
 @property (nonatomic,weak)IBOutlet UIButton *verifyButton;
+@property (nonatomic,weak)id<VerifyButtonTextFieldTableViewCellDelegate> delegate;
+@property (nonatomic,copy)verifyButtonCallBack callBack;
 @end

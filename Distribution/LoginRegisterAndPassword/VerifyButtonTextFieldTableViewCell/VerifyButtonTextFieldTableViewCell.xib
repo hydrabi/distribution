@@ -31,6 +31,9 @@
                             <constraint firstAttribute="width" constant="120" id="kpV-7j-25t"/>
                         </constraints>
                         <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="verifyButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ntb-Sd-Ew6"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

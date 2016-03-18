@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseAccountReleateViewController.h"
 @interface CustomRegisterSecondStepViewController : BaseAccountReleateViewController
+@property (nonatomic,strong)NSString *telephone;
+@property (nonatomic,strong)NSString *verifyCode;
 +(instancetype)shareInstance;
 @end

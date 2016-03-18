@@ -10,9 +10,9 @@
 #define CustomShareMacro_h
 
 //AppId,Key
-#define TencentAppId @"222222"
-#define WeiXinAppId @"wxd930ea5d5a258f4f"
-#define WeiboAppKey @"3038575036"
+#define TencentAppId @"1105262304"                   // 222222
+#define WeiXinAppId @"wx2e450bacbe2c8145"  //wxd930ea5d5a258f4f
+#define WeiboAppKey @"1473126341"           //3038575036
 #define WeiboAppRedirectURL @"https://api.weibo.com/oauth2/default.html"
 
 //分享图片，名称
@@ -25,11 +25,11 @@
 #define ZhiFuBaoHomeShareTitle @"支付宝生活圈"
 
 #define TencentShareImageName @"share_qq"
-#define TencentZoneShareImageName @"share_qq"
+#define TencentZoneShareImageName @"share_qqzone"
 #define WeiXinShareImageName @"share_friends"
-#define WeiXinFrinedsShareImageName @"share_friends"
+#define WeiXinFrinedsShareImageName @"share_weixinFriend"
 #define WeiBoShareImageName @"share_weibo"
 #define ZhiFuBaoShareImageName @"share_zhifubao"
-#define ZhiFuBaoHomeShareImageName @"share_zhifubao"
+#define ZhiFuBaoHomeShareImageName @"share_zhifubaoLife"
 
 #endif /* CustomShareMacro_h */

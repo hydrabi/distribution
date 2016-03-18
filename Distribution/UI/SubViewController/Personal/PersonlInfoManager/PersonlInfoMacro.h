@@ -39,5 +39,6 @@ typedef NS_ENUM(NSInteger,AVUserAttributeType) {
 #define AVUserKey_addressLocation        @"AVUserKey_addressLocation"       //收货地址的位置，即省，区，市等
 #define AVUserKey_addressLocationDic     @"AVUserKey_addressLocationDic"    //收货地址的位置相对选择省区市的picker的位置
 #define AVUserKey_addressDetail          @"AVUserKey_addressDetail"         //收货地址的详细部分，即街道，房号等
+#define AVUserKey_adviceFeedback         @"AVUserKey_adviceFeedback"        //意见反馈
 
 #endif /* PersonlInfoMacro_h */

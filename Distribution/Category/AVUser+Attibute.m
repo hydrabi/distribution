@@ -475,4 +475,23 @@
         NSLog(@"设置默认地址失败");
     }
 }
+
+#pragma mark - 意见反馈
+-(void)addAdviceWithStr:(NSString*)advice{
+    AVUser *user = [AVUser currentUser];
+    if(user && advice.length>0){
+        [user addObject:advice forKey:AVUserKey_adviceFeedback];
+        [user saveEventually:^(BOOL success,NSError *error){
+            if(success){
+                [MBProgressHUD showSuccess:@"意见反馈成功！"];
+            }
+            else{
+                [MBProgressHUD showError:@"意见反馈失败！"];
+            }
+        }];
+    }
+    else{
+        NSLog(@"添加新地址失败");
+    }
+}
 @end

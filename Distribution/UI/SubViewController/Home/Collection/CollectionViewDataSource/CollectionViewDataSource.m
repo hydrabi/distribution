@@ -100,6 +100,14 @@
         }
         
     }
+    else{
+        NSInteger index = indexPath.section*CollectViewColumnCount +indexPath.row;
+        if(self.dataArr.count>index){
+            AVObject *object = self.dataArr[index];
+            self.callback(indexPath,object);
+        }
+        
+    }
 }
 
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout

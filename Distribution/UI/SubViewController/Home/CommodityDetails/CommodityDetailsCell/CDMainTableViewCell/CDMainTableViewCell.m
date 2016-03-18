@@ -139,6 +139,22 @@
     self.productNumberLabel.text   = [localData objectForKey:@"productnumber"];
 
     self.brandNameLabel.text           = @"耐克";
+    
+    if(![[PersonlInfoManager shareManager] hadLogin]){
+        self.distributePriceLabel.text = @"登录可查看";
+        self.distributePriceLabel.font = [UIFont systemFontOfSize:13];
+        self.distributePriceLabel.textColor = [UIColor colorWithHexString:@"3d3d3d" alpha:1];
+        
+        self.suggestPriceLabel.text    = @"登录可查看";
+        self.suggestPriceLabel.font = [UIFont systemFontOfSize:13];
+        self.suggestPriceLabel.textColor = [UIColor colorWithHexString:@"3d3d3d" alpha:1];
+    }
+    else{
+        self.distributePriceLabel.font = [UIFont systemFontOfSize:15];
+        self.distributePriceLabel.textColor = [UIColor colorWithHexString:@"ff633b" alpha:1];
+        self.suggestPriceLabel.font = [UIFont systemFontOfSize:15];
+        self.suggestPriceLabel.textColor = [UIColor colorWithHexString:@"ff633b" alpha:1];
+    }
 }
 
 #pragma mark - size大小按钮点击
@@ -182,50 +198,7 @@
 }
 
 #pragma mark - 收藏
-/**按钮点击事件*/
-//-(void)favoriteButtonClick{
-//    AVUser *user = [AVUser currentUser];
-//    //已经登录
-//    if(user){
-//        BOOL favorited = [user containFavoriteObjectId:self.object.objectId];
-//        //未加入收藏，商品加入收藏
-//        if(!favorited){
-//            [user addFavoriteWithObjectId:self.object];
-//            [MBProgressHUD showSuccess:@"加入收藏成功！"];
-//            [self hadAddFavorite:YES];
-//            
-//        }
-//        else{
-//            [user removeFavoriteWithObjectId:self.object];
-//            [MBProgressHUD showSuccess:@"取消收藏成功！"];
-//            [self hadAddFavorite:NO];
-//            
-//        }
-//    }
-//    //未登录，弹出登录框
-//    else{
-//        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
-//    }
-//}
 
-/**根据是否收藏按钮的显示状态不同*/
-//-(void)hadAddFavorite:(BOOL)favorite{
-//    UIFont *font                           = [UIFont systemFontOfSize:15.0f];
-//    //未加入收藏
-//    if(!favorite){
-//        [self.favoriteButton configButtonImageName:@"favoriteButtonHeart" title:@"加入收藏" middleOffset:5.0f buttonHeight:CommodityDetailsFavoriteButtonHeight titleFont:font];
-//        [self.favoriteButton setBackgroundColor:[UIColor colorWithHexString:@"ff4400" alpha:0.2]];
-//        [self.favoriteButton setTitleColor:[UIColor colorWithHexString:@"ff4400" alpha:1] forState:UIControlStateNormal];
-//        self.favoriteButton.layer.borderColor  = [UIColor colorWithHexString:@"ff4400" alpha:0.3].CGColor;
-//    }
-//    //已加入收藏
-//    else{
-//        [self.favoriteButton configButtonImageName:nil title:@"取消收藏" middleOffset:5.0f buttonHeight:CommodityDetailsFavoriteButtonHeight titleFont:font];
-//        [self.favoriteButton setBackgroundColor:[UIColor grayColor]];
-//        self.favoriteButton.layer.borderColor  = [UIColor grayColor].CGColor;
-//        [self.favoriteButton setTitleColor:[UIColor colorWithHexString:@"ffffff" alpha:1] forState:UIControlStateNormal];
-//    }
-//}
 
 -(void)imageTagAction:(UITapGestureRecognizer*)tap{
     if(self.delegate && [self.delegate respondsToSelector:@selector(clickImageCell:)]){

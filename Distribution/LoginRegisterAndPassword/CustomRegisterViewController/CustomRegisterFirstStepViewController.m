@@ -9,11 +9,11 @@
 #import "CustomRegisterFirstStepViewController.h"
 #import "CustomPrefixInputTextFieldTableViewCell.h"
 #import "VerifyButtonTextFieldTableViewCell.h"
-#import "AccountNavigationManager.h"
 
-@interface CustomRegisterFirstStepViewController ()
+@interface CustomRegisterFirstStepViewController ()<VerifyButtonTextFieldTableViewCellDelegate,UITextFieldDelegate>
 @property (nonatomic,weak)UITextField *telephoneTextField;
 @property (nonatomic,weak)UITextField *verifyTextField;
+@property (nonatomic,weak)UIButton *verifyButton;
 @end
 
 @implementation CustomRegisterFirstStepViewController
@@ -46,7 +46,7 @@
 -(void)returnButtonClick{
     [super returnButtonClick];
     [[AccountNavigationManager shareInstance] hideNavWithCompletion:^{
-        
+        [[AccountNavigationManager shareInstance] clearRegisterTextField];
     }];
 }
 
@@ -57,11 +57,17 @@
 }
 
 -(void)mainButtonClick{
-    [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_RegisterSecond];
-}
-
--(void)subButtonClick{
+    if(self.telephoneTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入您的手机号!"];
+        return;
+    }
     
+    if(self.verifyTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入验证码!"];
+        return;
+    }
+    
+    [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_RegisterSecond];
 }
 
 #pragma mark - tableviewDelegate
@@ -82,6 +88,8 @@
         {
             VerifyButtonTextFieldTableViewCell *verifyCell = [tableView dequeueReusableCellWithIdentifier:verifyButtonTextFieldTableViewCellReuseIdentifier forIndexPath:indexPath];
             self.verifyTextField = verifyCell.textField;
+            self.verifyButton = verifyCell.verifyButton;
+            verifyCell.delegate = self;
             cell = (UITableViewCell*)verifyCell;
         }
             break;
@@ -93,4 +101,38 @@
     return cell;
 }
 
+/**验证码按钮点击*/
+-(void)verifyButtonClick:(void (^)(BOOL))callBack{
+    
+    if(self.telephoneTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入您的手机号!"];
+        return;
+    }
+    
+    //获取验证码
+    [[PersonlInfoManager shareManager] leanCloudRequestVerifyCodeWithTelephone:self.telephoneTextField.text password:nil completiton:^(BOOL success,NSError *error){
+        if(!error){
+            [MBProgressHUD showSuccess:@"获取验证码成功！"];
+        }
+        else{
+            [MBProgressHUD showError:@"获取验证码失败！"];
+        }
+    }];
+    
+    callBack(YES);
+}
+
+#pragma mark - 获取手机号码和验证码
+-(NSString*)getTelephoneString{
+    return self.telephoneTextField.text;
+}
+
+-(NSString*)getVerifyCode{
+    return self.verifyTextField.text;
+}
+
+-(void)clearTextField{
+    self.telephoneTextField.text = @"";
+    self.verifyTextField.text = @"";
+}
 @end

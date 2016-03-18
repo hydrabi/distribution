@@ -40,7 +40,6 @@
 -(void)configUI{
     self.tableView.backgroundColor = DiscoverTableViewBackgroundColor;
     self.title = Global_DiscoverNavigationTitleName;
-    [self navigationItemConfig];
 }
 
 -(void)navigationItemConfig{

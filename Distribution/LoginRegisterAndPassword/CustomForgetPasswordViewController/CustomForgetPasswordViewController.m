@@ -9,11 +9,12 @@
 #import "CustomForgetPasswordViewController.h"
 #import "CustomPrefixInputTextFieldTableViewCell.h"
 #import "VerifyButtonTextFieldTableViewCell.h"
-#import "AccountNavigationManager.h"
-@interface CustomForgetPasswordViewController ()
+#import "PersonlInfoManager.h"
+@interface CustomForgetPasswordViewController ()<VerifyButtonTextFieldTableViewCellDelegate,UITextFieldDelegate>
 @property (nonatomic,weak)UITextField *telephoneTextField;
 @property (nonatomic,weak)UITextField *virifyTextField;
 @property (nonatomic,weak)UITextField *passwordTextField;
+@property (nonatomic,weak)UIButton *verifyButton;
 @end
 
 @implementation CustomForgetPasswordViewController
@@ -58,14 +59,28 @@
 }
 
 -(void)mainButtonClick{
+    if(self.telephoneTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入您的手机号!"];
+        return;
+    }
     
-}
-
--(void)subButtonClick{
+    if(self.passwordTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入密码!"];
+        return;
+    }
     
+    if(self.virifyTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入验证码!"];
+        return;
+    }
+    
+    if(self.passwordTextField.text.length<6 || self.passwordTextField.text.length>12){
+        [MBProgressHUD showError:@"密码长度大于6位且不超过12位!"];
+        return;
+    }
+    
+    [self verifyPrepare];
 }
-
-
 
 #pragma mark - tableviewDelegate
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -85,6 +100,8 @@
         {
             VerifyButtonTextFieldTableViewCell *verifyCell = [tableView dequeueReusableCellWithIdentifier:verifyButtonTextFieldTableViewCellReuseIdentifier forIndexPath:indexPath];
             self.virifyTextField = verifyCell.textField;
+            self.verifyButton = verifyCell.verifyButton;
+            verifyCell.delegate = self;
             cell = (UITableViewCell*)verifyCell;
         }
             break;
@@ -92,6 +109,7 @@
         {
             CustomPrefixInputTextFieldTableViewCell *passwordCell = [tableView dequeueReusableCellWithIdentifier:customPrefixInputTextFieldTableViewCellReuseIdentifier forIndexPath:indexPath];
             self.passwordTextField = passwordCell.textField;
+            self.passwordTextField.delegate = self;
             [passwordCell setType:type];
             cell = (UITableViewCell*)passwordCell;
         }
@@ -102,6 +120,72 @@
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    //done的返回键点击
+    if(textField.returnKeyType == UIReturnKeyDone){
+        [self mainButtonClick];
+    }
+    return YES;
+}
+#pragma mark - action
+/**验证码按钮点击*/
+-(void)verifyButtonClick:(void (^)(BOOL))callBack{
+    
+    if(self.telephoneTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入您的手机号!"];
+        return;
+    }
+    //获取验证码
+    [[PersonlInfoManager shareManager] leanCloudRequestForgetPasswordVerifyCodeWithTelephone:self.telephoneTextField.text completiton:^(BOOL success,NSError *error){
+        if(!error){
+            [MBProgressHUD showSuccess:@"获取验证码成功！"];
+        }
+        else{
+            [MBProgressHUD showError:@"获取验证码失败！"];
+        }
+    }];
+    
+    callBack(YES);
+}
+
+#pragma mark - 验证操作
+//验证准备
+-(void)verifyPrepare{
+    [self.view endEditing:YES];
+    [self verifyRequest];
+}
+
+//验证请求
+-(void)verifyRequest{
+    [[PersonlInfoManager shareManager] leanCloudVerifyForgetPasswordVerifyCodeWith:self.virifyTextField.text
+                                                                         telephone:self.telephoneTextField.text
+                                                                       newPassword:self.passwordTextField.text
+                                                                       completiton:^(BOOL success,NSError *error){
+                                                                           
+                                                                           [self verifyCompleteWithResult:success];
+                                                                       }];
+}
+
+-(void)verifyCompleteWithResult:(BOOL)result{
+    if(result){
+        [MBProgressHUD showSuccess:@"密码重置成功，请重新登录！"];
+        [self clearTextField];
+        [self returnButtonClick];
+    }
+    else{
+        [MBProgressHUD showError:@"密码重置失败！"];
+        NSLog(@"密码重置失败！");
+        self.virifyTextField.text = @"";
+    }
+}
+
+-(void)clearTextField{
+    self.telephoneTextField.text = @"";
+    self.passwordTextField.text = @"";
+    self.virifyTextField.text = @"";
 }
 
 @end

@@ -10,4 +10,6 @@
 #import "BaseAccountReleateViewController.h"
 @interface CustomRegisterFirstStepViewController : BaseAccountReleateViewController
 +(instancetype)shareInstance;
+-(NSString*)getTelephoneString;
+-(NSString*)getVerifyCode;
 @end

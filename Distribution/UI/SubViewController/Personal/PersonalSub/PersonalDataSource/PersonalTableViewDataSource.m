@@ -12,10 +12,7 @@
 #import "PersonalMacro.h"
 #import "PersonalTableViewFooter.h"
 #import "AppDelegate.h"
-#import "LoginAndRegisterViewController.h"
-#import "LoginNavigationControllerViewController.h"
 #import "PersonalMacro.h"
-#import "AccountNavigationManager.h"
 
 static NSString *tableViewNormalCellIndentifier = @"tableViewNormalCellIndentifier";
 static NSString *tableViewHeadCellIndentifier = @"tableViewHeadCellIndentifier";
@@ -95,10 +92,7 @@ static NSString *tableViewHeadCellIndentifier = @"tableViewHeadCellIndentifier";
         }];
     }
     else{
-//        RootViewController *root = [AppDelegate getRootController];
-//        [LoginAndRegisterViewController shareInstance].delegate = (id)self.delegate;
-//        [[LoginNavigationControllerViewController shareInstance] showWithParent:root.view];
-        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
+        [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_Login];
     }
 }
 

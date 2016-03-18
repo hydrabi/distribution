@@ -97,7 +97,13 @@
             self.subButton.hidden = YES;
         }
             break;
-            
+        case AccountReleateViewControllerType_adviceFeedBack:
+        {
+            [self.mainButton setTitle:@"点击提交" forState:UIControlStateNormal];
+            [self.subButton setTitle:@"" forState:UIControlStateNormal];
+            self.subButton.hidden = YES;
+        }
+            break;
         default:
             break;
     }

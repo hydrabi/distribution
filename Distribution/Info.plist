@@ -47,7 +47,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wxd930ea5d5a258f4f</string>
+				<string>wx2e450bacbe2c8145</string>
 			</array>
 		</dict>
 		<dict>
@@ -83,6 +83,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

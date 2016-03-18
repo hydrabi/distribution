@@ -10,7 +10,6 @@
 #import "PersonalMacro.h"
 #import "PersonlInfoManager.h"
 #import "ImageManager.h"
-#import "LoginNavigationControllerViewController.h"
 #define logoImageWidthAndHeight 80.0f
 
 @interface ClassifyViewTableViewHeader()
@@ -79,7 +78,7 @@
     rect = self.backgroundImage.frame;
     if(![[PersonlInfoManager shareManager] hadLogin]){
         //未登录，弹出登录框
-        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
+        [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_Login];
     }
 }
 

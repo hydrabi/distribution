@@ -10,7 +10,6 @@
 #import "LoginAndRegisterViewController.h"
 #import "AppDelegate.h"
 #import "UIColor+Addition.h"
-#import "AccountNavigationManager.h"
 #define animationDuration 0.3f
 @interface LoginNavigationControllerViewController ()
 

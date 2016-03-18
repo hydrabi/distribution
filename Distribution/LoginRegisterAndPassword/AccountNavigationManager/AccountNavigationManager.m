@@ -148,6 +148,8 @@
         case AccountReleateViewControllerType_RegisterSecond:
         {
             if(self.isPresenting){
+                self.registerSecondStepViewController.telephone = [self.registerFirstStepViewController getTelephoneString];
+                self.registerSecondStepViewController.verifyCode = [self.registerFirstStepViewController getVerifyCode];
                 [self.registerNav pushViewController:self.registerSecondStepViewController animated:YES];
             }
             
@@ -190,5 +192,10 @@
         }
     }
     self.presenting = NO;
+}
+
+-(void)clearRegisterTextField{
+    [self.registerFirstStepViewController clearTextField];
+    [self.registerSecondStepViewController clearTextField];
 }
 @end

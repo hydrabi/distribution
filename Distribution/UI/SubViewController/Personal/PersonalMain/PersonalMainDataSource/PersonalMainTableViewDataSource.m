@@ -153,7 +153,9 @@ static NSString *tableViewOrderHeaderCellIndentifier = @"tableViewOrderHeaderCel
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     CGFloat height = 0.1;
-    
+    if(section == self.dataTypeArr.count-1){
+        height = 10;
+    }
     return height;
 }
 

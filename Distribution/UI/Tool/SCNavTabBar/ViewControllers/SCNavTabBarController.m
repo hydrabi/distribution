@@ -251,9 +251,6 @@
 //        [_sharePopSelectView showSharePopView];
         
         
-        if(self.homeDelegate && [self.homeDelegate respondsToSelector:@selector(showClassifyView)]){
-            [self.homeDelegate showClassifyView];
-        }
     }
     else{
         [self scrollToViewWithIndex:index];

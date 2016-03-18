@@ -154,4 +154,7 @@
  *  @param dic 收货地址信息
  */
 -(void)makeDefaultAddressWithDic:(NSDictionary*)dic completition:(void (^)(BOOL success,NSError *error))completition;
+
+#pragma mark - 意见反馈
+-(void)addAdviceWithStr:(NSString*)advice;
 @end

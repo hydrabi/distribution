@@ -65,6 +65,10 @@
 -(void)loginStatusChange{
     [self.dataSource reloadTableViewData];
     [self.dataSource resetTableViewFooter];
+    AVUser *user = [AVUser currentUser];
+    if(!user){
+        [self returnButtonClick];
+    }
 }
 
 #pragma mark - configUI
@@ -168,7 +172,7 @@
             break;
         case PersonalTableDataType_modifyPassword:
         {
-            
+            [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_forgetPassword];
         }
             break;
         default:

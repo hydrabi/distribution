@@ -38,15 +38,10 @@
 		808AA50E1C3CB7B80072C8DF /* CustomMWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA50D1C3CB7B80072C8DF /* CustomMWPhotoBrowser.m */; };
 		808AA5111C3CBBEF0072C8DF /* AppDelegate+Ease.m in Sources */ = {isa = PBXBuildFile; fileRef = 808AA5101C3CBBEF0072C8DF /* AppDelegate+Ease.m */; };
 		808AA5131C3D284E0072C8DF /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 808AA5121C3D284E0072C8DF /* MBProgressHUD.bundle */; };
-		809351AF1C8FAE4D00836F98 /* ClassifyViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 809351AD1C8FAE4D00836F98 /* ClassifyViewTableViewCell.m */; };
-		809351B01C8FAE4D00836F98 /* ClassifyViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809351AE1C8FAE4D00836F98 /* ClassifyViewTableViewCell.xib */; };
-		809351B31C8FAE9600836F98 /* ClassifyViewTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 809351B21C8FAE9600836F98 /* ClassifyViewTableViewHeader.m */; };
 		809351B91C901E4500836F98 /* PersonalSettingFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809351B71C901E4500836F98 /* PersonalSettingFunctionViewController.m */; };
 		809351BA1C901E4500836F98 /* PersonalSettingFunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809351B81C901E4500836F98 /* PersonalSettingFunctionViewController.xib */; };
 		809351BE1C90275E00836F98 /* PersonalSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 809351BC1C90275E00836F98 /* PersonalSettingTableViewCell.m */; };
 		809351BF1C90275E00836F98 /* PersonalSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809351BD1C90275E00836F98 /* PersonalSettingTableViewCell.xib */; };
-		8096E7861C97A0B600A8344E /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7841C97A0B600A8344E /* ClassifyViewController.m */; };
-		8096E7871C97A0B600A8344E /* ClassifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E7851C97A0B600A8344E /* ClassifyViewController.xib */; };
 		8096E78B1C97A0C600A8344E /* ShoppingCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E7891C97A0C600A8344E /* ShoppingCarViewController.m */; };
 		8096E78C1C97A0C600A8344E /* ShoppingCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E78A1C97A0C600A8344E /* ShoppingCarViewController.xib */; };
 		8096E79D1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E79B1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m */; };
@@ -74,7 +69,6 @@
 		809D0CD61C3F5754008B1648 /* ConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D0CD51C3F5754008B1648 /* ConversationListViewController.m */; };
 		809D0CDB1C3F6525008B1648 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D0CDA1C3F6525008B1648 /* ChatViewController.m */; };
 		809D0CED1C3F92D0008B1648 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 809D0CEF1C3F92D0008B1648 /* Localizable.strings */; };
-		809D31761C8F1146002D3A1F /* ClassifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D31751C8F1146002D3A1F /* ClassifyView.m */; };
 		80A0E9801C9506FE0070F091 /* PersonalAddressListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0E97E1C9506FE0070F091 /* PersonalAddressListTableViewCell.m */; };
 		80A0E9811C9506FE0070F091 /* PersonalAddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A0E97F1C9506FE0070F091 /* PersonalAddressListTableViewCell.xib */; };
 		80A0E9831C95115C0070F091 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80A0E9821C95115C0070F091 /* area.plist */; };
@@ -98,15 +92,6 @@
 		80ABE25B1C38BBE000D4041C /* CDMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ABE2591C38BBE000D4041C /* CDMainTableViewCell.m */; };
 		80ABE25C1C38BBE000D4041C /* CDMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80ABE25A1C38BBE000D4041C /* CDMainTableViewCell.xib */; };
 		80ABE2601C38CCB200D4041C /* CustomImageAndTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ABE25F1C38CCB200D4041C /* CustomImageAndTitleButton.m */; };
-		80AC835F1C58A4D800B955C4 /* CustomPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC834A1C58A4D800B955C4 /* CustomPresentViewController.m */; };
-		80AC83601C58A4D800B955C4 /* ForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC834D1C58A4D800B955C4 /* ForgetPasswordView.m */; };
-		80AC83611C58A4D800B955C4 /* ForgetPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC834E1C58A4D800B955C4 /* ForgetPasswordView.xib */; };
-		80AC83621C58A4D800B955C4 /* LoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC83511C58A4D800B955C4 /* LoginAndRegisterViewController.m */; };
-		80AC83631C58A4D800B955C4 /* LoginNavigationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC83541C58A4D800B955C4 /* LoginNavigationControllerViewController.m */; };
-		80AC83641C58A4D800B955C4 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC83581C58A4D800B955C4 /* LoginView.m */; };
-		80AC83651C58A4D800B955C4 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC83591C58A4D800B955C4 /* LoginView.xib */; };
-		80AC83661C58A4D800B955C4 /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AC835D1C58A4D800B955C4 /* RegisterView.m */; };
-		80AC83671C58A4D800B955C4 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AC835E1C58A4D800B955C4 /* RegisterView.xib */; };
 		80AEC1751C48C45C00467D92 /* SGActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEC16C1C48C45C00467D92 /* SGActionView.m */; };
 		80AEC1761C48C45C00467D92 /* SGAlertMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEC16E1C48C45C00467D92 /* SGAlertMenu.m */; };
 		80AEC1771C48C45C00467D92 /* SGBaseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEC1701C48C45C00467D92 /* SGBaseMenu.m */; };
@@ -132,6 +117,19 @@
 		80C139F01C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C139EE1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m */; };
 		80C139F11C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C139EF1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib */; };
 		80C139F41C99A47F00BD7D35 /* AccountNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C139F31C99A47F00BD7D35 /* AccountNavigationManager.m */; };
+		80C1EF0B1C9BDC38003A827D /* RequestLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF0A1C9BDC38003A827D /* RequestLocation.m */; };
+		80C1EF0D1C9BDC50003A827D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C1EF0C1C9BDC50003A827D /* libsqlite3.0.tbd */; };
+		80C1EF111C9BDC96003A827D /* CSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF0F1C9BDC96003A827D /* CSqlite.m */; };
+		80C1EF121C9BDC96003A827D /* gps.db in Resources */ = {isa = PBXBuildFile; fileRef = 80C1EF101C9BDC96003A827D /* gps.db */; };
+		80C1EF181C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF161C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.m */; };
+		80C1EF191C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1EF171C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.xib */; };
+		80C1EF2F1C9C18CF003A827D /* ClassifyViewCollectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF2A1C9C18CF003A827D /* ClassifyViewCollectViewCell.m */; };
+		80C1EF301C9C18CF003A827D /* ClassifyViewCollectViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1EF2B1C9C18CF003A827D /* ClassifyViewCollectViewCell.xib */; };
+		80C1EF311C9C18CF003A827D /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF2E1C9C18CF003A827D /* ClassifyViewController.m */; };
+		80C1EF3C1C9C2386003A827D /* DiscoverSubListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF391C9C2386003A827D /* DiscoverSubListViewController.m */; };
+		80C1EF3D1C9C2386003A827D /* DiscoverSubListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1EF3A1C9C2386003A827D /* DiscoverSubListViewController.xib */; };
+		80C1EF411C9C23E6003A827D /* DiscoverSubViewListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C1EF3F1C9C23E6003A827D /* DiscoverSubViewListTableViewCell.m */; };
+		80C1EF421C9C23E6003A827D /* DiscoverSubViewListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C1EF401C9C23E6003A827D /* DiscoverSubViewListTableViewCell.xib */; };
 		80C376E51C21A33E00464AC0 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C376E41C21A33E00464AC0 /* NavigationController.m */; };
 		80C376F81C21A6A800464AC0 /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80C376EF1C21A6A800464AC0 /* SCNavTabBar.bundle */; };
 		80C376F91C21A6A800464AC0 /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C376F21C21A6A800464AC0 /* SCNavTabBarController.m */; };
@@ -276,21 +274,12 @@
 		808AA5101C3CBBEF0072C8DF /* AppDelegate+Ease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Ease.m"; sourceTree = "<group>"; };
 		808AA5121C3D284E0072C8DF /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		808CBF3A1C9035AC00498187 /* PersonalSettingFunctionMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalSettingFunctionMacro.h; sourceTree = "<group>"; };
-		809351AC1C8FAE4D00836F98 /* ClassifyViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewTableViewCell.h; sourceTree = "<group>"; };
-		809351AD1C8FAE4D00836F98 /* ClassifyViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewTableViewCell.m; sourceTree = "<group>"; };
-		809351AE1C8FAE4D00836F98 /* ClassifyViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyViewTableViewCell.xib; sourceTree = "<group>"; };
-		809351B11C8FAE9600836F98 /* ClassifyViewTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewTableViewHeader.h; sourceTree = "<group>"; };
-		809351B21C8FAE9600836F98 /* ClassifyViewTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewTableViewHeader.m; sourceTree = "<group>"; };
-		809351B41C8FC6DF00836F98 /* ClassifyViewMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyViewMacro.h; sourceTree = "<group>"; };
 		809351B61C901E4500836F98 /* PersonalSettingFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSettingFunctionViewController.h; sourceTree = "<group>"; };
 		809351B71C901E4500836F98 /* PersonalSettingFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSettingFunctionViewController.m; sourceTree = "<group>"; };
 		809351B81C901E4500836F98 /* PersonalSettingFunctionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalSettingFunctionViewController.xib; sourceTree = "<group>"; };
 		809351BB1C90275E00836F98 /* PersonalSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSettingTableViewCell.h; sourceTree = "<group>"; };
 		809351BC1C90275E00836F98 /* PersonalSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSettingTableViewCell.m; sourceTree = "<group>"; };
 		809351BD1C90275E00836F98 /* PersonalSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalSettingTableViewCell.xib; sourceTree = "<group>"; };
-		8096E7831C97A0B600A8344E /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
-		8096E7841C97A0B600A8344E /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
-		8096E7851C97A0B600A8344E /* ClassifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyViewController.xib; sourceTree = "<group>"; };
 		8096E7881C97A0C600A8344E /* ShoppingCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCarViewController.h; sourceTree = "<group>"; };
 		8096E7891C97A0C600A8344E /* ShoppingCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCarViewController.m; sourceTree = "<group>"; };
 		8096E78A1C97A0C600A8344E /* ShoppingCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCarViewController.xib; sourceTree = "<group>"; };
@@ -341,8 +330,6 @@
 		809D0CEA1C3F92B5008B1648 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		809D0CEE1C3F92D0008B1648 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		809D0CF01C3F92D2008B1648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		809D31741C8F1146002D3A1F /* ClassifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyView.h; sourceTree = "<group>"; };
-		809D31751C8F1146002D3A1F /* ClassifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyView.m; sourceTree = "<group>"; };
 		80A0E97D1C9506FE0070F091 /* PersonalAddressListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalAddressListTableViewCell.h; sourceTree = "<group>"; };
 		80A0E97E1C9506FE0070F091 /* PersonalAddressListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalAddressListTableViewCell.m; sourceTree = "<group>"; };
 		80A0E97F1C9506FE0070F091 /* PersonalAddressListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalAddressListTableViewCell.xib; sourceTree = "<group>"; };
@@ -385,22 +372,6 @@
 		80ABE25E1C38CCB200D4041C /* CustomImageAndTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageAndTitleButton.h; sourceTree = "<group>"; };
 		80ABE25F1C38CCB200D4041C /* CustomImageAndTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageAndTitleButton.m; sourceTree = "<group>"; };
 		80ABE2611C38D91800D4041C /* CustomizedCollectionViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomizedCollectionViewControllerDelegate.h; sourceTree = "<group>"; };
-		80AC83491C58A4D800B955C4 /* CustomPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPresentViewController.h; sourceTree = "<group>"; };
-		80AC834A1C58A4D800B955C4 /* CustomPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPresentViewController.m; sourceTree = "<group>"; };
-		80AC834C1C58A4D800B955C4 /* ForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordView.h; sourceTree = "<group>"; };
-		80AC834D1C58A4D800B955C4 /* ForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordView.m; sourceTree = "<group>"; };
-		80AC834E1C58A4D800B955C4 /* ForgetPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordView.xib; sourceTree = "<group>"; };
-		80AC83501C58A4D800B955C4 /* LoginAndRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterViewController.h; sourceTree = "<group>"; };
-		80AC83511C58A4D800B955C4 /* LoginAndRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterViewController.m; sourceTree = "<group>"; };
-		80AC83531C58A4D800B955C4 /* LoginNavigationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginNavigationControllerViewController.h; sourceTree = "<group>"; };
-		80AC83541C58A4D800B955C4 /* LoginNavigationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginNavigationControllerViewController.m; sourceTree = "<group>"; };
-		80AC83551C58A4D800B955C4 /* PresentViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewDelegate.h; sourceTree = "<group>"; };
-		80AC83571C58A4D800B955C4 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
-		80AC83581C58A4D800B955C4 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
-		80AC83591C58A4D800B955C4 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		80AC835C1C58A4D800B955C4 /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
-		80AC835D1C58A4D800B955C4 /* RegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterView.m; sourceTree = "<group>"; };
-		80AC835E1C58A4D800B955C4 /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
 		80AEC16B1C48C45C00467D92 /* SGActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGActionView.h; sourceTree = "<group>"; };
 		80AEC16C1C48C45C00467D92 /* SGActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGActionView.m; sourceTree = "<group>"; };
 		80AEC16D1C48C45C00467D92 /* SGAlertMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAlertMenu.h; sourceTree = "<group>"; };
@@ -439,6 +410,27 @@
 		80C139EF1C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRegisterSecondStepViewController.xib; sourceTree = "<group>"; };
 		80C139F21C99A47F00BD7D35 /* AccountNavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountNavigationManager.h; sourceTree = "<group>"; };
 		80C139F31C99A47F00BD7D35 /* AccountNavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountNavigationManager.m; sourceTree = "<group>"; };
+		80C1EF091C9BDC38003A827D /* RequestLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestLocation.h; sourceTree = "<group>"; };
+		80C1EF0A1C9BDC38003A827D /* RequestLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestLocation.m; sourceTree = "<group>"; };
+		80C1EF0C1C9BDC50003A827D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		80C1EF0E1C9BDC96003A827D /* CSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSqlite.h; sourceTree = "<group>"; };
+		80C1EF0F1C9BDC96003A827D /* CSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSqlite.m; sourceTree = "<group>"; };
+		80C1EF101C9BDC96003A827D /* gps.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = gps.db; sourceTree = "<group>"; };
+		80C1EF151C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalFeedBackFunctionViewController.h; sourceTree = "<group>"; };
+		80C1EF161C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalFeedBackFunctionViewController.m; sourceTree = "<group>"; };
+		80C1EF171C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalFeedBackFunctionViewController.xib; sourceTree = "<group>"; };
+		80C1EF271C9C18CF003A827D /* ClassifyMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyMacro.h; sourceTree = "<group>"; };
+		80C1EF291C9C18CF003A827D /* ClassifyViewCollectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewCollectViewCell.h; sourceTree = "<group>"; };
+		80C1EF2A1C9C18CF003A827D /* ClassifyViewCollectViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewCollectViewCell.m; sourceTree = "<group>"; };
+		80C1EF2B1C9C18CF003A827D /* ClassifyViewCollectViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyViewCollectViewCell.xib; sourceTree = "<group>"; };
+		80C1EF2D1C9C18CF003A827D /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		80C1EF2E1C9C18CF003A827D /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		80C1EF381C9C2386003A827D /* DiscoverSubListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubListViewController.h; sourceTree = "<group>"; };
+		80C1EF391C9C2386003A827D /* DiscoverSubListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubListViewController.m; sourceTree = "<group>"; };
+		80C1EF3A1C9C2386003A827D /* DiscoverSubListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubListViewController.xib; sourceTree = "<group>"; };
+		80C1EF3E1C9C23E6003A827D /* DiscoverSubViewListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverSubViewListTableViewCell.h; sourceTree = "<group>"; };
+		80C1EF3F1C9C23E6003A827D /* DiscoverSubViewListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverSubViewListTableViewCell.m; sourceTree = "<group>"; };
+		80C1EF401C9C23E6003A827D /* DiscoverSubViewListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverSubViewListTableViewCell.xib; sourceTree = "<group>"; };
 		80C376E31C21A33E00464AC0 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		80C376E41C21A33E00464AC0 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		80C376EE1C21A6A800464AC0 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
@@ -591,6 +583,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C1EF0D1C9BDC50003A827D /* libsqlite3.0.tbd in Frameworks */,
 				80AEC1961C48E1E400467D92 /* libstdc++.tbd in Frameworks */,
 				80AEC1941C48E1D900467D92 /* CoreTelephony.framework in Frameworks */,
 				801FB9CC1C4C97A900A47FD4 /* libWeChatSDK.a in Frameworks */,
@@ -649,6 +642,7 @@
 		800AD6A01C50E599005BE6A1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				80C1EF081C9BDBC3003A827D /* Location */,
 				800AD6A11C50E599005BE6A1 /* Reachability */,
 			);
 			path = Tool;
@@ -772,25 +766,6 @@
 			path = CustomMWPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		809351AA1C8FAE3C00836F98 /* ClassifyViewTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				809351AC1C8FAE4D00836F98 /* ClassifyViewTableViewCell.h */,
-				809351AD1C8FAE4D00836F98 /* ClassifyViewTableViewCell.m */,
-				809351AE1C8FAE4D00836F98 /* ClassifyViewTableViewCell.xib */,
-			);
-			path = ClassifyViewTableViewCell;
-			sourceTree = "<group>";
-		};
-		809351AB1C8FAE3C00836F98 /* ClassifyViewTableViewHeader */ = {
-			isa = PBXGroup;
-			children = (
-				809351B11C8FAE9600836F98 /* ClassifyViewTableViewHeader.h */,
-				809351B21C8FAE9600836F98 /* ClassifyViewTableViewHeader.m */,
-			);
-			path = ClassifyViewTableViewHeader;
-			sourceTree = "<group>";
-		};
 		809351B51C901E0500836F98 /* PersonalSettingFunction */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,24 +778,6 @@
 				808CBF3A1C9035AC00498187 /* PersonalSettingFunctionMacro.h */,
 			);
 			path = PersonalSettingFunction;
-			sourceTree = "<group>";
-		};
-		8096E77F1C97A09E00A8344E /* Classify */ = {
-			isa = PBXGroup;
-			children = (
-				8096E7801C97A09E00A8344E /* ClassifyViewController */,
-			);
-			path = Classify;
-			sourceTree = "<group>";
-		};
-		8096E7801C97A09E00A8344E /* ClassifyViewController */ = {
-			isa = PBXGroup;
-			children = (
-				8096E7831C97A0B600A8344E /* ClassifyViewController.h */,
-				8096E7841C97A0B600A8344E /* ClassifyViewController.m */,
-				8096E7851C97A0B600A8344E /* ClassifyViewController.xib */,
-			);
-			path = ClassifyViewController;
 			sourceTree = "<group>";
 		};
 		8096E7811C97A09E00A8344E /* ShoppingCar */ = {
@@ -1006,18 +963,6 @@
 				809D0CDA1C3F6525008B1648 /* ChatViewController.m */,
 			);
 			path = ChatViewController;
-			sourceTree = "<group>";
-		};
-		809D31731C8F1039002D3A1F /* ClassifyView */ = {
-			isa = PBXGroup;
-			children = (
-				809351AA1C8FAE3C00836F98 /* ClassifyViewTableViewCell */,
-				809351AB1C8FAE3C00836F98 /* ClassifyViewTableViewHeader */,
-				809D31741C8F1146002D3A1F /* ClassifyView.h */,
-				809D31751C8F1146002D3A1F /* ClassifyView.m */,
-				809351B41C8FC6DF00836F98 /* ClassifyViewMacro.h */,
-			);
-			path = ClassifyView;
 			sourceTree = "<group>";
 		};
 		80A0E9841C95507E0070F091 /* PersonalAddressDetail */ = {
@@ -1210,85 +1155,6 @@
 			path = CustomImageAndTitleButton;
 			sourceTree = "<group>";
 		};
-		80AC83471C58A4D800B955C4 /* LoginAndRegister */ = {
-			isa = PBXGroup;
-			children = (
-				80AC83481C58A4D800B955C4 /* CustomPresentViewController */,
-				80AC834B1C58A4D800B955C4 /* ForgetPasswordView */,
-				80AC834F1C58A4D800B955C4 /* LoginAndRegisterViewController */,
-				80AC83521C58A4D800B955C4 /* LoginNavigationController */,
-				80AC83561C58A4D800B955C4 /* LoginView */,
-				80AC835A1C58A4D800B955C4 /* PresentParentView */,
-				80AC835B1C58A4D800B955C4 /* RegisterView */,
-			);
-			path = LoginAndRegister;
-			sourceTree = "<group>";
-		};
-		80AC83481C58A4D800B955C4 /* CustomPresentViewController */ = {
-			isa = PBXGroup;
-			children = (
-				80AC83491C58A4D800B955C4 /* CustomPresentViewController.h */,
-				80AC834A1C58A4D800B955C4 /* CustomPresentViewController.m */,
-			);
-			path = CustomPresentViewController;
-			sourceTree = "<group>";
-		};
-		80AC834B1C58A4D800B955C4 /* ForgetPasswordView */ = {
-			isa = PBXGroup;
-			children = (
-				80AC834C1C58A4D800B955C4 /* ForgetPasswordView.h */,
-				80AC834D1C58A4D800B955C4 /* ForgetPasswordView.m */,
-				80AC834E1C58A4D800B955C4 /* ForgetPasswordView.xib */,
-			);
-			path = ForgetPasswordView;
-			sourceTree = "<group>";
-		};
-		80AC834F1C58A4D800B955C4 /* LoginAndRegisterViewController */ = {
-			isa = PBXGroup;
-			children = (
-				80AC83501C58A4D800B955C4 /* LoginAndRegisterViewController.h */,
-				80AC83511C58A4D800B955C4 /* LoginAndRegisterViewController.m */,
-			);
-			path = LoginAndRegisterViewController;
-			sourceTree = "<group>";
-		};
-		80AC83521C58A4D800B955C4 /* LoginNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				80AC83531C58A4D800B955C4 /* LoginNavigationControllerViewController.h */,
-				80AC83541C58A4D800B955C4 /* LoginNavigationControllerViewController.m */,
-				80AC83551C58A4D800B955C4 /* PresentViewDelegate.h */,
-			);
-			path = LoginNavigationController;
-			sourceTree = "<group>";
-		};
-		80AC83561C58A4D800B955C4 /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-				80AC83571C58A4D800B955C4 /* LoginView.h */,
-				80AC83581C58A4D800B955C4 /* LoginView.m */,
-				80AC83591C58A4D800B955C4 /* LoginView.xib */,
-			);
-			path = LoginView;
-			sourceTree = "<group>";
-		};
-		80AC835A1C58A4D800B955C4 /* PresentParentView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PresentParentView;
-			sourceTree = "<group>";
-		};
-		80AC835B1C58A4D800B955C4 /* RegisterView */ = {
-			isa = PBXGroup;
-			children = (
-				80AC835C1C58A4D800B955C4 /* RegisterView.h */,
-				80AC835D1C58A4D800B955C4 /* RegisterView.m */,
-				80AC835E1C58A4D800B955C4 /* RegisterView.xib */,
-			);
-			path = RegisterView;
-			sourceTree = "<group>";
-		};
 		80AEC16A1C48C45C00467D92 /* SGActionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1343,6 +1209,77 @@
 			path = AccountNavigationManager;
 			sourceTree = "<group>";
 		};
+		80C1EF081C9BDBC3003A827D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF0E1C9BDC96003A827D /* CSqlite.h */,
+				80C1EF0F1C9BDC96003A827D /* CSqlite.m */,
+				80C1EF101C9BDC96003A827D /* gps.db */,
+				80C1EF091C9BDC38003A827D /* RequestLocation.h */,
+				80C1EF0A1C9BDC38003A827D /* RequestLocation.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		80C1EF141C9BF2BD003A827D /* PersonalFeedBackFunction */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF151C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.h */,
+				80C1EF161C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.m */,
+				80C1EF171C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.xib */,
+			);
+			path = PersonalFeedBackFunction;
+			sourceTree = "<group>";
+		};
+		80C1EF261C9C18CF003A827D /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF271C9C18CF003A827D /* ClassifyMacro.h */,
+				80C1EF281C9C18CF003A827D /* ClassifyViewCollectViewCell */,
+				80C1EF2C1C9C18CF003A827D /* ClassifyViewController */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		80C1EF281C9C18CF003A827D /* ClassifyViewCollectViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF291C9C18CF003A827D /* ClassifyViewCollectViewCell.h */,
+				80C1EF2A1C9C18CF003A827D /* ClassifyViewCollectViewCell.m */,
+				80C1EF2B1C9C18CF003A827D /* ClassifyViewCollectViewCell.xib */,
+			);
+			path = ClassifyViewCollectViewCell;
+			sourceTree = "<group>";
+		};
+		80C1EF2C1C9C18CF003A827D /* ClassifyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF2D1C9C18CF003A827D /* ClassifyViewController.h */,
+				80C1EF2E1C9C18CF003A827D /* ClassifyViewController.m */,
+			);
+			path = ClassifyViewController;
+			sourceTree = "<group>";
+		};
+		80C1EF371C9C2386003A827D /* DiscoverSubListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF381C9C2386003A827D /* DiscoverSubListViewController.h */,
+				80C1EF391C9C2386003A827D /* DiscoverSubListViewController.m */,
+				80C1EF3A1C9C2386003A827D /* DiscoverSubListViewController.xib */,
+			);
+			path = DiscoverSubListViewController;
+			sourceTree = "<group>";
+		};
+		80C1EF3B1C9C2386003A827D /* DiscoverSubViewListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				80C1EF3E1C9C23E6003A827D /* DiscoverSubViewListTableViewCell.h */,
+				80C1EF3F1C9C23E6003A827D /* DiscoverSubViewListTableViewCell.m */,
+				80C1EF401C9C23E6003A827D /* DiscoverSubViewListTableViewCell.xib */,
+			);
+			path = DiscoverSubViewListTableViewCell;
+			sourceTree = "<group>";
+		};
 		80C376E21C21A32100464AC0 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1386,7 +1323,7 @@
 		80C376FC1C21A7FF00464AC0 /* SubViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8096E77F1C97A09E00A8344E /* Classify */,
+				80C1EF261C9C18CF003A827D /* Classify */,
 				8096E7811C97A09E00A8344E /* ShoppingCar */,
 				80D55EE01C59AC0200B2F0EC /* Discover */,
 				809D0CD21C3F56FB008B1648 /* Conversation */,
@@ -1400,7 +1337,6 @@
 		80C377011C21A8DD00464AC0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				809D31731C8F1039002D3A1F /* ClassifyView */,
 				80B0A6EA1C899D17008194E2 /* SearchProduct */,
 				80ABE2471C38B3B800D4041C /* CommodityDetails */,
 				80FF3E651C22559300A08713 /* Collection */,
@@ -1464,6 +1400,8 @@
 		80D55EE31C59AC0200B2F0EC /* DiscoverSubViewController */ = {
 			isa = PBXGroup;
 			children = (
+				80C1EF371C9C2386003A827D /* DiscoverSubListViewController */,
+				80C1EF3B1C9C2386003A827D /* DiscoverSubViewListTableViewCell */,
 			);
 			path = DiscoverSubViewController;
 			sourceTree = "<group>";
@@ -1557,6 +1495,7 @@
 		80D55EFE1C59E33900B2F0EC /* PersonalFunction */ = {
 			isa = PBXGroup;
 			children = (
+				80C1EF141C9BF2BD003A827D /* PersonalFeedBackFunction */,
 				808797E31C942F8A003F91E3 /* PersonalManagerAddressFunction */,
 				808238E41C91487100A932E2 /* PersonalAboutUs */,
 				809351B51C901E0500836F98 /* PersonalSettingFunction */,
@@ -1800,7 +1739,6 @@
 			isa = PBXGroup;
 			children = (
 				8096E79F1C9815B400A8344E /* LoginRegisterAndPassword */,
-				80AC83471C58A4D800B955C4 /* LoginAndRegister */,
 				800AD6A01C50E599005BE6A1 /* Tool */,
 				8009BE431C4E42600035A3A1 /* Request */,
 				80E3E63B1C354B9F00C066FA /* CoreData */,
@@ -2006,6 +1944,7 @@
 		AB5D7089C654FD378732392D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80C1EF0C1C9BDC50003A827D /* libsqlite3.0.tbd */,
 				801FB9C61C4C97A900A47FD4 /* SDK1.6.2 */,
 				80AEC1951C48E1E400467D92 /* libstdc++.tbd */,
 				80AEC1931C48E1D900467D92 /* CoreTelephony.framework */,
@@ -2084,6 +2023,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C1EF301C9C18CF003A827D /* ClassifyViewCollectViewCell.xib in Resources */,
+				80C1EF121C9BDC96003A827D /* gps.db in Resources */,
 				8081CAC61C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.xib in Resources */,
 				809351BA1C901E4500836F98 /* PersonalSettingFunctionViewController.xib in Resources */,
 				80AEC1871C48DEFB00467D92 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -2099,6 +2040,7 @@
 				809BEF561C8C1A9A000B42A4 /* CustomBaseProductListViewController.xib in Resources */,
 				80D55F321C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.xib in Resources */,
 				80F1072E1C157F870009FBA4 /* Assets.xcassets in Resources */,
+				80C1EF421C9C23E6003A827D /* DiscoverSubViewListTableViewCell.xib in Resources */,
 				80C139EC1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.xib in Resources */,
 				804CDBAE1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.xib in Resources */,
 				808797EA1C943068003F91E3 /* PersonalAddressListViewController.xib in Resources */,
@@ -2108,18 +2050,17 @@
 				80D55F301C59E33900B2F0EC /* PersonalAgeViewController.xib in Resources */,
 				809351BF1C90275E00836F98 /* PersonalSettingTableViewCell.xib in Resources */,
 				80C139F11C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.xib in Resources */,
+				80C1EF191C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.xib in Resources */,
 				80C376F81C21A6A800464AC0 /* SCNavTabBar.bundle in Resources */,
 				80A0E9811C9506FE0070F091 /* PersonalAddressListTableViewCell.xib in Resources */,
 				80A514371C380917007C549B /* CustomControllerTitleView.xib in Resources */,
 				80D55F341C59E33900B2F0EC /* PersonalTextFieldInputViewController.xib in Resources */,
 				80A3D4DB1C2F884E0057F251 /* LRCustomTextField.xib in Resources */,
-				80AC83671C58A4D800B955C4 /* RegisterView.xib in Resources */,
 				80D55EE91C59ACC700B2F0EC /* DiscoverViewController.xib in Resources */,
-				809351B01C8FAE4D00836F98 /* ClassifyViewTableViewCell.xib in Resources */,
 				8081CAB51C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.xib in Resources */,
 				809D0CED1C3F92D0008B1648 /* Localizable.strings in Resources */,
-				80AC83651C58A4D800B955C4 /* LoginView.xib in Resources */,
 				80D55F5C1C59F4AE00B2F0EC /* PersonalMainNameTableViewCell.xib in Resources */,
+				80C1EF3D1C9C2386003A827D /* DiscoverSubListViewController.xib in Resources */,
 				8096E7AD1C98193B00A8344E /* CustomLoginViewController.xib in Resources */,
 				80A514261C37E292007C549B /* FavoriteTableViewCell.xib in Resources */,
 				80D55F3E1C59E33900B2F0EC /* PersonalLocationUIViewController.xib in Resources */,
@@ -2140,14 +2081,12 @@
 				8096E79E1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.xib in Resources */,
 				80D64F021C27E26B00B3493A /* SharePopSelectView.xib in Resources */,
 				808238E91C91488A00A932E2 /* PersonalAboutUsViewController.xib in Resources */,
-				8096E7871C97A0B600A8344E /* ClassifyViewController.xib in Resources */,
 				80D55F401C59E33900B2F0EC /* PersonalHeaderCell.xib in Resources */,
 				80A0E9901C9555820070F091 /* PersonalAddressDetailTableViewCell.xib in Resources */,
 				809BEF591C8C27E7000B42A4 /* FavoriteViewController.xib in Resources */,
 				80D55F661C59FEAD00B2F0EC /* PersonalMainTableViewHeader.xib in Resources */,
 				8096E78C1C97A0C600A8344E /* ShoppingCarViewController.xib in Resources */,
 				80D55F441C59E33900B2F0EC /* PersonalViewController.xib in Resources */,
-				80AC83611C58A4D800B955C4 /* ForgetPasswordView.xib in Resources */,
 				80D55F3C1C59E33900B2F0EC /* PersonalLocationUITableViewCell.xib in Resources */,
 				8096E7BB1C981D3300A8344E /* BaseAccountReleateViewController.xib in Resources */,
 				801FB9CD1C4C97A900A47FD4 /* read_me.txt in Resources */,
@@ -2216,11 +2155,11 @@
 				80C9F4271C5776A50077BEB3 /* NSArray+Addition.m in Sources */,
 				80D64F011C27E26B00B3493A /* SharePopSelectView.m in Sources */,
 				80A514161C37ACA3007C549B /* MBProgressHUD+YG.m in Sources */,
-				80AC83621C58A4D800B955C4 /* LoginAndRegisterViewController.m in Sources */,
 				80F1072C1C157D920009FBA4 /* UIColor+Addition.m in Sources */,
 				80D55F351C59E33900B2F0EC /* PersonalGenderTableViewCell.m in Sources */,
 				8096E7AC1C98193B00A8344E /* CustomLoginViewController.m in Sources */,
 				80A3D4D61C2F871E0057F251 /* PlaceHolderView.m in Sources */,
+				80C1EF111C9BDC96003A827D /* CSqlite.m in Sources */,
 				80F1071E1C157BEF0009FBA4 /* RootViewController.m in Sources */,
 				80D55F6D1C5A030900B2F0EC /* PersonalMainOrderCellButton.m in Sources */,
 				80A0E98F1C9555820070F091 /* PersonalAddressDetailTableViewCell.m in Sources */,
@@ -2232,12 +2171,12 @@
 				80D55F481C59E47500B2F0EC /* PersonalMainViewController.m in Sources */,
 				80D55EEC1C59AD7900B2F0EC /* DiscoverTableViewDataSource.m in Sources */,
 				80E5E8A91C8D106A001E3A49 /* PersonalTraceFunction.m in Sources */,
-				809351AF1C8FAE4D00836F98 /* ClassifyViewTableViewCell.m in Sources */,
 				80D55F5B1C59F4AE00B2F0EC /* PersonalMainNameTableViewCell.m in Sources */,
 				80F1071F1C157BEF0009FBA4 /* CustomTabBar.m in Sources */,
 				80AEC17D1C48C65200467D92 /* CustomShare.m in Sources */,
 				80AEC1791C48C45C00467D92 /* SGSheetMenu.m in Sources */,
 				809D0CDB1C3F6525008B1648 /* ChatViewController.m in Sources */,
+				80C1EF0B1C9BDC38003A827D /* RequestLocation.m in Sources */,
 				80C376F91C21A6A800464AC0 /* SCNavTabBarController.m in Sources */,
 				8096E7BA1C981D3300A8344E /* BaseAccountReleateViewController.m in Sources */,
 				80AAEA111C45E20400BE5BC5 /* AVUser+Attibute.m in Sources */,
@@ -2251,7 +2190,6 @@
 				80AEC1801C48D20C00467D92 /* AppDelegate+OpenShare.m in Sources */,
 				80C139F01C99A0F600BD7D35 /* CustomRegisterSecondStepViewController.m in Sources */,
 				80D55F4F1C59E4A700B2F0EC /* PersonalTableViewDataSource.m in Sources */,
-				80AC83601C58A4D800B955C4 /* ForgetPasswordView.m in Sources */,
 				809351B91C901E4500836F98 /* PersonalSettingFunctionViewController.m in Sources */,
 				8001179C1C23D90600996726 /* CollectionViewFooter.m in Sources */,
 				808AA5111C3CBBEF0072C8DF /* AppDelegate+Ease.m in Sources */,
@@ -2259,7 +2197,6 @@
 				808797EE1C9431F0003F91E3 /* PersonalAddressListFooterView.m in Sources */,
 				80D55F711C5A0A3200B2F0EC /* PersonalMainOrderTableViewCell.m in Sources */,
 				804CDBAD1C96872A009ABDF6 /* CustomInputTextFieldTableViewCell.m in Sources */,
-				80AC83631C58A4D800B955C4 /* LoginNavigationControllerViewController.m in Sources */,
 				80C376FB1C21A6A800464AC0 /* SCPopView.m in Sources */,
 				80D55F371C59E33900B2F0EC /* PersonalGenderViewController.m in Sources */,
 				80AEC1751C48C45C00467D92 /* SGActionView.m in Sources */,
@@ -2271,12 +2208,12 @@
 				80D55F3F1C59E33900B2F0EC /* PersonalHeaderCell.m in Sources */,
 				80DAB3A11C3A0A1300BAF1F4 /* CDIntroduceTableViewCell.m in Sources */,
 				80ABE25B1C38BBE000D4041C /* CDMainTableViewCell.m in Sources */,
-				809351B31C8FAE9600836F98 /* ClassifyViewTableViewHeader.m in Sources */,
 				8098A9581C36373300D3D7DF /* UIAlertView+Addition.m in Sources */,
 				80E5DB001C96568100C2B773 /* PersonalManageerAddressViewController.m in Sources */,
+				80C1EF311C9C18CF003A827D /* ClassifyViewController.m in Sources */,
 				80A514201C37E279007C549B /* FavoriteViewController.m in Sources */,
 				80C139EB1C99A0D300BD7D35 /* CustomRegisterFirstStepViewController.m in Sources */,
-				809D31761C8F1146002D3A1F /* ClassifyView.m in Sources */,
+				80C1EF411C9C23E6003A827D /* DiscoverSubViewListTableViewCell.m in Sources */,
 				808797E91C943068003F91E3 /* PersonalAddressListViewController.m in Sources */,
 				8080F4AA1C8E9FC8005306EA /* UIImageView+Addition.m in Sources */,
 				80D55F431C59E33900B2F0EC /* PersonalViewController.m in Sources */,
@@ -2292,10 +2229,7 @@
 				802302101C3A6D8C00589979 /* CDImageTableViewCell.m in Sources */,
 				8096E79D1C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell.m in Sources */,
 				80B0A6F01C899D31008194E2 /* SearchProductViewController.m in Sources */,
-				8096E7861C97A0B600A8344E /* ClassifyViewController.m in Sources */,
-				80AC83641C58A4D800B955C4 /* LoginView.m in Sources */,
 				8081CAB41C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.m in Sources */,
-				80AC835F1C58A4D800B955C4 /* CustomPresentViewController.m in Sources */,
 				8096E7C11C981D7500A8344E /* BaseAccountReleateTableViewFooter.m in Sources */,
 				80D55F311C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.m in Sources */,
 				80D55EE81C59ACC700B2F0EC /* DiscoverViewController.m in Sources */,
@@ -2306,6 +2240,7 @@
 				800AD69E1C50A91D005BE6A1 /* MyMD5.m in Sources */,
 				804CDBAF1C96872A009ABDF6 /* CustomInputTextViewTableViewCell.m in Sources */,
 				80F107211C157BEF0009FBA4 /* CustomTabBarViewController.m in Sources */,
+				80C1EF181C9BF2D8003A827D /* PersonalFeedBackFunctionViewController.m in Sources */,
 				8081CAC01C5B2760001FD68F /* PersonalNicknameAndSignatureFunction.m in Sources */,
 				8096E7A71C98161300A8344E /* VerifyButtonTextFieldTableViewCell.m in Sources */,
 				80E3E63E1C354BD100C066FA /* UserImformation.xcdatamodeld in Sources */,
@@ -2313,6 +2248,7 @@
 				80F107241C157C050009FBA4 /* AppDelegate.m in Sources */,
 				80A514251C37E292007C549B /* FavoriteTableViewCell.m in Sources */,
 				80976C071C34E0F200AB6A7D /* UITabelViewSeparatorView.m in Sources */,
+				80C1EF2F1C9C18CF003A827D /* ClassifyViewCollectViewCell.m in Sources */,
 				8096E7BE1C981D5F00A8344E /* BaseAccountReleateTableViewHeader.m in Sources */,
 				80A514291C37E2A2007C549B /* FavoriteDataSource.m in Sources */,
 				809BEF501C8C1A7A000B42A4 /* CustomBaseProductListDataSource.m in Sources */,
@@ -2329,11 +2265,11 @@
 				80FDE1171C32C82B00652555 /* UIView+Addition.m in Sources */,
 				808238E81C91488A00A932E2 /* PersonalAboutUsViewController.m in Sources */,
 				80F107321C1586C80009FBA4 /* CollectViewController.m in Sources */,
-				80AC83661C58A4D800B955C4 /* RegisterView.m in Sources */,
 				80C377051C21A8DD00464AC0 /* HomeViewController.m in Sources */,
 				8081CAC51C5B27D9001FD68F /* PersonalNicknameAndSignatureTableViewCell.m in Sources */,
 				80D55F331C59E33900B2F0EC /* PersonalTextFieldInputViewController.m in Sources */,
 				80A3D4D91C2F88290057F251 /* LRCustomTextField.m in Sources */,
+				80C1EF3C1C9C2386003A827D /* DiscoverSubListViewController.m in Sources */,
 				80ABE2511C38B63900D4041C /* CommodityDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

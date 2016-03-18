@@ -8,6 +8,7 @@
 
 #import "PersonalMainNormalTableViewCell.h"
 #import "UIColor+Addition.h"
+#import "RequestLocation.h"
 @implementation PersonalMainNormalTableViewCell
 
 - (void)awakeFromNib {
@@ -44,7 +45,13 @@
         case PersonalMainTableDataType_location:
         {
             self.arrowImage.hidden = YES;
-            self.detailLabel.text = user.location;
+            self.detailLabel.text = [RequestLocation shareInstance].location;
+//            if(user.location.length>0){
+//                self.detailLabel.text = user.location;
+//            }
+//            else{
+//                
+//            }
         }
             break;
         case PersonalMainTableDataType_telephone:

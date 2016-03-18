@@ -18,7 +18,6 @@
 #import "NSArray+Addition.h"
 #import "PersonalMacro.h"
 #import "SearchProductViewController.h"
-#import "ClassifyView.h"
 
 #define searchBarWidthPer   0.8f
 #define searchBarHeight     30.0f
@@ -49,7 +48,6 @@
  */
 @property (strong,nonatomic) MBProgressHUD *progressHUD;
 
-@property (strong,nonatomic) ClassifyView *classifyView;
 @end
 
 @implementation HomeViewController
@@ -64,13 +62,6 @@
         [_progressHUD addGestureRecognizer:tap];
     }
     return _progressHUD;
-}
-
--(ClassifyView*)classifyView{
-    if(!_classifyView){
-        _classifyView = [[ClassifyView alloc] initWithParentView:self.navigationController.view];
-    }
-    return _classifyView;
 }
 
 - (void)viewDidLoad {
@@ -223,9 +214,6 @@
     [self.classifyController refreshIfShould];
 }
 
--(void)showClassifyView{
-    [self.classifyView show];
-}
 
 #pragma mark - CustomizedCollectionViewControllerDelegate
 -(void)pushIntoCommodityDitailsControllerWithIndexPath:(NSIndexPath *)indexPath object:(AVObject *)object{

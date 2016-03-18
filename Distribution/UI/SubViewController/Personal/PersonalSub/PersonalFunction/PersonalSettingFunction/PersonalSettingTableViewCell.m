@@ -39,7 +39,7 @@
             break;
         case PersonalSettingTypeEvaluate:
         {
-            self.titleLabel.text = @"评价我们";
+            self.titleLabel.text = @"意见反馈";
             self.cacheLabel.text = @"";
         }
             break;

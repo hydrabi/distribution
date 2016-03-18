@@ -118,6 +118,10 @@
     return type;
 }
 
+-(void)clearTextField{
+    
+}
+
 #pragma mark - 注册tableView要用到的所有CellNib
 -(void)registerCellNib{
     UINib *verifyCellNib = [UINib nibWithNibName:NSStringFromClass([VerifyButtonTextFieldTableViewCell class]) bundle:nil];

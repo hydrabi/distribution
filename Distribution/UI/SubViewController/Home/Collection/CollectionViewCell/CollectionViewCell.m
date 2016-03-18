@@ -49,8 +49,8 @@
 
 -(void)UIConfig{
     //    self.recommendImage.hidden = YES;
-    self.backgroundColor = [UIColor whiteColor];
-    
+    self.backgroundColor                   = [UIColor whiteColor];
+
     self.collectImage.contentMode          = UIViewContentModeScaleAspectFill;
     self.productNumberTitleLabel.font      = [UIFont systemFontOfSize:14.0f];
     self.productNumberTitleLabel.textColor = [UIColor colorWithHexString:@"#999999" alpha:1];
@@ -58,9 +58,11 @@
     self.productNumberValueLabel.textColor = [UIColor colorWithHexString:@"#999999" alpha:1];
     self.salePriceValueLabel.font          = [UIFont systemFontOfSize:13.0f];
     self.salePriceValueLabel.textColor     = [UIColor colorWithHexString:@"#6a6a6a" alpha:1];
-    self.collectValueLabel.font               = [UIFont systemFontOfSize:10.0f];
-    self.collectValueLabel.textColor          = [UIColor colorWithHexString:@"#999999" alpha:1];
-    
+    self.collectValueLabel.font            = [UIFont systemFontOfSize:10.0f];
+    self.collectValueLabel.textColor       = [UIColor colorWithHexString:@"#999999" alpha:1];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loginClick)];
+    self.salePriceValueLabel.userInteractionEnabled = YES;
+    [self.salePriceValueLabel addGestureRecognizer:tap];
 }
 
 -(void)resetValueWith:(AVObject*)object{
@@ -80,9 +82,17 @@
     
     NSInteger collectNumber = [[localData objectForKey:Global_ProductCollectNumber] integerValue];
     collectNumber = collectNumber<0?0:collectNumber;
-    self.collectValueLabel.text = [NSString stringWithFormat:@"%d",collectNumber];
+    self.collectValueLabel.text = [NSString stringWithFormat:@"%ld",(long)collectNumber];
     
     [_collectImage downloadImageWithUrl:[localData objectForKey:@"productimg"]];
+    
+    
+}
+
+-(void)loginClick{
+    if(![[PersonlInfoManager shareManager] hadLogin]){
+        [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_Login];
+    }
 }
 
 @end

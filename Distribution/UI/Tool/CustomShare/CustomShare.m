@@ -15,6 +15,7 @@
 #import "ImageManager.h"
 #import "AppDelegate.h"
 #import "UIAlertView+Addition.h"
+#import "UIColor+Addition.h"
 @interface CustomShare()<UIAlertViewDelegate>
 @property (nonatomic,strong)AVObject *object;
 /**
@@ -93,7 +94,7 @@
         [titleArr addObject:ZhiFuBaoShareTitle];
         [titleArr addObject:ZhiFuBaoHomeShareTitle];
         [imageArr addObject:[UIImage imageNamed:ZhiFuBaoShareImageName]];
-        [imageArr addObject:[UIImage imageNamed:ZhiFuBaoShareImageName]];
+        [imageArr addObject:[UIImage imageNamed:ZhiFuBaoHomeShareImageName]];
     }
     
     if(self.shareTypeArr.count>0){
@@ -250,19 +251,18 @@
     NSString *utf8String = @"http://www.baidu.com";
     NSString *theTitle = [localData objectForKey:@"productname"];
     NSString *description = [localData objectForKey:@"productdesc"];
+    
     WBMessageObject *message = [WBMessageObject message];
     BOOL hadInstalledWeibo = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weibo://"]];
     hadInstalledWeibo = [WeiboSDK isWeiboAppInstalled];
     if(hadInstalledWeibo){
-        message.imageObject = [WBImageObject object];
-//        message.imageObject.imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"CollectionViewCell_Test1"], 0.5);
         message.text = [NSString stringWithFormat:@"%@,%@,http://www.baidu.com", theTitle, description];
-//        WBWebpageObject *webpage = [WBWebpageObject object];
-//        webpage.objectID = @"identifier1";
-//        webpage.title = theTitle;
-//        webpage.description = description;
-//        webpage.webpageUrl = utf8String;
-//        message.mediaObject = webpage;
+        WBWebpageObject *webpage = [WBWebpageObject object];
+        webpage.objectID = @"identifier1";
+        webpage.title = theTitle;
+        webpage.description = description;
+        webpage.webpageUrl = utf8String;
+        message.mediaObject = webpage;
     }
     else{
         WBWebpageObject *webpage = [WBWebpageObject object];

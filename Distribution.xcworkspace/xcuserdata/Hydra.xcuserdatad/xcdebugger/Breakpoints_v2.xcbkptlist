@@ -9,44 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
-            timestampString = "479714128.040198"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
-            landmarkName = "-onReq:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Distribution/UI/SubViewController/Personal/ImageManager/ImageManager.m"
             timestampString = "479705003.457136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "284"
             endingLineNumber = "284">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/SubViewController/Personal/PersonlInfoManager/PersonlInfoManager.m"
-            timestampString = "478530140.857442"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
-            landmarkName = "-distributionRegisterWithTelephone:password:"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,22 +30,6 @@
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "-setCompletionBlockWithSuccess:failure:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/SubViewController/Personal/PersonlInfoManager/PersonlInfoManager.m"
-            timestampString = "478597717.259663"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "277"
-            endingLineNumber = "277"
-            landmarkName = "-registerWithTelephoneNumber:password:completiton:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -104,7 +56,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479918161.155312"
+                  timestampString = "479994593.15"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -119,7 +71,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479918161.155467"
+                  timestampString = "479994593.150267"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -134,7 +86,7 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "479918161.155592"
+                  timestampString = "479994593.150487"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "65"
@@ -151,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Distribution/UI/SubViewController/Home/ClassifyView/ClassifyViewTableViewHeader/ClassifyViewTableViewHeader.m"
-            timestampString = "479188183.119321"
+            timestampString = "479972606.2985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-tapAction:"
             landmarkType = "5">
          </BreakpointContent>
@@ -182,94 +134,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
-            timestampString = "479708555.221267"
+            filePath = "Distribution/LoginRegisterAndPassword/CustomRegisterViewController/CustomRegisterSecondStepViewController.m"
+            timestampString = "479972606.2985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "-QQShare"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/Tool/CustomShare/CustomShare.m"
-            timestampString = "479714128.040198"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "294"
-            endingLineNumber = "294"
-            landmarkName = "-onResp:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/LoginRegisterAndPassword/CustomLoginViewController/CustomLoginViewController.m"
-            timestampString = "479915271.572748"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "-mainButtonClick"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Distribution/UI/Tool/CustomTabBarController/CustomTabBarViewController.m"
-            timestampString = "479918040.806778"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "-hideTabbar"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CustomTabBarViewController hideTabbar]"
-                  moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/UI/Tool/CustomTabBarController/CustomTabBarViewController.m"
-                  timestampString = "479918161.159381"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[CustomTabBarViewController hideTabbar]_block_invoke"
-                  moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/UI/Tool/CustomTabBarController/CustomTabBarViewController.m"
-                  timestampString = "479918161.159527"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

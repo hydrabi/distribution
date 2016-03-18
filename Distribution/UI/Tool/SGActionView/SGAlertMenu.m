@@ -8,7 +8,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "SGAlertMenu.h"
-
+#import "UIColor+Addition.h"
 #define kMAX_ALERT_MESSAGE_HEIGHT   300
 
 @interface SGAlertMenu ()

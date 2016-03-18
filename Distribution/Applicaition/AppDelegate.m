@@ -11,6 +11,7 @@
 #import "AppDelegate+Ease.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import "AppDelegate+OpenShare.h"
+#import "RequestLocation.h"
 
 #define EaseMobAppkey @"yyss2016#yyss"
 #define AVCloundID @"9dibcmhsV9QeOFoiWBaQmpbS-gzGzoHsz"
@@ -40,6 +41,9 @@ didFinishLaunchingWithOptions:launchOptions
     }];
     //分享注册
     [self openShareApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
+    [[RequestLocation shareInstance] openGPSWithHUD:NO];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     RootViewController *vc = [[RootViewController alloc] init];
     vc.view.backgroundColor = [UIColor whiteColor];

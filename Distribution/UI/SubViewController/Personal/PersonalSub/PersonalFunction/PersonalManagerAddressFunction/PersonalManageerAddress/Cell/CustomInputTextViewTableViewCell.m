@@ -23,4 +23,8 @@
 
 }
 
+-(void)resetAdviceFeedbackPlaceholder{
+    self.textView.placeholder = @"请输入您的宝贵意见，我们将不断优化改进";
+}
+
 @end

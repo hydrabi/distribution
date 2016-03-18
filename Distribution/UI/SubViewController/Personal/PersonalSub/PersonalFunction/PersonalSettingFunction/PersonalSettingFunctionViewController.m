@@ -13,7 +13,7 @@
 #import "PersonalSettingTableViewCell.h"
 #import "AppDelegate.h"
 #import "PersonalAboutUsViewController.h"
-
+#import "PersonalFeedBackFunctionViewController.h"
 static NSString *personalSettingTableViewCellIdentifier = @"personalSettingTableViewCellIdentifier";
 static NSString *personalSettingNormalTableViewCellIdentifier = @"personalSettingNormalTableViewCellIdentifier";
 
@@ -198,6 +198,11 @@ static NSString *personalSettingNormalTableViewCellIdentifier = @"personalSettin
     }
     else if (type == PersonalSettingTypeAboutUs){
         PersonalAboutUsViewController *vc = [[PersonalAboutUsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (type == PersonalSettingTypeEvaluate)
+    {
+        PersonalFeedBackFunctionViewController *vc = [[PersonalFeedBackFunctionViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

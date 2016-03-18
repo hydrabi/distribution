@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "CHTCollectionViewWaterfallLayout.h"
-
+typedef void (^didSelectCallback) (NSIndexPath *indexPath,AVObject *object);
 @class CustomizedCollectionViewController;
 @interface CollectionViewDataSource : NSObject<UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>
+
+@property (nonatomic,copy)didSelectCallback callback;
 
 -(instancetype)initWithDelegate:(CustomizedCollectionViewController*)delegate;
 

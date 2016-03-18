@@ -93,7 +93,6 @@
     }
     
     if([viewController isKindOfClass:[BaseAccountReleateViewController class]]){
-        
         return;
     }
     

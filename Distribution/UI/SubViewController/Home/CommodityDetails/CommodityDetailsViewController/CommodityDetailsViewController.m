@@ -17,7 +17,6 @@
 #import "NSArray+Addition.h"
 #import "CustomShare.h"
 #import "CustomImageAndTitleButton.h"
-#import "LoginNavigationControllerViewController.h"
 
 @interface CommodityDetailsViewController ()<CommodityDetailsDataSourceDelegate,MWPhotoBrowserDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -142,6 +141,7 @@
 //返回
 -(void)returnButtonClick{
     [self.navigationController popViewControllerAnimated:YES];
+    [[AppDelegate getRootController] configTabBarConstraint];
 }
 //分享
 -(void)shareButtonClick{
@@ -170,7 +170,7 @@
     }
     //未登录，弹出登录框
     else{
-        [[LoginNavigationControllerViewController shareInstance] showWithRootViewController];
+        [[AccountNavigationManager shareInstance] showNavWithType:AccountReleateViewControllerType_Login];
     }
 }
 

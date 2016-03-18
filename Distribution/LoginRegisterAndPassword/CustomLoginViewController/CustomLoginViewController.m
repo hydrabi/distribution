@@ -8,8 +8,9 @@
 
 #import "CustomLoginViewController.h"
 #import "CustomPrefixInputTextFieldTableViewCell.h"
-#import "AccountNavigationManager.h"
-@interface CustomLoginViewController ()
+#import "NSString+Addition.h"
+#import "PersonlInfoManager.h"
+@interface CustomLoginViewController ()<UITextFieldDelegate>
 @property (nonatomic,weak)UITextField *accountTextField;
 @property (nonatomic,weak)UITextField *passwordTextField;
 @end
@@ -64,7 +65,22 @@
 }
 
 -(void)mainButtonClick{
+    if(self.accountTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入您的手机号!"];
+        return;
+    }
     
+    if(![self.accountTextField.text validateMobile]){
+        [MBProgressHUD showError:@"请输入正确的手机号码！"];
+        return;
+    }
+    
+    if(self.passwordTextField.text.length == 0){
+        [MBProgressHUD showError:@"请输入密码!"];
+        return;
+    }
+    
+    [self loginPrepare];
 }
 
 -(void)subButtonClick{
@@ -83,6 +99,7 @@
         {
             CustomPrefixInputTextFieldTableViewCell *accountCell = [tableView dequeueReusableCellWithIdentifier:customPrefixInputTextFieldTableViewCellReuseIdentifier forIndexPath:indexPath];
             self.accountTextField = accountCell.textField;
+            
             [accountCell setType:type];
             cell = (UITableViewCell*)accountCell;
         }
@@ -91,6 +108,7 @@
         {
             CustomPrefixInputTextFieldTableViewCell *passwordCell = [tableView dequeueReusableCellWithIdentifier:customPrefixInputTextFieldTableViewCellReuseIdentifier forIndexPath:indexPath];
             self.passwordTextField = passwordCell.textField;
+            self.passwordTextField.delegate = self;
             [passwordCell setType:type];
             cell = (UITableViewCell*)passwordCell;
         }
@@ -102,5 +120,46 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
+}
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    //done的返回键点击
+    if(textField.returnKeyType == UIReturnKeyDone){
+        [self mainButtonClick];
+    }
+    return YES;
+}
+
+-(void)loginPrepare{
+    
+    [self.view endEditing:YES];
+    [self loginRequest];
+}
+
+-(void)loginRequest{
+    
+    [[PersonlInfoManager shareManager] loginWithTelephoneNumber:self.accountTextField.text password:self.passwordTextField.text completiton:^(BOOL success){
+        [self loginCompleteWithResult:success];
+    }];
+    
+}
+
+-(void)loginCompleteWithResult:(BOOL)result{
+
+    if(result){
+        [MBProgressHUD showSuccess:@"登陆成功"];
+    }
+    else{
+        [MBProgressHUD showError:@"登陆失败"];
+    }
+    
+    [self clearTextField];
+    [self returnButtonClick];
+}
+
+-(void)clearTextField{
+    self.accountTextField.text = @"";
+    self.passwordTextField.text = @"";
 }
 @end

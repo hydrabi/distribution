@@ -12,4 +12,5 @@
 +(instancetype)shareInstance;
 -(void)showNavWithType:(AccountReleateViewControllerType)type;
 -(void)hideNavWithCompletion:(void (^)(void))completion;
+-(void)clearRegisterTextField;
 @end

@@ -18,6 +18,7 @@
 #import "MBProgressHUD+YG.h"
 #import "AVUser+Attibute.h"
 #import "GlobalMacro.h"
+#import "AccountNavigationManager.h"
 #endif
 
 #endif /* Distribution_Prefix_pch */

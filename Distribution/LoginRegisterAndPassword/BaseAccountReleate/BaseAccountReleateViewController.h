@@ -25,5 +25,6 @@ static NSString *customPrefixInputTextFieldTableViewCellReuseIdentifier = @"cust
 -(void)configDataTypeArr;
 -(void)mainButtonClick;
 -(void)subButtonClick;
+-(void)clearTextField;
 -(AccountReleateCellType)getSpecificTypeWithIndexPath:(NSIndexPath*)indexPath;
 @end

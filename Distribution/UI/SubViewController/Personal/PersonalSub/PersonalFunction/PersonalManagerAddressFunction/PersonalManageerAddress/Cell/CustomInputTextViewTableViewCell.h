@@ -10,4 +10,5 @@
 #import "PlaceHolderTextView.h"
 @interface CustomInputTextViewTableViewCell : UITableViewCell
 @property (nonatomic,weak)IBOutlet PlaceHolderTextView *textView;
+-(void)resetAdviceFeedbackPlaceholder;
 @end

@@ -11,8 +11,9 @@
 #import "CustomizedCollectionMacro.h"
 #import "CollectionViewDataSource.h"
 #import "MJRefresh.h"
-
+#import "NSArray+Addition.h"
 #import "UIColor+Addition.h"
+#import "CommodityDetailsViewController.h"
 @interface CustomizedCollectionViewController ()
 
 /**collectView的数据源*/
@@ -44,13 +45,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     [self UIConfig];
-    // Do any additional setup after loading the view.
+    [self UIConfig];
+    [self navigationConfig];
+    
+    if(self.navigationController){
+        [self refreshIfShould];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)dealloc{
+    [self removeObserver:self forKeyPath:@"pdType"];
+}
+
+-(void)navigationConfig{
+    NSArray *left                  = [NSArray navigationItemsReturnWithTarget:self selecter:@selector(returnButtonClick)];
+    self.navigationItem.leftBarButtonItems  = left;
+}
+
+-(void)returnButtonClick{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - 刷新
@@ -151,6 +169,10 @@
     self.collectionView.backgroundColor = [UIColor colorWithHexString:@"f5f5f5" alpha:1];
     self.collectionView.dataSource = self.collectDataSource;
     self.collectionView.delegate = self.collectDataSource;
+    __weak typeof(self)weakSelf = self;
+    self.collectDataSource.callback = ^(NSIndexPath *indexPath,AVObject *object){
+        [weakSelf pushIntoCommodityDitailsControllerWithIndexPath:indexPath object:object];
+    };
     self.collectionView.alwaysBounceVertical = YES;
     self.collectionView.bounces = YES;
     self.collectionView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
@@ -160,13 +182,13 @@
     self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     [self.view addSubview:self.collectionView];
     //创建约束
-    __weak typeof(self)weakSelf = self;
     [self.collectionView makeConstraints:^(MASConstraintMaker *make){
         make.leading.equalTo(weakSelf.view.leading);
         make.trailing.equalTo(weakSelf.view.trailing);
         make.top.equalTo(weakSelf.view.top);
         make.bottom.equalTo(weakSelf.view.bottom);
     }];
+    [self resetTitleWithType:self.pdType];
 }
 
 #pragma mark - 数据源
@@ -239,5 +261,74 @@
     self.pullRequestProductNum = eachPageSize-self.totalProductNum%eachPageSize;
 }
 
+-(void)resetTitleWithType:(productType)type{
+    switch (type) {
+        case productType_women:
+        {
+            self.title = @"全部女装";
+        }
+            break;
+        case productType_sweater:
+        {
+            self.title = @"毛衣";
+        }
+            break;
+        case productType_sportswear:
+        {
+            self.title = @"运动装";
+        }
+            break;
+        case productType_shirt:
+        {
+            self.title = @"衬衣";
+        }
+            break;
+        case productType_pantyHose:
+        {
+            self.title = @"裤袜";
+        }
+            break;
+        case productType_overcoat:
+        {
+            self.title = @"大衣";
+        }
+            break;
+        case productType_minkCoat:
+        {
+            self.title = @"貂皮大衣";
+        }
+            break;
+        case productType_jacket:
+        {
+            self.title = @"外套";
+        }
+            break;
+        case productType_formal:
+        {
+            self.title = @"正装";
+        }
+            break;
+        case productType_dress:
+        {
+            self.title = @"连衣裙";
+        }
+            break;
+        case productType_downJacket:
+        {
+            self.title = @"羽绒服";
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+#pragma mark - callBack
+-(void)pushIntoCommodityDitailsControllerWithIndexPath:(NSIndexPath *)indexPath object:(AVObject *)object{
+    CommodityDetailsViewController *vc = [[CommodityDetailsViewController alloc] initWithObject:object];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 @end

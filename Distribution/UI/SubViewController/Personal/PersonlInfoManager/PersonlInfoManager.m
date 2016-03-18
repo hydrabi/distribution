@@ -84,8 +84,10 @@
 -(void)loginPrepare{
     self.progressHUD.labelText = @"正在登录...";
     RootViewController *vc = [AppDelegate getRootController];
-    [vc.view addSubview:self.progressHUD];
-    [self.progressHUD show:YES];
+    if(vc.presentedViewController){
+        [vc.presentedViewController.view addSubview:self.progressHUD];
+        [self.progressHUD show:YES];
+    }
 }
 
 /**环信登录*/
@@ -121,7 +123,7 @@
             //如果leanCloud登录成功
             if(success){
                 //环信登陆
-                success = [self easeLoginWithTelephone:telephone password:user.easePassword];
+                [self easeLoginWithTelephone:telephone password:user.easePassword];
             }
             
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -200,7 +202,12 @@
 -(void)logoutPrepare{
     self.progressHUD.labelText = @"正在退出...";
     RootViewController *vc = [AppDelegate getRootController];
-    [vc.view addSubview:self.progressHUD];
+    if(vc.presentedViewController){
+        [vc.presentedViewController.view addSubview:self.progressHUD];
+    }
+    else{
+        [vc.view addSubview:self.progressHUD];
+    }
     [self.progressHUD show:YES];
 }
 
@@ -261,8 +268,11 @@
 -(void)registerPrepare{
     self.progressHUD.labelText = @"正在注册...";
     RootViewController *vc = [AppDelegate getRootController];
-    [vc.view addSubview:self.progressHUD];
-    [self.progressHUD show:YES];
+    if(vc.presentedViewController){
+        [vc.presentedViewController.view addSubview:self.progressHUD];
+        [self.progressHUD show:YES];
+    }
+    
 }
 
 /**注册请求*/
@@ -436,15 +446,29 @@
 
 //验证忘记密码的验证码
 -(void)leanCloudVerifyForgetPasswordVerifyCodeWith:(NSString*)verifyCode telephone:(NSString*)telephone newPassword:(NSString*)newPassword completiton:(void(^)(BOOL success,NSError *error))block{
+    [self resetPasswordPrepare];
     [AVUser resetPasswordWithSmsCode:verifyCode newPassword:newPassword block:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
-            NSLog(@"验证忘记密码的验证码成功！");
+            NSLog(@"密码重置成功！");
         } else {
-            NSLog(@"验证忘记密码的验证码失败！");
+            NSLog(@"密码重置失败！");
         }
         block(succeeded,error);
+        [self.progressHUD hide:YES];
     }];
 }
+
+/**注册准备*/
+-(void)resetPasswordPrepare{
+    self.progressHUD.labelText = @"重置中...";
+    RootViewController *vc = [AppDelegate getRootController];
+    if(vc.presentedViewController){
+        [vc.presentedViewController.view addSubview:self.progressHUD];
+        [self.progressHUD show:YES];
+    }
+    
+}
+
 #pragma mark - leanCloud 设置属性
 
 //服务器数据同步到客户端，登陆后或者打开app有登录过的情况下使用
