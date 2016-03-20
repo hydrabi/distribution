@@ -40,11 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Distribution/Category/UIImageView+Addition.m"
-            timestampString = "479214172.936411"
+            timestampString = "480150519.042493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-compressImage:"
             landmarkType = "5">
             <Locations>
@@ -56,12 +56,12 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "480009428.709393"
+                  timestampString = "480153720.475076"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "61">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -71,27 +71,12 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "480009428.709673"
+                  timestampString = "480153720.475306"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__Block_byref_object_dispose_"
-                  moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "480009428.709892"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "10">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>

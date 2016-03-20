@@ -12,6 +12,7 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import "AppDelegate+OpenShare.h"
 #import "RequestLocation.h"
+#import "CustomLuanchView.h"
 
 #define EaseMobAppkey @"yyss2016#yyss"
 #define AVCloundID @"9dibcmhsV9QeOFoiWBaQmpbS-gzGzoHsz"
@@ -27,6 +28,8 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
     //环信注册
     [self easemobApplication:application
 didFinishLaunchingWithOptions:launchOptions
@@ -51,6 +54,8 @@ didFinishLaunchingWithOptions:launchOptions
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     
+    CustomLuanchView *launchView = [[CustomLuanchView alloc] initWithDelayTime:4];
+    [launchView show];
     
     return YES;
 }

@@ -47,7 +47,10 @@
  *  表示正在查询中
  */
 @property (strong,nonatomic) MBProgressHUD *progressHUD;
-
+/**
+ *  指定按钮
+ */
+@property (strong,nonatomic) UIButton *topButton;
 @end
 
 @implementation HomeViewController
@@ -88,7 +91,22 @@
 -(void)UIConfig{
     self.navigationItem.leftBarButtonItems = [NSArray navigationItemsWithImageName:@"navigation_logo" target:self selecter:@selector(logoClick)];
     [self searchBarConfig];
+    [self topButtonConfig];
 }
+
+-(void)topButtonConfig{
+    self.topButton = [[UIButton alloc] init];
+    [self.view addSubview:self.topButton];
+    [self.topButton setImage:[UIImage imageNamed:@"home_topButton"] forState:UIControlStateNormal];
+    [self.topButton addTarget:self action:@selector(topButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    __weak typeof(self)weakSelf = self;
+    [self.topButton makeConstraints:^(MASConstraintMaker *make){
+        make.width.and.height.equalTo(@(63));
+        make.trailing.equalTo(weakSelf.view.trailing).offset(@(-12));
+        make.bottom.equalTo(weakSelf.view.bottom).offset(@(-28));
+    }];
+}
+
 //创建子视图
 -(void)configureTabBarController{
     CustomizedCollectionViewController *vc1 = [[CustomizedCollectionViewController alloc] init];
@@ -193,6 +211,11 @@
     
 }
 
+-(void)topButtonClick{
+    CustomizedCollectionViewController *vc = (CustomizedCollectionViewController*)self.navTabBar.subViewControllers[self.navTabBar.currentIndex];
+    [vc.collectionView setContentOffset:CGPointMake(0, 0) animated:YES];
+}
+
 #pragma mark - navBar调用
 -(void)resignSerchBarFirstResponse{
     if([self.searchBar isFirstResponder]){
@@ -229,4 +252,6 @@
         [vc refreshIfShould];
     }
 }
+
+
 @end

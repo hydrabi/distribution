@@ -71,6 +71,7 @@
 
     _navgationTabBar = [[UIScrollView alloc] initWithFrame:CGRectMake(DOT_COORDINATE, DOT_COORDINATE, functionButtonX, NAV_TAB_BAR_HEIGHT)];
     _navgationTabBar.showsHorizontalScrollIndicator = NO;
+    _navgationTabBar.scrollsToTop = NO;
     [self addSubview:_navgationTabBar];
     
     [self viewShowShadow:self shadowRadius:1.0f shadowOpacity:0.5f];

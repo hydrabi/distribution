@@ -39,20 +39,6 @@
                       
                    }];
     
-//    SDWebImageManager *manager = [SDWebImageManager sharedManager];
-//    [self setImage:[UIImage imageNamed:@"CommodityDefault"]];
-//    [manager downloadImageWithURL:[NSURL URLWithString:imageURL]
-//                          options:0
-//                         progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-//                             
-//                         }
-//                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
-//                            if (image) {
-//                                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//                                    [self compressImage:image];
-//                                });
-//                            }
-//                        }];
 }
 
 //压缩图片尺寸 骂了隔壁 还要自己压缩 不压缩内存爆灯了 艹

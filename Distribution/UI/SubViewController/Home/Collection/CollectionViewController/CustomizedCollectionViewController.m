@@ -169,6 +169,7 @@
     self.collectionView.backgroundColor = [UIColor colorWithHexString:@"f5f5f5" alpha:1];
     self.collectionView.dataSource = self.collectDataSource;
     self.collectionView.delegate = self.collectDataSource;
+    self.collectionView.scrollsToTop = NO;
     __weak typeof(self)weakSelf = self;
     self.collectDataSource.callback = ^(NSIndexPath *indexPath,AVObject *object){
         [weakSelf pushIntoCommodityDitailsControllerWithIndexPath:indexPath object:object];

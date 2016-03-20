@@ -147,6 +147,8 @@
 		80C376FB1C21A6A800464AC0 /* SCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C376F71C21A6A800464AC0 /* SCPopView.m */; };
 		80C377051C21A8DD00464AC0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C377041C21A8DD00464AC0 /* HomeViewController.m */; };
 		80C9F4271C5776A50077BEB3 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C9F4261C5776A50077BEB3 /* NSArray+Addition.m */; };
+		80CEECBF1C9E516A00B81F48 /* UIImage+LaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CEECBE1C9E516A00B81F48 /* UIImage+LaunchImage.m */; };
+		80CEECC61C9E551A00B81F48 /* CustomLuanchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CEECC51C9E551A00B81F48 /* CustomLuanchView.m */; };
 		80D55EE81C59ACC700B2F0EC /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D55EE61C59ACC700B2F0EC /* DiscoverViewController.m */; };
 		80D55EE91C59ACC700B2F0EC /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80D55EE71C59ACC700B2F0EC /* DiscoverViewController.xib */; };
 		80D55EEC1C59AD7900B2F0EC /* DiscoverTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D55EEB1C59AD7900B2F0EC /* DiscoverTableViewDataSource.m */; };
@@ -472,6 +474,10 @@
 		80C9F4241C5755D10077BEB3 /* GlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalMacro.h; sourceTree = "<group>"; };
 		80C9F4251C5776A50077BEB3 /* NSArray+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Addition.h"; sourceTree = "<group>"; };
 		80C9F4261C5776A50077BEB3 /* NSArray+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Addition.m"; sourceTree = "<group>"; };
+		80CEECBD1C9E516A00B81F48 /* UIImage+LaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LaunchImage.h"; sourceTree = "<group>"; };
+		80CEECBE1C9E516A00B81F48 /* UIImage+LaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LaunchImage.m"; sourceTree = "<group>"; };
+		80CEECC41C9E551A00B81F48 /* CustomLuanchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLuanchView.h; sourceTree = "<group>"; };
+		80CEECC51C9E551A00B81F48 /* CustomLuanchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLuanchView.m; sourceTree = "<group>"; };
 		80D55EE51C59ACC700B2F0EC /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		80D55EE61C59ACC700B2F0EC /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		80D55EE71C59ACC700B2F0EC /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
@@ -1408,6 +1414,15 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
+		80CEECC31C9E551A00B81F48 /* CustomLaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				80CEECC41C9E551A00B81F48 /* CustomLuanchView.h */,
+				80CEECC51C9E551A00B81F48 /* CustomLuanchView.m */,
+			);
+			path = CustomLaunchView;
+			sourceTree = "<group>";
+		};
 		80D3105E1C341D2D00ADA02E /* Personal */ = {
 			isa = PBXGroup;
 			children = (
@@ -1871,6 +1886,7 @@
 		80F107151C157BEF0009FBA4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				80CEECC31C9E551A00B81F48 /* CustomLaunchView */,
 				8096E7991C9813EA00A8344E /* CustomPrefixInputTextFieldTableViewCell */,
 				80E5DB0C1C96682700C2B773 /* PlaceHolderTextView */,
 				809BEF4B1C8C1A6D000B42A4 /* CustomBaseProductList */,
@@ -1925,6 +1941,8 @@
 				80C9F4261C5776A50077BEB3 /* NSArray+Addition.m */,
 				8080F4A81C8E9FC8005306EA /* UIImageView+Addition.h */,
 				8080F4A91C8E9FC8005306EA /* UIImageView+Addition.m */,
+				80CEECBD1C9E516A00B81F48 /* UIImage+LaunchImage.h */,
+				80CEECBE1C9E516A00B81F48 /* UIImage+LaunchImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2226,6 +2244,7 @@
 				80A0E98F1C9555820070F091 /* PersonalAddressDetailTableViewCell.m in Sources */,
 				80ABE2551C38B79600D4041C /* CommodityDetailsDataSource.m in Sources */,
 				809351BE1C90275E00836F98 /* PersonalSettingTableViewCell.m in Sources */,
+				80CEECBF1C9E516A00B81F48 /* UIImage+LaunchImage.m in Sources */,
 				80C376FA1C21A6A800464AC0 /* SCNavTabBar.m in Sources */,
 				804CDBB41C968749009ABDF6 /* PersonalManagerAddressNormalTableViewCell.m in Sources */,
 				80FF3E641C224D0300A08713 /* CHTCollectionViewWaterfallLayout.m in Sources */,
@@ -2294,6 +2313,7 @@
 				80B0A6F01C899D31008194E2 /* SearchProductViewController.m in Sources */,
 				8006CA4D1C9C4D2F006D6634 /* DiscoverSubDetailIntroduceTableViewCell.m in Sources */,
 				8081CAB41C5B1110001FD68F /* PersonalMainOrderHeaderTableViewCell.m in Sources */,
+				80CEECC61C9E551A00B81F48 /* CustomLuanchView.m in Sources */,
 				8096E7C11C981D7500A8344E /* BaseAccountReleateTableViewFooter.m in Sources */,
 				80D55F311C59E33900B2F0EC /* PersonalContactTelephoneTableViewCell.m in Sources */,
 				80D55EE81C59ACC700B2F0EC /* DiscoverViewController.m in Sources */,
