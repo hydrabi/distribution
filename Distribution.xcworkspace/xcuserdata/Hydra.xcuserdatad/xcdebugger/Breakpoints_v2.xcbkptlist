@@ -56,12 +56,12 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "480153720.475076"
+                  timestampString = "480308510.316194"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "61">
+                  offsetFromSymbolStart = "48">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -71,12 +71,27 @@
                   moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
-                  timestampString = "480153720.475306"
+                  timestampString = "480308510.31647"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Block_byref_object_dispose_"
+                  moduleName = "&#x8863;&#x4e91;&#x65f6;&#x5c1a;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Hydra/Documents/distributionProject/gitSave/Distribution/Category/UIImageView+Addition.m"
+                  timestampString = "480308510.316694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "10">
                </Location>
             </Locations>
          </BreakpointContent>

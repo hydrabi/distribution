@@ -67,16 +67,16 @@
 #pragma mark - 数据源
 -(void)dataTypeConfig{
     self.dataArr = @[@(productType_women),
+                     @(productType_summer),
+                     @(productType_autumn),
                      @(productType_overcoat),
                      @(productType_sweater),
+                     @(productType_fachion),
                      @(productType_jacket),
                      @(productType_downJacket),
-                     @(productType_sportswear),
-                     @(productType_formal),
-                     @(productType_minkCoat),
                      @(productType_pantyHose),
-                     @(productType_shirt),
-                     @(productType_dress)].mutableCopy;
+                     @(productType_dress),
+                     @(productType_minkCoat)].mutableCopy;
 }
 
 

@@ -125,23 +125,39 @@
 
 #pragma mark - DZNEmptyDataSetSource 当页面为空时出现的提示
 - (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
-    NSString *text = @"现在还没有商品~";
-    
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
-                                 NSForegroundColorAttributeName: [UIColor darkGrayColor]};
-    
-    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    if(self.delegate.pdType != productType_forwardSale){
+        NSString *text = @"现在还没有商品~";
+        
+        NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
+                                     NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+        
+        return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    }
+    return nil;
 }
 - (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView{
-    NSString *text = @"请刷新一下~";
-    
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
-                                 NSForegroundColorAttributeName: [UIColor darkGrayColor]};
-    
-    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    if(self.delegate.pdType != productType_forwardSale){
+        NSString *text = @"请刷新一下~";
+        
+        NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0f],
+                                     NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+        
+        return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    }
+    return nil;
 }
 
 - (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView{
     return YES;
 }
+
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+{
+    if(self.delegate.pdType == productType_forwardSale){
+        return [UIImage imageNamed:@"collection_forwardSaleDataEmpty"];
+    }
+    return nil;
+}
+
 @end

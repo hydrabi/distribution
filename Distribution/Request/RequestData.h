@@ -20,11 +20,11 @@ typedef NS_ENUM(NSInteger,productType) {
     productType_women,              //全部女装
     productType_jacket,             //外套
     productType_downJacket,         //羽绒服
-    productType_sportswear,         //运动装
-    productType_formal,             //正装
     productType_minkCoat,           //貂皮大衣
     productType_pantyHose,          //裤袜
-    productType_shirt,              //衬衣
+    productType_summer,             //夏装
+    productType_autumn,             //秋装
+    productType_fachion             //时尚装
 };
 
 //每一页的商品数目

@@ -32,19 +32,19 @@
         case productType_sweater:
         {
             [self.imageView setImage:[UIImage imageNamed:@"classify_sweater"]];
-            self.titleLabel.text = @"毛衣";
+            self.titleLabel.text = @"针织衫/毛衣";
         }
             break;
-        case productType_sportswear:
+        case productType_summer:
         {
-            [self.imageView setImage:[UIImage imageNamed:@"classify_sportswear"]];
-            self.titleLabel.text = @"运动装";
+            [self.imageView setImage:[UIImage imageNamed:@"classify_summer"]];
+            self.titleLabel.text = @"夏装";
         }
             break;
-        case productType_shirt:
+        case productType_autumn:
         {
-            [self.imageView setImage:[UIImage imageNamed:@"classify_shirt"]];
-            self.titleLabel.text = @"衬衣";
+            [self.imageView setImage:[UIImage imageNamed:@"classify_autumn"]];
+            self.titleLabel.text = @"秋装";
         }
             break;
         case productType_pantyHose:
@@ -56,7 +56,7 @@
         case productType_overcoat:
         {
             [self.imageView setImage:[UIImage imageNamed:@"classify_overcoat"]];
-            self.titleLabel.text = @"大衣";
+            self.titleLabel.text = @"风衣/大衣";
         }
             break;
         case productType_minkCoat:
@@ -71,10 +71,10 @@
             self.titleLabel.text = @"外套";
         }
             break;
-        case productType_formal:
+        case productType_fachion:
         {
-            [self.imageView setImage:[UIImage imageNamed:@"classify_formal"]];
-            self.titleLabel.text = @"正装";
+            [self.imageView setImage:[UIImage imageNamed:@"classify_fachion"]];
+            self.titleLabel.text = @"时尚装";
         }
             break;
         case productType_dress:

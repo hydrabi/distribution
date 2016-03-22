@@ -274,14 +274,14 @@
             self.title = @"毛衣";
         }
             break;
-        case productType_sportswear:
+        case productType_summer:
         {
-            self.title = @"运动装";
+            self.title = @"夏装";
         }
             break;
-        case productType_shirt:
+        case productType_autumn:
         {
-            self.title = @"衬衣";
+            self.title = @"秋装";
         }
             break;
         case productType_pantyHose:
@@ -304,9 +304,9 @@
             self.title = @"外套";
         }
             break;
-        case productType_formal:
+        case productType_fachion:
         {
-            self.title = @"正装";
+            self.title = @"时尚装";
         }
             break;
         case productType_dress:

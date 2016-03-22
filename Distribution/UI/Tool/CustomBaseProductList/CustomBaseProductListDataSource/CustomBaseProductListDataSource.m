@@ -23,14 +23,14 @@ static NSString *tableViewFavoriteCellIndentifier = @"tableViewFavoriteCellInden
 -(instancetype)initWithTableView:(UITableView*)tableView{
     self = [super init];
     if(self){
-        self.tableView            = tableView;
-        self.tableView.delegate   = self;
-        self.tableView.dataSource = self;
-        
-        self.tableView.emptyDataSetSource = self;
+        self.tableView                      = tableView;
+        self.tableView.delegate             = self;
+        self.tableView.dataSource           = self;
+
+        self.tableView.emptyDataSetSource   = self;
         self.tableView.emptyDataSetDelegate = self;
 
-        self.dataTypeArr = [[NSMutableArray alloc] init];
+        self.dataTypeArr                    = [[NSMutableArray alloc] init];
         [self registerCellNib];
     }
     return self;
@@ -78,7 +78,6 @@ static NSString *tableViewFavoriteCellIndentifier = @"tableViewFavoriteCellInden
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0.1;
 }
-
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] init];

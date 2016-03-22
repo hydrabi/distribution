@@ -49,7 +49,7 @@
 -(void)UIConfig{
     [self cellAppearanceConfig];
     [self navigationItemConfig];
-//    [self updateMoreViewImage];
+    [self updateMoreViewImage];
 }
 
 //设置cell外观
@@ -75,9 +75,18 @@
     self.navigationItem.rightBarButtonItem = right;
 }
 
-//-(void)updateMoreViewImage{
-//    [self.chatBarMoreView updateItemWithImage:[UIImage imageNamed:@"chatBarMoreView_photo"] highlightedImage:[UIImage imageNamed:@"chatBarMoreView_photo"] title:@"图片" atIndex:0];
-//}
+-(void)updateMoreViewImage{
+    [self.chatBarMoreView updateItemWithImage:[UIImage imageNamed:@"chatBarMoreView_picture"] highlightedImage:[UIImage imageNamed:@"chatBarMoreView_picture"] title:@"图片" atIndex:0];
+    
+    [self.chatBarMoreView updateItemWithImage:[UIImage imageNamed:@"chatBarMoreView_location"] highlightedImage:[UIImage imageNamed:@"chatBarMoreView_location"] title:@"位置" atIndex:1];
+    
+    [self.chatBarMoreView updateItemWithImage:[UIImage imageNamed:@"chatBarMoreView_photo"] highlightedImage:[UIImage imageNamed:@"chatBarMoreView_photo"] title:@"拍照" atIndex:2];
+    
+    [self.chatBarMoreView updateItemWithImage:[UIImage imageNamed:@"chatBarMoreView_telephone"] highlightedImage:[UIImage imageNamed:@"chatBarMoreView_telephone"] title:@"通话" atIndex:3];
+    
+    [self.chatBarMoreView removeItematIndex:4];
+    
+}
 
 #pragma mark - 点击事件
 

@@ -6,11 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "classify_shirt@2x.png",
+      "filename" : "chatBarMoreView_picture@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "chatBarMoreView_picture@3x.png",
       "scale" : "3x"
     }
   ],
